@@ -29,10 +29,12 @@ namespace JinxMod.Modules.Survivors
             podPrefab = RoR2.LegacyResourcesAPI.Load<GameObject>("Prefabs/NetworkedObjects/SurvivorPod"),
 
             maxHealth = 110f,
-            healthRegen = 1.5f,
+            healthRegen = 1f,
             armor = 0f,
 
             jumpCount = 1,
+
+            sortPosition = 1f,
         };
 
         public override CustomRendererInfo[] customRendererInfos { get; set; } = new CustomRendererInfo[] 
