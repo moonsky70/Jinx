@@ -1,0 +1,53 @@
+ManifestFileVersion: 0
+CRC: 2214481449
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6671f5a383f0cf18c75f21c2338c2e24
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3557737d4a5c6f2f74d46e448aae2951
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 261c50d8a80898e4ebf2e8e415ea6766, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Jinx/CustomAnimations/Falling Idle.anim
+- Assets/Jinx/CustomAnimations/animDisplay.controller
+- Assets/Jinx/mdlJinx.prefab
+- Assets/Jinx/Model/matJinx.mat
+- Assets/Jinx/CustomAnimations/Jumping UP.anim
+- Assets/Jinx/Model/skin0.png
+- Assets/Jinx/JinxDisplay.prefab
+- Assets/Jinx/Model/JinxBase.fbx
+- Assets/Jinx/CustomAnimations/animJinx.controller
+Dependencies: []

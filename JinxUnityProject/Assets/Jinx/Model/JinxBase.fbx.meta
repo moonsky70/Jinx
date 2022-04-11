@@ -1,0 +1,3521 @@
+fileFormatVersion: 2
+guid: 538acd0fa480a6f46997e5b5981801ce
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: 4443495253774182878
+    second: model|_DEFAULT
+  - first:
+      74: -88475387795136252
+    second: model|Attack1_model
+  - first:
+      74: -2903774718111324486
+    second: model|Attack2_model
+  - first:
+      74: -6234997540010503203
+    second: model|Attack3_model
+  - first:
+      74: -2798369100426500154
+    second: model|Attack4_model
+  - first:
+      74: 8874180860386985422
+    second: model|Attack5_model
+  - first:
+      74: 9109718240878610138
+    second: model|Attack6_model
+  - first:
+      74: -1324583135617647519
+    second: model|Channel_model
+  - first:
+      74: -4433036886903349129
+    second: model|Channel_Wndup_model
+  - first:
+      74: 8909942206742220893
+    second: model|Dance_Loop_model
+  - first:
+      74: -2409441192970904763
+    second: model|Dance_Windup_model
+  - first:
+      74: 5767416680400176517
+    second: model|Death_model
+  - first:
+      74: -6881917816738582735
+    second: model|Emote_Enter_Minigun_model
+  - first:
+      74: 2863820695165937663
+    second: model|Emote_Enter_Rocket_model
+  - first:
+      74: -8692614213872516123
+    second: model|Emote_Exit_Minigun_model
+  - first:
+      74: 7172155576752425800
+    second: model|Emote_Exit_Rocket_model
+  - first:
+      74: 8623473132180522463
+    second: model|Idle1_Base_model
+  - first:
+      74: -8428837467773043523
+    second: model|Idle2_Base_model
+  - first:
+      74: -2845148764510940030
+    second: model|IdleIn1_model
+  - first:
+      74: 5415689046265792501
+    second: model|Idlein2_model
+  - first:
+      74: 2649772588877626340
+    second: model|jinx_buffbone_swap_model
+  - first:
+      74: 1080687547339506010
+    second: model|jinx_joke3_model
+  - first:
+      74: -3194539682331210143
+    second: model|jinx_minigun_idle3_model
+  - first:
+      74: 7082574311621320064
+    second: model|jinx_minigun_run_in_model
+  - first:
+      74: -3078003872474616285
+    second: model|jinx_rlauncher_attack1_model
+  - first:
+      74: 6138375352399493363
+    second: model|jinx_rlauncher_attack2_model
+  - first:
+      74: -5067939048241731385
+    second: model|jinx_rlauncher_death_model
+  - first:
+      74: 776391075393951444
+    second: model|jinx_rlauncher_drecall_in_model
+  - first:
+      74: 9024054712925596650
+    second: model|jinx_rlauncher_drecall_model
+  - first:
+      74: 2957571531437694911
+    second: model|jinx_rlauncher_drecall_out_model
+  - first:
+      74: -7196581416292772217
+    second: model|jinx_rlauncher_idle1_model
+  - first:
+      74: -5915512307875794097
+    second: model|jinx_rlauncher_idle2_model
+  - first:
+      74: 7422677452847799593
+    second: model|jinx_rlauncher_idle3_model
+  - first:
+      74: 5857775518107739873
+    second: model|jinx_rlauncher_recall_model
+  - first:
+      74: 6060499576986711521
+    second: model|jinx_rlauncher_run2_model
+  - first:
+      74: 7260472194803151832
+    second: model|jinx_rlauncher_run_in_model
+  - first:
+      74: 1094450873438227372
+    second: model|jinx_rlauncher_run_model
+  - first:
+      74: 2959531679668663497
+    second: model|jinx_rlauncher_runhaste_model
+  - first:
+      74: 8992882975246136986
+    second: model|jinx_rlauncher_spell2_model
+  - first:
+      74: -6926087325932992419
+    second: model|jinx_rlauncher_spell3_model
+  - first:
+      74: 2863174647338382142
+    second: model|jinx_rlauncher_spell4_model
+  - first:
+      74: 4566972800111573847
+    second: model|jinx_taunt2_model
+  - first:
+      74: 3378324815580223138
+    second: model|Laugh_Breath_model
+  - first:
+      74: -5988012318065463583
+    second: model|Laugh_In_model
+  - first:
+      74: -4812467515121480447
+    second: model|Laugh_Loop_model
+  - first:
+      74: 3743170753719761546
+    second: model|launcher_spell1_weapon2_model
+  - first:
+      74: -2922650939368696537
+    second: model|launcher_spell1_weapon_model
+  - first:
+      74: -8013504556342752064
+    second: model|minigun_spell1_weapon2_model
+  - first:
+      74: 5069548367978615718
+    second: model|minigun_spell1_weapon_gunonly_model
+  - first:
+      74: -8564578651611425186
+    second: model|Recall_LeadIn_model
+  - first:
+      74: 1607605707085911822
+    second: model|Recall_Leadout_model
+  - first:
+      74: 6162463592546450161
+    second: model|Recall_Winddown_model
+  - first:
+      74: -1022028840256950935
+    second: model|Respawn_model
+  - first:
+      74: 1556273480439793989
+    second: model|Rlauncher_Death_model
+  - first:
+      74: 6210906120805082766
+    second: model|Rlauncher_Idlein1_model
+  - first:
+      74: -2753358263870077316
+    second: model|Rlauncher_Spell3_model
+  - first:
+      74: 7282191144618091642
+    second: model|Run_Base_model
+  - first:
+      74: 2951166735909956264
+    second: model|Run_Fast_model
+  - first:
+      74: 9047251552881618316
+    second: model|Run_Haste_model
+  - first:
+      74: -2012743243429093787
+    second: model|Spell2_model
+  - first:
+      74: 4088199807002177393
+    second: model|Spell3_model
+  - first:
+      74: -8753812113442019392
+    second: model|Spell3_Run_model
+  - first:
+      74: -136329107136604290
+    second: model|Spell4_model
+  - first:
+      74: -4641086960943709729
+    second: model|Stunned_model
+  - first:
+      74: 4938825350056464797
+    second: model|Taunt_Base_model
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jinx_Base_Mat
+    second: {fileID: 2100000, guid: 151062899f0f3164abb402ecda7d0b0e, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: <Root Transform>
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'model|Attack1_model' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Elbow' has translation animation that will be discarded.\n\t'R_Hand'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Attack2_model' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'L_Elbow' has translation animation that will be
+      discarded.\n\t'L_Hand' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'L_KneeUpper'
+      has translation animation that will be discarded.\n\t'L_Foot' has translation
+      animation that will be discarded.\n\nClip 'model|Attack3_model' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine3' has translation animation
+      that will be discarded.\n\t'R_Elbow' has translation animation that will be
+      discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Attack4_model' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Attack5_model' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Elbow' has translation
+      animation that will be discarded.\n\t'R_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'model|Attack6_model' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine3' has translation animation
+      that will be discarded.\n\t'L_Clavicle' has translation animation that will
+      be discarded.\n\t'L_Elbow' has translation animation that will be discarded.\n\t'L_Hand'
+      has translation animation that will be discarded.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_KneeUpper' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\nClip 'model|Channel_model' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'model|Channel_Wndup_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Index2' has translation animation that will be discarded.\n\t'L_Elbow'
+      has translation animation that will be discarded.\n\t'L_Hand' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'model|Dance_Loop_model' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'R_Hair1'
+      has translation animation that will be discarded.\n\t'L_Hair1' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'R_KneeUpper' has translation animation
+      that will be discarded.\n\t'R_Foot' has translation animation that will be
+      discarded.\n\t'L_KneeUpper' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\nClip 'model|Dance_Windup_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Hair1'
+      has translation animation that will be discarded.\n\t'L_Hair1' has translation
+      animation that will be discarded.\n\t'R_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Shoulder' has translation animation that will
+      be discarded.\n\t'R_Elbow' has translation animation that will be discarded.\n\t'R_Hand'
+      has translation animation that will be discarded.\n\t'R_Thumb1' has translation
+      animation that will be discarded.\n\t'R_Thumb2' has translation animation that
+      will be discarded.\n\t'R_Index1' has translation animation that will be discarded.\n\t'R_Index2'
+      has translation animation that will be discarded.\n\t'R_Middle1' has translation
+      animation that will be discarded.\n\t'R_Middle2' has translation animation
+      that will be discarded.\n\t'L_Clavicle' has translation animation that will
+      be discarded.\n\t'L_Shoulder' has translation animation that will be discarded.\n\t'L_Elbow'
+      has translation animation that will be discarded.\n\t'L_Hand' has translation
+      animation that will be discarded.\n\t'L_Thumb1' has translation animation that
+      will be discarded.\n\t'L_Thumb2' has translation animation that will be discarded.\n\t'L_Index1'
+      has translation animation that will be discarded.\n\t'L_Index2' has translation
+      animation that will be discarded.\n\t'L_Middle1' has translation animation
+      that will be discarded.\n\t'L_Middle2' has translation animation that will
+      be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|Death_model' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Spine3' has translation animation that will be discarded.\n\t'Neck'
+      has translation animation that will be discarded.\n\t'R_Hair1' has translation
+      animation that will be discarded.\n\t'L_Hair1' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|Emote_Enter_Minigun_model' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'model|Emote_Enter_Rocket_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Emote_Exit_Minigun_model' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Spine1' has translation animation that will be discarded.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'model|Emote_Exit_Rocket_model' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation
+      animation that will be discarded.\n\t'Spine2' has translation animation that
+      will be discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Idle1_Base_model' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'model|Idle2_Base_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Neck' has translation animation that will be discarded.\n\t'Head'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|IdleIn1_model' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Idlein2_model' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'model|jinx_joke3_model' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'R_Hair1'
+      has translation animation that will be discarded.\n\t'L_Hair1' has translation
+      animation that will be discarded.\n\t'R_Clavicle' has translation animation
+      that will be discarded.\n\t'L_Clavicle' has translation animation that will
+      be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|jinx_minigun_idle3_model' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'model|jinx_minigun_run_in_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_KneeUpper'
+      has translation animation that will be discarded.\n\t'L_Foot' has translation
+      animation that will be discarded.\n\nClip 'model|jinx_rlauncher_attack1_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Neck' has translation animation that will be discarded.\n\t'Hair_Bank_Front1'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|jinx_rlauncher_attack2_model' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|jinx_rlauncher_death_model' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'Neck'
+      has translation animation that will be discarded.\n\t'R_Hair1' has translation
+      animation that will be discarded.\n\t'L_Hair1' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'L_Elbow' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_KneeUpper'
+      has translation animation that will be discarded.\n\t'L_Foot' has translation
+      animation that will be discarded.\n\nClip 'model|jinx_rlauncher_drecall_in_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'L_Elbow' has translation animation that will be
+      discarded.\n\t'L_Hand' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|jinx_rlauncher_drecall_model' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine3' has translation animation that will be
+      discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|jinx_rlauncher_drecall_out_model' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Elbow' has translation animation that
+      will be discarded.\n\t'L_Hand' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|jinx_rlauncher_idle1_model' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine3' has translation animation
+      that will be discarded.\n\t'R_Clavicle' has translation animation that will
+      be discarded.\n\t'L_Clavicle' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|jinx_rlauncher_idle2_model' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Spine1' has translation animation that will be discarded.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'R_KneeUpper' has translation animation
+      that will be discarded.\n\t'R_Foot' has translation animation that will be
+      discarded.\n\t'L_KneeUpper' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\nClip 'model|jinx_rlauncher_idle3_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|jinx_rlauncher_recall_model' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|jinx_rlauncher_run2_model' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Spine1' has translation animation that will be discarded.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'R_KneeUpper' has translation animation
+      that will be discarded.\n\t'R_Foot' has translation animation that will be
+      discarded.\n\t'L_KneeUpper' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\nClip 'model|jinx_rlauncher_run_in_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'L_KneeUpper' has translation
+      animation that will be discarded.\n\t'L_Foot' has translation animation that
+      will be discarded.\n\nClip 'model|jinx_rlauncher_run_model' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_KneeUpper' has translation
+      animation that will be discarded.\n\t'R_Foot' has translation animation that
+      will be discarded.\n\nClip 'model|jinx_rlauncher_runhaste_model' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_KneeUpper' has translation
+      animation that will be discarded.\n\t'R_Foot' has translation animation that
+      will be discarded.\n\t'L_KneeUpper' has translation animation that will be
+      discarded.\n\t'L_Foot' has translation animation that will be discarded.\n\nClip
+      'model|jinx_rlauncher_spell2_model' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Spine1' has translation animation that will be discarded.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'R_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Elbow' has translation animation that will be
+      discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_KneeUpper'
+      has translation animation that will be discarded.\n\t'L_Foot' has translation
+      animation that will be discarded.\n\nClip 'model|jinx_rlauncher_spell3_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_KneeUpper'
+      has translation animation that will be discarded.\n\t'L_Foot' has translation
+      animation that will be discarded.\n\nClip 'model|jinx_rlauncher_spell4_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'model|jinx_taunt2_model' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'Hair_Bank_Front1'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|Laugh_Breath_model' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'model|Laugh_In_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'model|Laugh_Loop_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'R_Clavicle' has translation animation
+      that will be discarded.\n\t'L_Clavicle' has translation animation that will
+      be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|launcher_spell1_weapon2_model' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Spine1' has translation animation that will be discarded.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'model|launcher_spell1_weapon_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|minigun_spell1_weapon2_model' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Spine1' has translation animation that will be discarded.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'Neck' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Recall_LeadIn_model' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Spine1' has translation animation that will be discarded.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'R_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Elbow' has translation animation that will be
+      discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'L_Hand' has translation animation that
+      will be discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|Recall_Leadout_model' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Elbow' has translation animation that
+      will be discarded.\n\t'L_Hand' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|Recall_Winddown_model' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Elbow'
+      has translation animation that will be discarded.\n\t'L_Hand' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'R_KneeUpper' has translation animation
+      that will be discarded.\n\t'R_Foot' has translation animation that will be
+      discarded.\n\t'L_KneeUpper' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\nClip 'model|Respawn_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Elbow' has translation animation that
+      will be discarded.\n\t'L_Hand' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|Rlauncher_Death_model' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'Neck' has translation
+      animation that will be discarded.\n\t'R_Hair1' has translation animation that
+      will be discarded.\n\t'L_Hair1' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Elbow' has translation
+      animation that will be discarded.\n\t'L_Clavicle' has translation animation
+      that will be discarded.\n\t'L_Elbow' has translation animation that will be
+      discarded.\n\t'Pelvis' has translation animation that will be discarded.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'L_KneeUpper'
+      has translation animation that will be discarded.\n\t'L_Foot' has translation
+      animation that will be discarded.\n\nClip 'model|Rlauncher_Idlein1_model' has
+      import animation warnings that might lower retargeting quality:\nNote: Activate
+      translation DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation
+      animation that will be discarded.\n\t'Spine2' has translation animation that
+      will be discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Rlauncher_Spell3_model' has import animation warnings that might lower
+      retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting
+      quality.\n\t'Spine1' has translation animation that will be discarded.\n\t'Spine2'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|Run_Base_model' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine1' has translation animation that
+      will be discarded.\n\t'Spine2' has translation animation that will be discarded.\n\t'Spine3'
+      has translation animation that will be discarded.\n\t'Hair_Bank_Front1' has
+      translation animation that will be discarded.\n\t'R_Clavicle' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\nClip 'model|Run_Fast_model' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine2' has translation animation that will be
+      discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'R_KneeUpper' has translation animation
+      that will be discarded.\n\t'R_Foot' has translation animation that will be
+      discarded.\n\t'L_KneeUpper' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\nClip 'model|Run_Haste_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'R_Clavicle' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\t'L_KneeUpper' has translation animation
+      that will be discarded.\n\t'L_Foot' has translation animation that will be
+      discarded.\n\nClip 'model|Spell2_model' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine2' has translation animation that
+      will be discarded.\n\t'Spine3' has translation animation that will be discarded.\n\t'R_Elbow'
+      has translation animation that will be discarded.\n\t'R_Hand' has translation
+      animation that will be discarded.\n\t'L_Elbow' has translation animation that
+      will be discarded.\n\t'L_Hand' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'R_KneeUpper'
+      has translation animation that will be discarded.\n\t'R_Foot' has translation
+      animation that will be discarded.\n\nClip 'model|Spell3_model' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine1' has translation animation
+      that will be discarded.\n\t'Spine3' has translation animation that will be
+      discarded.\n\t'R_Elbow' has translation animation that will be discarded.\n\t'R_Hand'
+      has translation animation that will be discarded.\n\t'L_Clavicle' has translation
+      animation that will be discarded.\n\t'L_Shoulder' has translation animation
+      that will be discarded.\n\t'L_Elbow' has translation animation that will be
+      discarded.\n\t'L_Hand' has translation animation that will be discarded.\n\t'Pelvis'
+      has translation animation that will be discarded.\n\t'Pelvis' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Spell4_model' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine2' has translation
+      animation that will be discarded.\n\t'Spine3' has translation animation that
+      will be discarded.\n\t'Head' has translation animation that will be discarded.\n\t'R_Clavicle'
+      has translation animation that will be discarded.\n\t'R_Shoulder' has translation
+      animation that will be discarded.\n\t'R_Elbow' has translation animation that
+      will be discarded.\n\t'L_Clavicle' has translation animation that will be discarded.\n\t'L_Shoulder'
+      has translation animation that will be discarded.\n\t'L_Elbow' has translation
+      animation that will be discarded.\n\t'Pelvis' has translation animation that
+      will be discarded.\n\t'Pelvis' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'R_KneeUpper' has translation animation
+      that will be discarded.\n\t'R_Foot' has translation animation that will be
+      discarded.\n\t'L_KneeUpper' has translation animation that will be discarded.\n\t'L_Foot'
+      has translation animation that will be discarded.\n\nClip 'model|Stunned_model'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Pelvis'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'model|Taunt_Base_model' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine1'
+      has translation animation that will be discarded.\n\t'Spine3' has translation
+      animation that will be discarded.\n\t'R_Clavicle' has translation animation
+      that will be discarded.\n\t'R_Elbow' has translation animation that will be
+      discarded.\n\t'R_Hand' has translation animation that will be discarded.\n\t'L_Clavicle'
+      has translation animation that will be discarded.\n\t'Pelvis' has translation
+      animation that will be discarded.\n\t'Pelvis' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_KneeUpper' has translation
+      animation that will be discarded.\n\t'R_Foot' has translation animation that
+      will be discarded.\n\t'L_KneeUpper' has translation animation that will be
+      discarded.\n\t'L_Foot' has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 1
+    importConstraints: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: model|_DEFAULT
+      takeName: model|_DEFAULT
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Attack1_model
+      takeName: model|Attack1_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Attack2_model
+      takeName: model|Attack2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Attack3_model
+      takeName: model|Attack3_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Attack4_model
+      takeName: model|Attack4_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Attack5_model
+      takeName: model|Attack5_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Attack6_model
+      takeName: model|Attack6_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Channel_model
+      takeName: model|Channel_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Channel_Wndup_model
+      takeName: model|Channel_Wndup_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Dance_Loop_model
+      takeName: model|Dance_Loop_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Dance_Windup_model
+      takeName: model|Dance_Windup_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 52
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Death_model
+      takeName: model|Death_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Emote_Enter_Minigun_model
+      takeName: model|Emote_Enter_Minigun_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Emote_Enter_Rocket_model
+      takeName: model|Emote_Enter_Rocket_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Emote_Exit_Minigun_model
+      takeName: model|Emote_Exit_Minigun_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Emote_Exit_Rocket_model
+      takeName: model|Emote_Exit_Rocket_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Idle1_Base_model
+      takeName: model|Idle1_Base_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Idle2_Base_model
+      takeName: model|Idle2_Base_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 169
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|IdleIn1_model
+      takeName: model|IdleIn1_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Idlein2_model
+      takeName: model|Idlein2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_buffbone_swap_model
+      takeName: model|jinx_buffbone_swap_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 47
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_joke3_model
+      takeName: model|jinx_joke3_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 237
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_minigun_idle3_model
+      takeName: model|jinx_minigun_idle3_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_minigun_run_in_model
+      takeName: model|jinx_minigun_run_in_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_attack1_model
+      takeName: model|jinx_rlauncher_attack1_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_attack2_model
+      takeName: model|jinx_rlauncher_attack2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_death_model
+      takeName: model|jinx_rlauncher_death_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_drecall_in_model
+      takeName: model|jinx_rlauncher_drecall_in_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_drecall_model
+      takeName: model|jinx_rlauncher_drecall_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 8
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_drecall_out_model
+      takeName: model|jinx_rlauncher_drecall_out_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_idle1_model
+      takeName: model|jinx_rlauncher_idle1_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_idle2_model
+      takeName: model|jinx_rlauncher_idle2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 138
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_idle3_model
+      takeName: model|jinx_rlauncher_idle3_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 159
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_recall_model
+      takeName: model|jinx_rlauncher_recall_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_run2_model
+      takeName: model|jinx_rlauncher_run2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_run_in_model
+      takeName: model|jinx_rlauncher_run_in_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_run_model
+      takeName: model|jinx_rlauncher_run_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_runhaste_model
+      takeName: model|jinx_rlauncher_runhaste_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_spell2_model
+      takeName: model|jinx_rlauncher_spell2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_spell3_model
+      takeName: model|jinx_rlauncher_spell3_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_rlauncher_spell4_model
+      takeName: model|jinx_rlauncher_spell4_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|jinx_taunt2_model
+      takeName: model|jinx_taunt2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Laugh_Breath_model
+      takeName: model|Laugh_Breath_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Laugh_In_model
+      takeName: model|Laugh_In_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 44
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Laugh_Loop_model
+      takeName: model|Laugh_Loop_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|launcher_spell1_weapon2_model
+      takeName: model|launcher_spell1_weapon2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|launcher_spell1_weapon_model
+      takeName: model|launcher_spell1_weapon_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|minigun_spell1_weapon2_model
+      takeName: model|minigun_spell1_weapon2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 9
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|minigun_spell1_weapon_gunonly_model
+      takeName: model|minigun_spell1_weapon_gunonly_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Recall_LeadIn_model
+      takeName: model|Recall_LeadIn_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Recall_Leadout_model
+      takeName: model|Recall_Leadout_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Recall_Winddown_model
+      takeName: model|Recall_Winddown_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Respawn_model
+      takeName: model|Respawn_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Rlauncher_Death_model
+      takeName: model|Rlauncher_Death_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Rlauncher_Idlein1_model
+      takeName: model|Rlauncher_Idlein1_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Rlauncher_Spell3_model
+      takeName: model|Rlauncher_Spell3_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Run_Base_model
+      takeName: model|Run_Base_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Run_Fast_model
+      takeName: model|Run_Fast_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Run_Haste_model
+      takeName: model|Run_Haste_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 22
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Spell2_model
+      takeName: model|Spell2_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Spell3_model
+      takeName: model|Spell3_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Spell3_Run_model
+      takeName: model|Spell3_Run_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Spell4_model
+      takeName: model|Spell4_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 43
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Stunned_model
+      takeName: model|Stunned_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: model|Taunt_Base_model
+      takeName: model|Taunt_Base_model
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 131
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Root
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Hip
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Hip
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_KneeLower
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_KneeLower
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Shoulder
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Shoulder
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Elbow
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Elbow
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Toe
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Toe
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Hair1
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Hair1
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hair_Bank_Front1
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Thumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Index2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Middle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Middle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Thumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Index1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Index2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Middle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Middle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine3
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: JinxBase(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mesh_0
+      parentName: JinxBase(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 1, y: 0, z: -0, w: -0.00000004371139}
+      scale: {x: -1, y: -1, z: -1}
+    - name: model
+      parentName: JinxBase(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+      scale: {x: -1, y: -1, z: -1}
+    - name: Buffbone_Glb_Channel_Loc
+      parentName: model
+      position: {x: 0.0000023587797, y: -0.59999996, z: 1.6999999}
+      rotation: {x: -0.00000009415697, y: 0.7071068, z: -0.7071067, w: 0.00000009415696}
+      scale: {x: 1, y: 0.9999997, z: 0.99999994}
+    - name: Buffbone_Glb_Ground_Loc
+      parentName: model
+      position: {x: 0.0000020713999, y: -0.08157918, z: 0}
+      rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: C_Buffbone_Glb_Center_Loc
+      parentName: model
+      position: {x: 0.00000210163, y: -0.0815828, z: 1.163602}
+      rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: C_Buffbone_Glb_Layout_Loc
+      parentName: model
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: C_Buffbone_Glb_Overhead_Loc
+      parentName: model
+      position: {x: 0.00000207485, y: -0.03318022, z: 2.7305849}
+      rotation: {x: 0, y: 0, z: 1, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rocket_Launcher_World
+      parentName: model
+      position: {x: 0.15017529, y: 0.19409259, z: 1.5952559}
+      rotation: {x: 0.7071068, y: 4.32978e-17, z: 0.7071067, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: model
+      position: {x: 0.00000207484, y: -0.1012751, z: 1.369478}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pelvis
+      parentName: Root
+      position: {x: -5.0058586e-11, y: 0.012115602, z: -0.055641934}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Hip
+      parentName: Pelvis
+      position: {x: 0.07696222, y: 0.047457654, z: 0.029606337}
+      rotation: {x: 0.07392767, y: 0.9965501, z: 0.03769172, w: 0.0013828207}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_KneeUpper
+      parentName: L_Hip
+      position: {x: 0.00024909357, y: 0.60722333, z: -0.00036665797}
+      rotation: {x: 0.5071645, y: 0.4929819, z: -0.507093, w: -0.4925544}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: L_KneeLower
+      parentName: L_KneeUpper
+      position: {x: -0.00002453342, y: 0.00012345165, z: -0.00008422328}
+      rotation: {x: 0.49835384, y: 0.50159943, z: -0.4983313, w: 0.50170445}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: L_Foot
+      parentName: L_KneeLower
+      position: {x: -0.00009102149, y: 0.5482178, z: 0.0009882572}
+      rotation: {x: 0.56335765, y: 0.436331, z: 0.4878492, w: 0.50422883}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: L_Buffbone_Glb_Foot_Loc
+      parentName: L_Foot
+      position: {x: 0.0005009483, y: -0.0006360116, z: -0.00013391027}
+      rotation: {x: 0.49879283, y: -0.50035334, z: 0.5020407, w: 0.498806}
+      scale: {x: 0.99999994, y: 0.9999997, z: 0.99999994}
+    - name: L_Toe
+      parentName: L_Foot
+      position: {x: 0.09153169, y: 0.12565248, z: -0.002816131}
+      rotation: {x: -0.0041065067, y: 0.00009216938, z: 0.58529943, w: 0.8108069}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Pistol
+      parentName: L_Hip
+      position: {x: -0.1421383, y: 0.16881233, z: -0.036556814}
+      rotation: {x: -0.1915478, y: -0.051810917, z: -0.025134137, w: 0.97979254}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Cstm_Buffbone_Pistol
+      parentName: Pistol
+      position: {x: 0.01630508, y: 0.3922019, z: 0.06528144}
+      rotation: {x: -0.021536471, y: 0.022212397, z: 0.7073227, w: 0.7062134}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Minigun
+      parentName: Pelvis
+      position: {x: -0.3146082, y: 0.28301904, z: 0.052462667}
+      rotation: {x: 0.00000009415697, y: 0.7071068, z: -0.7071067, w: -0.00000009415696}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cstm_Buffbone_Minigun
+      parentName: Minigun
+      position: {x: 0.0000000064891355, y: 0.6591622, z: -0.014167834}
+      rotation: {x: 0, y: -0.00000004371139, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Buffbone_Glb_Weapon_1
+      parentName: Cstm_Buffbone_Minigun
+      position: {x: -0, y: 0.000000076293944, z: -0.000000076293944}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Minigun_Ammo_Drum
+      parentName: Minigun
+      position: {x: 0.00044449506, y: 0.07961145, z: -0.0148869045}
+      rotation: {x: 0, y: -0.00000004371139, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Minigun_Barrel1
+      parentName: Minigun
+      position: {x: 0.00040109875, y: 0.4430881, z: 0.032305248}
+      rotation: {x: 0, y: -0.00000004371139, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Minigun_Barrel2
+      parentName: Minigun
+      position: {x: 0.05429202, y: 0.4430881, z: -0.06067181}
+      rotation: {x: 0, y: -0.00000004371139, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Minigun_Barrel3
+      parentName: Minigun
+      position: {x: -0.053381395, y: 0.4430881, z: -0.060671818}
+      rotation: {x: 0, y: -0.00000004371139, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Minigun_Body
+      parentName: Minigun
+      position: {x: 0.00009201575, y: 0, z: 0.000000027511781}
+      rotation: {x: 0, y: -0.00000004371139, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Minigun_Handle_Back
+      parentName: Minigun
+      position: {x: -0.000000010094473, y: -0.12881565, z: 0.17552651}
+      rotation: {x: 0.25054893, y: -0.0000000846357, z: 5.370738e-12, w: 0.96810395}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: Minigun_Handle_Front
+      parentName: Minigun
+      position: {x: -0.0000000024243945, y: 0.32065076, z: 0.087791085}
+      rotation: {x: 0, y: -0.00000004371139, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Minigun_Space
+      parentName: Minigun
+      position: {x: 0.00000000525054, y: 0, z: 0.00000002750374}
+      rotation: {x: 0, y: -0.00000004371139, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Minigun_Strap_Back
+      parentName: Minigun
+      position: {x: -0.18755884, y: -0.18675254, z: 0.43571448}
+      rotation: {x: 0.8662843, y: -0.16048607, z: -0.4703438, w: 0.050719265}
+      scale: {x: 1.0000008, y: 1.0000004, z: 1.0000008}
+    - name: Minigun_Strap_Front
+      parentName: Minigun
+      position: {x: -0.16406879, y: 0.09799358, z: 0.42622292}
+      rotation: {x: 0.87255275, y: -0.029300833, z: -0.4834749, w: 0.06360133}
+      scale: {x: 1, y: 1, z: 1.0000011}
+    - name: Minigun_Tank
+      parentName: Minigun
+      position: {x: 0.000000006966311, y: -0.31852487, z: -0.019626055}
+      rotation: {x: 0, y: -0.00000004371139, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Hip
+      parentName: Pelvis
+      position: {x: -0.07751354, y: 0.04753006, z: 0.028661493}
+      rotation: {x: 0.038013678, y: 0.001078414, z: 0.07370855, w: 0.9965545}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: R_KneeUpper
+      parentName: R_Hip
+      position: {x: 0.00006368348, y: 0.60728, z: -0.0000933063}
+      rotation: {x: 0.014765962, y: -0.000059896283, z: 0.000053894808, w: 0.999891}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: R_KneeLower
+      parentName: R_KneeUpper
+      position: {x: 0.000020456211, y: -0.000010982901, z: -0.000030200034}
+      rotation: {x: 0.0040630735, y: -0.000018992385, z: 0.000019002193, w: 0.9999918}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: R_Foot
+      parentName: R_KneeLower
+      position: {x: 0.00024196987, y: 0.5483831, z: 0.0007461771}
+      rotation: {x: 0.48837894, y: -0.5056166, z: 0.564715, w: -0.43235967}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: R_Buffbone_Glb_Foot_Loc
+      parentName: R_Foot
+      position: {x: -0.000337474, y: 0.0006362062, z: -0.00029901258}
+      rotation: {x: -0.50052685, y: 0.49862894, z: 0.50036365, w: 0.500478}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: R_Toe
+      parentName: R_Foot
+      position: {x: -0.09177509, y: 0.12661721, z: -0.003177208}
+      rotation: {x: -0.0007510055, y: -0.0018585412, z: -0.58394885, w: 0.811788}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: Spine1
+      parentName: Root
+      position: {x: 4.1996825e-10, y: -0.00051401136, z: 0.059977874}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Spine2
+      parentName: Spine1
+      position: {x: 0.0000000017396814, y: 0.059467304, z: -0.005826845}
+      rotation: {x: -3.5527137e-15, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine3
+      parentName: Spine2
+      position: {x: -2.2002496e-10, y: 0.06254714, z: -0.014383392}
+      rotation: {x: -3.5527137e-15, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: C_Buffbone_Glb_Chest_Loc
+      parentName: Spine3
+      position: {x: -1.4551915e-13, y: 0.00000029545083, z: 0.000000009536743}
+      rotation: {x: -3.5527137e-15, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Clavicle
+      parentName: Spine3
+      position: {x: 0.016208522, y: 0.11961043, z: -0.027901253}
+      rotation: {x: 0.50000006, y: 0.49999994, z: 0.5, w: -0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Shoulder
+      parentName: L_Clavicle
+      position: {x: -0.030754473, y: 0.12327845, z: 0.019652708}
+      rotation: {x: -0.016675474, y: 0.11770565, z: 0.006619275, w: 0.9928865}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Elbow
+      parentName: L_Shoulder
+      position: {x: 0.00046334742, y: 0.29924563, z: -0.000050029157}
+      rotation: {x: 0.015373874, y: -0.005028567, z: -0.03166432, w: 0.99936765}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999998}
+    - name: L_Hand
+      parentName: L_Elbow
+      position: {x: -0.000000049471854, y: 0.28292665, z: -0.00000038078053}
+      rotation: {x: -0.0000049194787, y: 0.000007694587, z: 0.0000014714897, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Buffbone_Glb_Hand_Loc
+      parentName: L_Hand
+      position: {x: -0.00036899713, y: 0.0028432468, z: 0.0024407974}
+      rotation: {x: -0.00016361257, y: 0.70813483, z: 0.7060773, w: 0.00013189844}
+      scale: {x: 1, y: 1.0000005, z: 1.0000001}
+    - name: L_Index1
+      parentName: L_Hand
+      position: {x: 0.037782792, y: 0.114706054, z: -0.013301562}
+      rotation: {x: -0.097274356, y: 0.11952045, z: 0.00065820845, w: 0.98805475}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: L_Index2
+      parentName: L_Index1
+      position: {x: 0.0000016069412, y: 0.048295345, z: 0.0000014162064}
+      rotation: {x: -0.0000000782311, y: 0.000000046566136, z: 0.000000039115555,
+        w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: L_Middle1
+      parentName: L_Hand
+      position: {x: -0.013985648, y: 0.118950956, z: -0.0076957433}
+      rotation: {x: -0.10917642, y: 0.022276537, z: 0.052943546, w: 0.9923615}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: L_Middle2
+      parentName: L_Middle1
+      position: {x: 0.00000014543534, y: 0.042130463, z: -0.000000070929524}
+      rotation: {x: -0.00000012968667, y: 0.0000000017462298, z: 0.000000002095476,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Thumb1
+      parentName: L_Hand
+      position: {x: 0.03825189, y: 0.036359634, z: -0.024079673}
+      rotation: {x: 0.16725351, y: 0.58293784, z: -0.23682241, w: 0.759029}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: L_Thumb2
+      parentName: L_Thumb1
+      position: {x: 0.00000062584877, y: 0.07257564, z: 0.0000015211104}
+      rotation: {x: -0.0000000963919, y: -0.000000035390258, z: -0.00000007683412,
+        w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Neck
+      parentName: Spine3
+      position: {x: 0.000000006569753, y: 0.2034404, z: -0.062210176}
+      rotation: {x: 0.00000007125381, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head
+      parentName: Neck
+      position: {x: -0.0000000071201063, y: 0.065480344, z: 0.013811539}
+      rotation: {x: 0.00000005145294, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: C_Buffbone_Glb_Head_Loc
+      parentName: Head
+      position: {x: -1.4551915e-13, y: 0.00000030936326, z: -9.057112e-10}
+      rotation: {x: 7.802967e-10, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair_Bank_Front1
+      parentName: Head
+      position: {x: -0.024192775, y: 0.2070778, z: 0.13490753}
+      rotation: {x: -0.57258517, y: 0.26608643, z: 0.6805944, w: 0.37166604}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1}
+    - name: Hair_Bank_Front2
+      parentName: Hair_Bank_Front1
+      position: {x: -0.00085215206, y: 0.13058163, z: -0.030988995}
+      rotation: {x: -0.29552236, y: 0.004463127, z: 0.02233947, w: 0.9550642}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair_Bank_Side1
+      parentName: Head
+      position: {x: -0.06566446, y: 0.16926073, z: 0.07645334}
+      rotation: {x: 0.7883396, y: -0.09474186, z: -0.5422691, w: -0.27475244}
+      scale: {x: 0.9999992, y: 0.9999999, z: 0.9999995}
+    - name: Hair_Bank_Side2
+      parentName: Hair_Bank_Side1
+      position: {x: -0.0007893276, y: 0.0954564, z: 0.0016782212}
+      rotation: {x: -0.24204287, y: -0.014136647, z: 0.0572834, w: 0.96847}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999999}
+    - name: L_Hair1
+      parentName: Head
+      position: {x: 0.043334797, y: 0.0867186, z: -0.06341628}
+      rotation: {x: 0.92980564, y: 0.09493802, z: 0.08106586, w: -0.34623197}
+      scale: {x: 1, y: 0.99999994, z: 1.0000002}
+    - name: L_Hair2
+      parentName: L_Hair1
+      position: {x: 0.0000005674362, y: 0.28789294, z: 0.0000013190507}
+      rotation: {x: -0.00000036647546, y: -0.000000018626453, z: -0.000000085681684,
+        w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: L_Hair3
+      parentName: L_Hair2
+      position: {x: 0.000000085830685, y: 0.28664356, z: 0.0000031280517}
+      rotation: {x: 0.00000085914496, y: 0.0000006593764, z: -0.0000002365559, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: L_Hair4
+      parentName: L_Hair3
+      position: {x: -0.00000125885, y: 0.28084567, z: -0.0000062441823}
+      rotation: {x: -0.000002504792, y: 0.00000043585896, z: 0.0000004898757, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Hair5
+      parentName: L_Hair4
+      position: {x: 0.0000009059906, y: 0.23308136, z: 0.0000053286553}
+      rotation: {x: 0.000000027474016, y: -0.00000042282045, z: 0.00000002607703,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: L_Hair6
+      parentName: L_Hair5
+      position: {x: 0.000000085830685, y: 0.23256584, z: -0.0000032782555}
+      rotation: {x: -0.00000017415732, y: -0.0000009015202, z: 0.00000085495407, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: R_Hair1
+      parentName: Head
+      position: {x: -0.043334935, y: 0.08672317, z: -0.06341513}
+      rotation: {x: 0.08106599, y: -0.34623203, z: 0.92980564, w: 0.094938025}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Hair2
+      parentName: R_Hair1
+      position: {x: -0.0000001001358, y: 0.28789625, z: 0.0000010955333}
+      rotation: {x: 0.00000031059608, y: 0.000000018626451, z: -0.000000022351742,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Hair3
+      parentName: R_Hair2
+      position: {x: -0.00000017166137, y: 0.28664702, z: 0.0000006532669}
+      rotation: {x: -0.0000007925555, y: 0.0000004898757, z: -0.00000026635826, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: R_Hair4
+      parentName: R_Hair3
+      position: {x: -0.0000003528595, y: 0.28084037, z: 0.0000012898445}
+      rotation: {x: 0.0000025108457, y: -0.0000005438924, z: 0.0000004526228, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: R_Hair5
+      parentName: R_Hair4
+      position: {x: -0.000000009536743, y: 0.23308592, z: -0.00000007390976}
+      rotation: {x: -0.000000026077034, y: 0.00000047124925, z: -0.000000035390258,
+        w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: R_Hair6
+      parentName: R_Hair5
+      position: {x: -0.000000095367426, y: 0.23256391, z: -0.00000046253203}
+      rotation: {x: 0.00000008801, y: 2.2204823e-16, z: 0.0000009704382, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 0.9999999}
+    - name: R_Clavicle
+      parentName: Spine3
+      position: {x: -0.016208509, y: 0.11961211, z: -0.027901234}
+      rotation: {x: 0.5000001, y: -0.4999999, z: 0.4999999, w: 0.5000001}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: R_Shoulder
+      parentName: R_Clavicle
+      position: {x: -0.030754553, y: 0.12327889, z: -0.019648904}
+      rotation: {x: 0.01624331, y: -0.11611151, z: 0.0036490562, w: 0.99309665}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: R_Elbow
+      parentName: R_Shoulder
+      position: {x: 0.00046294928, y: 0.2992442, z: 0.00005039245}
+      rotation: {x: -0.015308038, y: 0.0050071483, z: -0.031772144, w: 0.9993653}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: R_Hand
+      parentName: R_Elbow
+      position: {x: -0.00000020593404, y: 0.28292835, z: 0.00000057801606}
+      rotation: {x: 0.0000014712568, y: -0.0000030118972, z: 0.00000051409006, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: R_Buffbone_Glb_Hand_Loc
+      parentName: R_Hand
+      position: {x: -0.0003691241, y: 0.0028435166, z: -0.0024412498}
+      rotation: {x: -0.70607805, y: 0.00013138764, z: 0.0001651404, w: 0.70813406}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: R_Index1
+      parentName: R_Hand
+      position: {x: 0.037783902, y: 0.11470049, z: 0.013297743}
+      rotation: {x: 0.097256675, y: -0.11952153, z: 0.0006491966, w: 0.98805636}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: R_Index2
+      parentName: R_Index1
+      position: {x: -0.00000032901764, y: 0.04830317, z: 0.0000002169609}
+      rotation: {x: 0.0000000074505815, y: -0.000000025145706, z: 0.00000020116568,
+        w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: R_Middle1
+      parentName: R_Hand
+      position: {x: -0.013984239, y: 0.11894521, z: 0.007691742}
+      rotation: {x: 0.10916146, y: -0.02227575, z: 0.052941296, w: 0.9923633}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: R_Middle2
+      parentName: R_Middle1
+      position: {x: -0.000000019073486, y: 0.042130735, z: 0.00000015556812}
+      rotation: {x: -0.000000050058585, y: -0.000000007043127, z: -0.000000044645276,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: R_Thumb1
+      parentName: R_Hand
+      position: {x: 0.039467156, y: 0.03899216, z: 0.022205634}
+      rotation: {x: -0.16679317, y: -0.58360577, z: -0.23783354, w: 0.7583004}
+      scale: {x: 0.9999998, y: 1, z: 0.99999994}
+    - name: R_Thumb2
+      parentName: R_Thumb1
+      position: {x: 0.000000051259992, y: 0.07257753, z: -0.000000019073486}
+      rotation: {x: -0.00000014691612, y: 0.00000003818422, z: -0.00000003864989,
+        w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Rocket_Launcher
+      parentName: Spine3
+      position: {x: 0.15097095, y: 0.04371081, z: -0.27567142}
+      rotation: {x: 0.00017667205, y: 0.7071067, z: -0.00017667202, w: 0.7071068}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Rocket_Launcher_End
+      parentName: Rocket_Launcher
+      position: {x: 0.00000010793832, y: -0.18093725, z: -0.0014139111}
+      rotation: {x: -0.000000031742232, y: 0.0004997041, z: 0.9999999, w: 1.5861786e-11}
+      scale: {x: 1, y: 0.9999998, z: 1.0000005}
+    - name: Rocket_Launcher_Front
+      parentName: Rocket_Launcher
+      position: {x: -0.000000025637885, y: 0.21261229, z: 0.000000043937256}
+      rotation: {x: 0.000000016967535, y: -0.000000006286508, z: 2.291145e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cstm_Buffbone_Rocket_Launcher
+      parentName: Rocket_Launcher_Front
+      position: {x: -0.000981984, y: 0.15757155, z: -0.0009828287}
+      rotation: {x: 0.49974918, y: 0.5002508, z: 0.5000009, w: 0.49999896}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Rocket_Launcher_Handle
+      parentName: Rocket_Launcher_Front
+      position: {x: -0.092507154, y: 0.00398985, z: 0.00000003377904}
+      rotation: {x: -9.281584e-16, y: -1.3263611e-15, z: -3.4685817e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rocket_Launcher_Mouth_Bottom
+      parentName: Rocket_Launcher_Front
+      position: {x: -0.015760941, y: 0.11449495, z: 0.000000030352762}
+      rotation: {x: 2.9102902e-11, y: -1.3263613e-15, z: -3.4717025e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rocket_Launcher_Mouth_Top
+      parentName: Rocket_Launcher_Front
+      position: {x: -0.014960847, y: 0.11449495, z: -0.00000076117203}
+      rotation: {x: 2.7940104e-16, y: 1, z: 2.9107446e-11, w: 0.00000013315805}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 0
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
