@@ -1,4 +1,5 @@
 ﻿using BepInEx.Configuration;
+using JinxMod.Controller;
 using JinxMod.Modules.Characters;
 using RoR2;
 using RoR2.Skills;
@@ -60,6 +61,7 @@ namespace JinxMod.Modules.Survivors
         public override void InitializeCharacter()
         {
             base.InitializeCharacter();
+            bodyPrefab.AddComponent<RocketController>();
         }
 
         public override void InitializeUnlockables()
@@ -132,10 +134,10 @@ namespace JinxMod.Modules.Survivors
                 skillNameToken = prefix + "_HENRY_BODY_UTILITY_ROLL_NAME",
                 skillDescriptionToken = prefix + "_HENRY_BODY_UTILITY_ROLL_DESCRIPTION",
                 skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texUtilityIcon"),
-                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Roll)),
+                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Switcharoo)),
                 activationStateMachineName = "Body",
                 baseMaxStock = 1,
-                baseRechargeInterval = 4f,
+                baseRechargeInterval = 1f,
                 beginSkillCooldownOnSkillEnd = false,
                 canceledFromSprinting = false,
                 forceSprintDuringState = true,

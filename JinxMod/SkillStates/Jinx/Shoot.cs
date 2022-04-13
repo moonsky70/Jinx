@@ -52,7 +52,7 @@ namespace JinxMod.SkillStates
 
                     new BulletAttack
                     {
-                        bulletCount = 1,
+                        bulletCount = 3,
                         aimVector = aimRay.direction,
                         origin = aimRay.origin,
                         damage = Shoot.damageCoefficient * this.damageStat,

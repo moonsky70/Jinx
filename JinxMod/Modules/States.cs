@@ -9,8 +9,7 @@ namespace JinxMod.Modules
     {
         internal static void RegisterStates()
         {
-            Modules.Content.AddEntityState(typeof(BaseMeleeAttack));
-            Modules.Content.AddEntityState(typeof(SlashCombo));
+            Modules.Content.AddEntityState(typeof(Switcharoo));
 
             Modules.Content.AddEntityState(typeof(Shoot));
 
