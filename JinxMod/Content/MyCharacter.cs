@@ -87,12 +87,13 @@ namespace JinxMod.Modules.Survivors
 
             #region Primary
             //Creates a skilldef for a typical primary 
-            SkillDef primarySkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo(prefix + "_HENRY_BODY_PRIMARY_SLASH_NAME",
-                                                                                      prefix + "_HENRY_BODY_PRIMARY_SLASH_DESCRIPTION",
-                                                                                      Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texPrimaryIcon"),
-                                                                                      new EntityStates.SerializableEntityStateType(typeof(SkillStates.SlashCombo)),
-                                                                                      "Weapon",
-                                                                                      true));
+            SkillDef primarySkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
+                (prefix + "_HENRY_BODY_PRIMARY_SLASH_NAME",
+                prefix + "_HENRY_BODY_PRIMARY_SLASH_DESCRIPTION",
+                Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texPrimaryIcon"),
+                new EntityStates.SerializableEntityStateType(typeof(SkillStates.Shoot)),
+                "Weapon",
+                true));
 
 
             Modules.Skills.AddPrimarySkills(bodyPrefab, primarySkillDef);
