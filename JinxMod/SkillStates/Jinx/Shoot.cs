@@ -18,6 +18,9 @@ namespace JinxMod.SkillStates
         private float fireTime;
         private bool hasFired;
         private string muzzleString;
+
+        public Animator animator { get; private set; }
+
         private float bulletStopWatch;
         private int bulletCount = 3;
 
@@ -28,8 +31,17 @@ namespace JinxMod.SkillStates
             this.fireTime = 0.2f * this.duration;
             base.characterBody.SetAimTimer(2f);
             this.muzzleString = "Muzzle";
+            this.animator = base.GetModelAnimator();
 
-            base.PlayAnimation("LeftArm, Override", "ShootGun", "ShootGun.playbackRate", 1.8f);
+            if (this.animator.GetBool("isMoving") || (!(this.animator.GetBool("isGrounded"))))
+            {
+                base.PlayAnimation("Gesture, Override", "powpowattack");
+            }
+            else if ((!(this.animator.GetBool("isMoving"))) && this.animator.GetBool("isGrounded"))
+            {
+                base.PlayAnimation("FullBody, Override", "powpowattack");
+            }
+
         }
 
         public override void OnExit()

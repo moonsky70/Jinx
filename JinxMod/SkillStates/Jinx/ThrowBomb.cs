@@ -25,7 +25,14 @@ namespace JinxMod.SkillStates
             base.characterBody.SetAimTimer(2f);
             this.animator = base.GetModelAnimator();
 
-            base.PlayAnimation("Gesture, Override", "ThrowBomb", "ThrowBomb.playbackRate", this.duration);
+            if (this.animator.GetBool("isMoving") || (!(this.animator.GetBool("isGrounded"))))
+            {
+                base.PlayAnimation("Gesture, Override", "fishbonesattack");
+            }
+            else if ((!(this.animator.GetBool("isMoving"))) && this.animator.GetBool("isGrounded"))
+            {
+                base.PlayAnimation("FullBody, Override", "fishbonesattack");
+            }
         }
 
         public override void OnExit()
@@ -42,21 +49,18 @@ namespace JinxMod.SkillStates
 
                 if (base.isAuthority)
                 {
-                    Ray aimRay = base.GetAimRay();
-                    /*
-                    ProjectileManager.instance.FireProjectile(Modules.Projectiles.bombPrefab, 
-                        aimRay.origin, 
-                        Util.QuaternionSafeLookRotation(aimRay.direction), 
-                        base.gameObject, 
-                        ThrowBomb.damageCoefficient * this.damageStat, 
-                        4000f, 
-                        base.RollCrit(), 
-                        DamageColorIndex.Default, 
-                        null, 
-                        ThrowBomb.throwForce);
-                    */
+                    FireMissile();
                 }
             }
+        }
+
+        private void FireMissile()
+        {
+            Ray aimRay = base.GetAimRay();
+            GameObject projectilePrefab = LegacyResourcesAPI.Load<GameObject>("Prefabs/Projectiles/MissileProjectile");
+            float num = 3f;
+            bool isCrit = Util.CheckRoll(this.characterBody.crit, this.characterBody.master);
+            MissileUtils.FireMissile(this.characterBody.corePosition, this.characterBody, default(ProcChainMask), null, this.characterBody.damage * num, isCrit, projectilePrefab, DamageColorIndex.Item, aimRay.direction, 200f, true);
         }
 
         public override void FixedUpdate()

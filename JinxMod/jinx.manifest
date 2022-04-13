@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3114335389
+CRC: 2117464216
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d326b9822e58c91b955b4f78f45ac8d9
+    Hash: bf31fb46bee9d57ab45e557de2d0f6ec
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4a1135e039b31f6a54db169841a9135d
@@ -46,6 +46,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Jinx/CustomAnimations/Falling Idle.anim
+- Assets/Jinx/Model/Jinx Dyzcrol Animations V0.1.fbx
 - Assets/Jinx/JinxDisplay.prefab
 - Assets/Jinx/CustomAnimations/RocketOverrideController.overrideController
 - Assets/Jinx/JinxUpper.mask

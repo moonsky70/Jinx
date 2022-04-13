@@ -15,6 +15,8 @@ namespace JinxMod.Modules
         // the assetbundle to load assets from
         internal static AssetBundle mainAssetBundle;
 
+        internal static GameObject bombExplosionEffect;
+
         // particle effects
 
         // networked hit sounds
@@ -78,6 +80,24 @@ namespace JinxMod.Modules
             {
                 Log.Error("There is no AssetBundle to load assets from.");
                 return;
+            }
+
+            bombExplosionEffect = LoadEffect("BombExplosionEffect", "HenryBombExplosion");
+
+            if (bombExplosionEffect)
+            {
+                ShakeEmitter shakeEmitter = bombExplosionEffect.AddComponent<ShakeEmitter>();
+                shakeEmitter.amplitudeTimeDecay = true;
+                shakeEmitter.duration = 0.5f;
+                shakeEmitter.radius = 200f;
+                shakeEmitter.scaleShakeRadiusWithLocalScale = false;
+
+                shakeEmitter.wave = new Wave
+                {
+                    amplitude = 1f,
+                    frequency = 40f,
+                    cycleOffset = 0f
+                };
             }
         }
 

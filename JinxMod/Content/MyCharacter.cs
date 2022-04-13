@@ -17,6 +17,8 @@ namespace JinxMod.Modules.Survivors
         //used when registering your survivor's language tokens
         public override string survivorTokenPrefix => HENRY_PREFIX;
 
+        public static SkillDef fishBonesSkillDef;
+
         public override BodyInfo bodyInfo { get; set; } = new BodyInfo
         {
             bodyName = "JinxBody",
@@ -95,7 +97,15 @@ namespace JinxMod.Modules.Survivors
                 "Weapon",
                 true));
 
+            SkillDef fish = Modules.Skills.CreateSkillDef(new SkillDefInfo
+                (prefix + "_HENRY_BODY_PRIMARY_SLASH_NAME",
+                prefix + "_HENRY_BODY_PRIMARY_SLASH_DESCRIPTION",
+                Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texPrimaryIcon"),
+                new EntityStates.SerializableEntityStateType(typeof(SkillStates.ThrowBomb)),
+                "Weapon",
+                true));
 
+            fishBonesSkillDef = fish;
             Modules.Skills.AddPrimarySkills(bodyPrefab, primarySkillDef);
             #endregion
 

@@ -1,6 +1,7 @@
 ﻿
 using EntityStates;
 using JinxMod.Controller;
+using RoR2;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -27,6 +28,9 @@ namespace JinxMod.SkillStates
                 base.PlayAnimation("Gesture, Override", "equip_rocket");
                 this.animatorOverrideController = Modules.Assets.mainAssetBundle.LoadAsset<AnimatorOverrideController>("RocketOverrideController");
                 animator.runtimeAnimatorController = this.animatorOverrideController;
+
+                base.skillLocator.primary.SetSkillOverride(base.skillLocator.primary, JinxMod.Modules.Survivors.MyCharacter.fishBonesSkillDef, GenericSkill.SkillOverridePriority.Replacement);
+
             }
             else
             {
@@ -34,6 +38,7 @@ namespace JinxMod.SkillStates
                 base.PlayAnimation("Gesture, Override", "equip_gat");
                 this.animatorOverrideController = Modules.Assets.mainAssetBundle.LoadAsset<AnimatorOverrideController>("GatOverrideController");
                 animator.runtimeAnimatorController = this.animatorOverrideController;
+                base.skillLocator.primary.UnsetSkillOverride(base.skillLocator.primary, JinxMod.Modules.Survivors.MyCharacter.fishBonesSkillDef, GenericSkill.SkillOverridePriority.Replacement);
             }
         }
 
