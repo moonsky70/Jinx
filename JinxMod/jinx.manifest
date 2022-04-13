@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2117464216
+CRC: 2349047773
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bf31fb46bee9d57ab45e557de2d0f6ec
+    Hash: e9acda809c2710700102013b7925c1dc
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 4a1135e039b31f6a54db169841a9135d
+    Hash: 81f85a1848bd487af28dc79788e4af96
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -31,6 +31,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 95
   Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 261c50d8a80898e4ebf2e8e415ea6766, type: 3}
 - Class: 115
@@ -39,23 +41,69 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 137
   Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
 - Class: 221
   Script: {instanceID: 0}
 - Class: 319
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Jinx/VFX/Materials/matAnimeShapes.mat
 - Assets/Jinx/CustomAnimations/Falling Idle.anim
+- Assets/Jinx/VFX/HenryFistSwingEffect.prefab
+- Assets/Jinx/VFX/BombExplosionEffect.prefab
+- Assets/Jinx/VFX/Textures/texFire.tga
+- Assets/Jinx/VFX/ImpactHenrySlash.prefab
+- Assets/Jinx/VFX/HenryBazookaExplosionEffect.prefab
+- Assets/Jinx/VFX/Textures/texHitSpark.png
+- Assets/Jinx/VFX/Textures/texSmoke.png
+- Assets/Jinx/VFX/Textures/texPunchImpact.png
 - Assets/Jinx/Model/Jinx Dyzcrol Animations V0.1.fbx
 - Assets/Jinx/JinxDisplay.prefab
 - Assets/Jinx/CustomAnimations/RocketOverrideController.overrideController
+- Assets/Jinx/VFX/HenryBazookaMuzzleFlash.prefab
+- Assets/Jinx/VFX/Materials/matTrail.mat
+- Assets/Jinx/VFX/Materials/matFire.mat
 - Assets/Jinx/JinxUpper.mask
 - Assets/Jinx/CustomAnimations/animDisplay.controller
+- Assets/Jinx/VFX/Mesh/meshPunchShockwave.mesh
+- Assets/Jinx/VFX/Textures/texHenrySwing2.png
 - Assets/Jinx/CustomAnimations/GatOverrideController.overrideController
+- Assets/Jinx/VFX/Materials/matSwingEffect.mat
+- Assets/Jinx/VFX/Materials/matHenrySwing2.mat
+- Assets/Jinx/VFX/ImpactHenryPunch.prefab
+- Assets/Jinx/VFX/Materials/matHitSparkPunch.mat
 - Assets/Jinx/mdlJinx.prefab
+- Assets/Jinx/VFX/Materials/matSmoke.mat
+- Assets/Jinx/VFX/Textures/texLightning.tif
+- Assets/Jinx/VFX/Materials/matSwingShadow.mat
+- Assets/Jinx/VFX/HenryDustEffect.prefab
+- Assets/Jinx/VFX/Textures/texEmbers.png
 - Assets/Jinx/Model/matJinx.mat
+- Assets/Jinx/VFX/Materials/matDust.mat
+- Assets/Jinx/VFX/Materials/matPunchEffect.mat
+- Assets/Jinx/VFX/Textures/texSlash.png
+- Assets/Jinx/VFX/Materials/matPunchImpactShadow.mat
+- Assets/Jinx/VFX/Materials/matRipple.mat
 - Assets/Jinx/CustomAnimations/Jumping UP.anim
+- Assets/Jinx/VFX/Materials/matHitSpark.mat
+- Assets/Jinx/VFX/Textures/texSwingEffect.png
 - Assets/Jinx/Model/skin0.png
 - Assets/Jinx/Model/Jinx Jump and fall.fbx
+- Assets/Jinx/VFX/HenrySwordSwingEffect.prefab
+- Assets/Jinx/VFX/Mesh/meshBoxingGlove.mesh
+- Assets/Jinx/VFX/Textures/texPunchImpactShadow.png
+- Assets/Jinx/VFX/Materials/matFistSwing.mat
+- Assets/Jinx/VFX/Textures/texDust.png
+- Assets/Jinx/VFX/Materials/matEmbers.mat
+- Assets/Jinx/VFX/Materials/matPunchImpact.mat
+- Assets/Jinx/VFX/Textures/texRipple.png
+- Assets/Jinx/VFX/Materials/matSlash.mat
+- Assets/Jinx/VFX/Textures/texFistSwing.png
 - Assets/Jinx/CustomAnimations/animJinx.controller
+- Assets/Jinx/VFX/FistBarrageEffect.prefab
+- Assets/Jinx/VFX/Mesh/meshSwing.asset
 Dependencies: []

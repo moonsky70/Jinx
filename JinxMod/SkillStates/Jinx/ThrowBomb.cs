@@ -9,7 +9,7 @@ namespace JinxMod.SkillStates
     {
         public static float damageCoefficient = 16f;
         public static float procCoefficient = 1f;
-        public static float baseDuration = 0.65f;
+        public static float baseDuration = 1.50f;
         public static float throwForce = 80f;
 
         private float duration;
@@ -21,7 +21,7 @@ namespace JinxMod.SkillStates
         {
             base.OnEnter();
             this.duration = ThrowBomb.baseDuration / this.attackSpeedStat;
-            this.fireTime = 0.35f * this.duration;
+            this.fireTime = 0.11f;
             base.characterBody.SetAimTimer(2f);
             this.animator = base.GetModelAnimator();
 
@@ -57,10 +57,11 @@ namespace JinxMod.SkillStates
         private void FireMissile()
         {
             Ray aimRay = base.GetAimRay();
-            GameObject projectilePrefab = LegacyResourcesAPI.Load<GameObject>("Prefabs/Projectiles/MissileProjectile");
+            base.AddRecoil(-1f * 6f, -2f * 6f, -0.5f * 6f, 0.5f * 6f);
+            GameObject projectilePrefab = Modules.Projectiles.misslePrefab;
             float num = 3f;
             bool isCrit = Util.CheckRoll(this.characterBody.crit, this.characterBody.master);
-            MissileUtils.FireMissile(this.characterBody.corePosition, this.characterBody, default(ProcChainMask), null, this.characterBody.damage * num, isCrit, projectilePrefab, DamageColorIndex.Item, aimRay.direction, 200f, true);
+            MissileUtils.FireMissile(aimRay.origin, this.characterBody, default(ProcChainMask), null, this.characterBody.damage * num, isCrit, projectilePrefab, DamageColorIndex.Default, aimRay.direction, 200f, true);
         }
 
         public override void FixedUpdate()

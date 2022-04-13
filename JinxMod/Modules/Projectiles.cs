@@ -9,10 +9,42 @@ namespace JinxMod.Modules
     internal static class Projectiles
     {
         internal static GameObject bombPrefab;
+        internal static GameObject misslePrefab;
+
         internal static void RegisterProjectiles()
         {
             CreateBomb();
+            CreateMissile();
             AddProjectile(bombPrefab);
+            AddProjectile(misslePrefab);
+        }
+        private static void CreateMissile()
+        {
+            misslePrefab = CloneProjectilePrefab("MissileProjectile", "JinxMissileProjectile");
+            GameObject.Destroy(misslePrefab.GetComponent<ProjectileTargetComponent>());
+            GameObject.Destroy(misslePrefab.GetComponent<MissileController>());
+            GameObject.Destroy(misslePrefab.GetComponent<ProjectileSingleTargetImpact>());
+
+            ProjectileImpactExplosion ImpactExplosion = misslePrefab.AddComponent<ProjectileImpactExplosion>();
+            InitializeImpactExplosion(ImpactExplosion);
+
+            ImpactExplosion.blastRadius = 16f;
+            ImpactExplosion.destroyOnEnemy = true;
+            ImpactExplosion.destroyOnWorld = true;
+            ImpactExplosion.lifetime = 12f;
+            ImpactExplosion.impactEffect = Modules.Assets.bombExplosionEffect;
+            //bombImpactExplosion.lifetimeExpiredSound = Modules.Assets.CreateNetworkSoundEventDef("HenryBombExplosion");
+            ImpactExplosion.timerAfterImpact = true;
+            ImpactExplosion.lifetimeAfterImpact = 0.1f;
+
+            ProjectileSimple projectileSimple = misslePrefab.AddComponent<ProjectileSimple>();
+            projectileSimple.desiredForwardSpeed = 60f;
+            projectileSimple.oscillate = false;
+            projectileSimple.updateAfterFiring = true;
+            projectileSimple.enableVelocityOverLifetime = false;
+
+            Rigidbody rigidBody = misslePrefab.GetComponent<Rigidbody>();
+            rigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
         }
 
         private static void CreateBomb()
