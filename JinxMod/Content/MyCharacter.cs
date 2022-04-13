@@ -135,7 +135,7 @@ namespace JinxMod.Modules.Survivors
                 skillDescriptionToken = prefix + "_HENRY_BODY_UTILITY_ROLL_DESCRIPTION",
                 skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texUtilityIcon"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Switcharoo)),
-                activationStateMachineName = "Body",
+                activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
                 baseRechargeInterval = 1f,
                 beginSkillCooldownOnSkillEnd = false,
@@ -145,11 +145,11 @@ namespace JinxMod.Modules.Survivors
                 interruptPriority = EntityStates.InterruptPriority.PrioritySkill,
                 resetCooldownTimerOnUse = false,
                 isCombatSkill = false,
-                mustKeyPress = false,
+                mustKeyPress = true,
                 cancelSprintingOnActivation = false,
-                rechargeStock = 1,
+                rechargeStock = 0,
                 requiredStock = 1,
-                stockToConsume = 1
+                stockToConsume = 0
             });
 
             Modules.Skills.AddUtilitySkills(bodyPrefab, rollSkillDef);

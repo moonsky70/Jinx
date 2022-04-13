@@ -7,187 +7,163 @@ AvatarMask:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: JinxUpper
-  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   m_Elements:
   - m_Path: 
     m_Weight: 1
   - m_Path: Mesh_0
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: model
+    m_Weight: 0
+  - m_Path: model/Global_Root
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/L_Hip
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/L_Hip/L_KneeUpper
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/L_Hip/L_KneeUpper/L_KneeLower
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/L_Hip/L_KneeUpper/L_KneeLower/L_Foot
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/L_Hip/L_KneeUpper/L_KneeLower/L_Foot/L_Toe
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/L_Hip/Pistol
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/L_Hip/Pistol/Cstm_Buffbone_Pistol
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun
     m_Weight: 1
-  - m_Path: model/Buffbone_Glb_Channel_Loc
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Cstm_Buffbone_Minigun
     m_Weight: 1
-  - m_Path: model/Buffbone_Glb_Ground_Loc
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Ammo_Drum
     m_Weight: 1
-  - m_Path: model/C_Buffbone_Glb_Center_Loc
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Barrel1
     m_Weight: 1
-  - m_Path: model/C_Buffbone_Glb_Layout_Loc
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Barrel2
     m_Weight: 1
-  - m_Path: model/C_Buffbone_Glb_Overhead_Loc
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Barrel3
     m_Weight: 1
-  - m_Path: model/Rocket_Launcher_World
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Body
     m_Weight: 1
-  - m_Path: model/Root
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Handle_Back
     m_Weight: 1
-  - m_Path: model/Root/Pelvis
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Handle_Front
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/L_Hip
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Space
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/L_Hip/L_KneeUpper
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Strap_Back
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/L_Hip/L_KneeUpper/L_KneeLower
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Strap_Front
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/L_Hip/L_KneeUpper/L_KneeLower/L_Foot
+  - m_Path: model/Global_Root/Root/Pelvis/Minigun/Minigun_Tank
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/L_Hip/L_KneeUpper/L_KneeLower/L_Foot/L_Buffbone_Glb_Foot_Loc
+  - m_Path: model/Global_Root/Root/Pelvis/R_Hip
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/R_Hip/R_KneeUpper
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/R_Hip/R_KneeUpper/R_KneeLower
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/R_Hip/R_KneeUpper/R_KneeLower/R_Foot
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Pelvis/R_Hip/R_KneeUpper/R_KneeLower/R_Foot/R_Toe
+    m_Weight: 0
+  - m_Path: model/Global_Root/Root/Spine1
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/L_Hip/L_KneeUpper/L_KneeLower/L_Foot/L_Toe
+  - m_Path: model/Global_Root/Root/Spine1/Spine2
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/L_Hip/Pistol
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/L_Hip/Pistol/Cstm_Buffbone_Pistol
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Cstm_Buffbone_Minigun
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Cstm_Buffbone_Minigun/Buffbone_Glb_Weapon_1
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Ammo_Drum
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Index1
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Barrel1
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Index1/L_Index2
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Barrel2
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Middle1
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Barrel3
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Middle1/L_Middle2
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Body
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Thumb1
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Handle_Back
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Thumb1/L_Thumb2
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Handle_Front
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Space
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Strap_Back
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/Hair_Bank_Front1
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Strap_Front
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/Hair_Bank_Front1/Hair_Bank_Front2
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/Minigun/Minigun_Tank
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/Hair_Bank_Side1
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/R_Hip
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/Hair_Bank_Side1/Hair_Bank_Side2
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/R_Hip/R_KneeUpper
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/R_Hip/R_KneeUpper/R_KneeLower
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/R_Hip/R_KneeUpper/R_KneeLower/R_Foot
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2/L_Hair3
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/R_Hip/R_KneeUpper/R_KneeLower/R_Foot/R_Buffbone_Glb_Foot_Loc
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2/L_Hair3/L_Hair4
     m_Weight: 1
-  - m_Path: model/Root/Pelvis/R_Hip/R_KneeUpper/R_KneeLower/R_Foot/R_Toe
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2/L_Hair3/L_Hair4/L_Hair5
     m_Weight: 1
-  - m_Path: model/Root/Spine1
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2/L_Hair3/L_Hair4/L_Hair5/L_Hair6
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/C_Buffbone_Glb_Chest_Loc
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2/R_Hair3
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2/R_Hair3/R_Hair4
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2/R_Hair3/R_Hair4/R_Hair5
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2/R_Hair3/R_Hair4/R_Hair5/R_Hair6
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Buffbone_Glb_Hand_Loc
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Index1
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Index1/L_Index2
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Middle1
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Index1
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Middle1/L_Middle2
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Index1/R_Index2
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Thumb1
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Middle1
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/L_Clavicle/L_Shoulder/L_Elbow/L_Hand/L_Thumb1/L_Thumb2
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Middle1/R_Middle2
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Thumb1
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Thumb1/R_Thumb2
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/C_Buffbone_Glb_Head_Loc
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Rocket_Launcher
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/Hair_Bank_Front1
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_End
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/Hair_Bank_Front1/Hair_Bank_Front2
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/Hair_Bank_Side1
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front/Cstm_Buffbone_Rocket_Launcher
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/Hair_Bank_Side1/Hair_Bank_Side2
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front/Rocket_Launcher_Handle
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front/Rocket_Launcher_Mouth_Bottom
     m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2/L_Hair3
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2/L_Hair3/L_Hair4
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2/L_Hair3/L_Hair4/L_Hair5
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/L_Hair1/L_Hair2/L_Hair3/L_Hair4/L_Hair5/L_Hair6
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2/R_Hair3
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2/R_Hair3/R_Hair4
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2/R_Hair3/R_Hair4/R_Hair5
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Neck/Head/R_Hair1/R_Hair2/R_Hair3/R_Hair4/R_Hair5/R_Hair6
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Buffbone_Glb_Hand_Loc
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Index1
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Index1/R_Index2
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Middle1
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Middle1/R_Middle2
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Thumb1
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/R_Clavicle/R_Shoulder/R_Elbow/R_Hand/R_Thumb1/R_Thumb2
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Rocket_Launcher
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_End
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front/Cstm_Buffbone_Rocket_Launcher
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front/Rocket_Launcher_Handle
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front/Rocket_Launcher_Mouth_Bottom
-    m_Weight: 1
-  - m_Path: model/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front/Rocket_Launcher_Mouth_Top
+  - m_Path: model/Global_Root/Root/Spine1/Spine2/Spine3/Rocket_Launcher/Rocket_Launcher_Front/Rocket_Launcher_Mouth_Top
     m_Weight: 1

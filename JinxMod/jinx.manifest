@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2795977480
+CRC: 3114335389
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9e60ec8d7f3080dff8e7bd0024c9b165
+    Hash: d326b9822e58c91b955b4f78f45ac8d9
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4a1135e039b31f6a54db169841a9135d
@@ -46,6 +46,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Jinx/CustomAnimations/Falling Idle.anim
+- Assets/Jinx/JinxDisplay.prefab
 - Assets/Jinx/CustomAnimations/RocketOverrideController.overrideController
 - Assets/Jinx/JinxUpper.mask
 - Assets/Jinx/CustomAnimations/animDisplay.controller
@@ -54,7 +55,6 @@ Assets:
 - Assets/Jinx/Model/matJinx.mat
 - Assets/Jinx/CustomAnimations/Jumping UP.anim
 - Assets/Jinx/Model/skin0.png
-- Assets/Jinx/JinxDisplay.prefab
-- Assets/Jinx/Model/JinxBase.fbx
+- Assets/Jinx/Model/Jinx Jump and fall.fbx
 - Assets/Jinx/CustomAnimations/animJinx.controller
 Dependencies: []

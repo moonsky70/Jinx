@@ -8,9 +8,9 @@ using UnityEngine;
 
 namespace JinxMod.SkillStates
 {
-    public class Switcharoo : BaseSkillState
+    public class Switcharoo : GenericCharacterMain
     {
-        public static float baseDuration = 0.9f;
+        public static float baseDuration = 0.266f;
         private Animator animator;
         private RocketController rocketController;
         private AnimatorOverrideController animatorOverrideController;
@@ -49,6 +49,7 @@ namespace JinxMod.SkillStates
 
         public override void OnExit()
         {
+            base.PlayAnimation("Gesture, Override", "BufferEmpty");
             base.OnExit();
         }
     }
