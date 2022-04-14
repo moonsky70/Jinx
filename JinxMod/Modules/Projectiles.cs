@@ -9,23 +9,33 @@ namespace JinxMod.Modules
     internal static class Projectiles
     {
         internal static GameObject bombPrefab;
-        internal static GameObject misslePrefab;
+        internal static GameObject missilePrefab;
 
         internal static void RegisterProjectiles()
         {
             CreateBomb();
             CreateMissile();
             AddProjectile(bombPrefab);
-            AddProjectile(misslePrefab);
+            AddProjectile(missilePrefab);
         }
         private static void CreateMissile()
         {
-            misslePrefab = CloneProjectilePrefab("MissileProjectile", "JinxMissileProjectile");
-            GameObject.Destroy(misslePrefab.GetComponent<ProjectileTargetComponent>());
-            GameObject.Destroy(misslePrefab.GetComponent<MissileController>());
-            GameObject.Destroy(misslePrefab.GetComponent<ProjectileSingleTargetImpact>());
+            missilePrefab = CloneProjectilePrefab("MissileProjectile", "JinxMissileProjectile");
+            GameObject.Destroy(missilePrefab.GetComponent<MissileController>());
+            GameObject.Destroy(missilePrefab.GetComponent<ProjectileSingleTargetImpact>());
 
-            ProjectileImpactExplosion ImpactExplosion = misslePrefab.AddComponent<ProjectileImpactExplosion>();
+            ProjectileSteerTowardTarget projectileSteerTowardTarget = missilePrefab.AddComponent<ProjectileSteerTowardTarget>();
+            projectileSteerTowardTarget.rotationSpeed = 180f;
+            projectileSteerTowardTarget.yAxisOnly = false;
+
+            ProjectileSphereTargetFinder projectileSphereTargetFinder = missilePrefab.AddComponent<ProjectileSphereTargetFinder>();
+            projectileSphereTargetFinder.lookRange = 10f;
+            projectileSphereTargetFinder.onlySearchIfNoTarget = false;
+            projectileSphereTargetFinder.allowTargetLoss = true;
+            projectileSphereTargetFinder.targetSearchInterval = 0.1f;
+
+
+            ProjectileImpactExplosion ImpactExplosion = missilePrefab.AddComponent<ProjectileImpactExplosion>();
             InitializeImpactExplosion(ImpactExplosion);
 
             ImpactExplosion.blastRadius = 16f;
@@ -37,18 +47,18 @@ namespace JinxMod.Modules
             ImpactExplosion.timerAfterImpact = true;
             ImpactExplosion.lifetimeAfterImpact = 0.1f;
 
-            ProjectileSimple projectileSimple = misslePrefab.AddComponent<ProjectileSimple>();
+            ProjectileSimple projectileSimple = missilePrefab.AddComponent<ProjectileSimple>();
             projectileSimple.desiredForwardSpeed = 60f;
             projectileSimple.oscillate = false;
             projectileSimple.updateAfterFiring = true;
             projectileSimple.enableVelocityOverLifetime = false;
 
-            Rigidbody rigidBody = misslePrefab.GetComponent<Rigidbody>();
+            Rigidbody rigidBody = missilePrefab.GetComponent<Rigidbody>();
             rigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
 
-            ProjectileController projectileController = misslePrefab.GetComponent<ProjectileController>();
+            ProjectileController projectileController = missilePrefab.GetComponent<ProjectileController>();
             var ghostPrefab = PrefabAPI.InstantiateClone(projectileController.ghostPrefab, "MissileGhost", false);
-            misslePrefab.transform.localScale *= 5;
+            missilePrefab.transform.localScale *= 5;
             ghostPrefab.transform.localScale *= 5;
             projectileController.ghostPrefab = ghostPrefab;
         }

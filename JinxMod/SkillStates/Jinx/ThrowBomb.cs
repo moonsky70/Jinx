@@ -58,7 +58,7 @@ namespace JinxMod.SkillStates
         {
             Ray aimRay = base.GetAimRay();
             base.AddRecoil(-1f * 6f, -2f * 6f, -0.5f * 6f, 0.5f * 6f);
-            GameObject projectilePrefab = Modules.Projectiles.misslePrefab;
+            GameObject projectilePrefab = Modules.Projectiles.missilePrefab;
             float num = 3f;
             bool isCrit = Util.CheckRoll(this.characterBody.crit, this.characterBody.master);
             MissileUtils.FireMissile(aimRay.origin, this.characterBody, default(ProcChainMask), null, this.characterBody.damage * num, isCrit, projectilePrefab, DamageColorIndex.Default, aimRay.direction, 200f, true);
