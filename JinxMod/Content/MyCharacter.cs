@@ -151,18 +151,18 @@ namespace JinxMod.Modules.Survivors
                 baseRechargeInterval = 1f,
                 beginSkillCooldownOnSkillEnd = false,
                 canceledFromSprinting = false,
-                forceSprintDuringState = true,
+                forceSprintDuringState = false,
                 fullRestockOnAssign = true,
                 interruptPriority = EntityStates.InterruptPriority.PrioritySkill,
                 resetCooldownTimerOnUse = false,
                 isCombatSkill = false,
                 mustKeyPress = true,
                 cancelSprintingOnActivation = false,
-                rechargeStock = 0,
+                rechargeStock = 1,
                 requiredStock = 1,
-                stockToConsume = 0
+                stockToConsume = 1,
             });
-
+            rollSkillDef.dontAllowPastMaxStocks = true;
             Modules.Skills.AddUtilitySkills(bodyPrefab, rollSkillDef);
             #endregion
 

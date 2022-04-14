@@ -45,6 +45,12 @@ namespace JinxMod.Modules
 
             Rigidbody rigidBody = misslePrefab.GetComponent<Rigidbody>();
             rigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+
+            ProjectileController projectileController = misslePrefab.GetComponent<ProjectileController>();
+            var ghostPrefab = PrefabAPI.InstantiateClone(projectileController.ghostPrefab, "MissileGhost", false);
+            misslePrefab.transform.localScale *= 5;
+            ghostPrefab.transform.localScale *= 5;
+            projectileController.ghostPrefab = ghostPrefab;
         }
 
         private static void CreateBomb()
