@@ -8,7 +8,7 @@ namespace JinxMod.Modules
         internal static void AddTokens()
         {
             #region Jinx
-            string prefix = JinxPlugin.DEVELOPER_PREFIX + "_HENRY_BODY_";
+            string prefix = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_";
 
             string desc = "Jinx is a skilled fighter who makes use of a wide arsenal of weaponry to take down his foes.<color=#CCD3E0>" + Environment.NewLine + Environment.NewLine;
             desc = desc + "< ! > Sword is a good all-rounder while Boxing Gloves are better for laying a beatdown on more powerful foes." + Environment.NewLine + Environment.NewLine;
@@ -26,19 +26,20 @@ namespace JinxMod.Modules
             LanguageAPI.Add(prefix + "OUTRO_FLAVOR", outro);
             LanguageAPI.Add(prefix + "OUTRO_FAILURE", outroFailure);
 
-            #region Skins
-            LanguageAPI.Add(prefix + "DEFAULT_SKIN_NAME", "Default");
-            LanguageAPI.Add(prefix + "MASTERY_SKIN_NAME", "Alternate");
-            #endregion
-
             #region Passive
             LanguageAPI.Add(prefix + "PASSIVE_NAME", "Jinx passive");
             LanguageAPI.Add(prefix + "PASSIVE_DESCRIPTION", "Sample text.");
             #endregion
 
             #region Primary
-            LanguageAPI.Add(prefix + "PRIMARY_SLASH_NAME", "Sword");
-            LanguageAPI.Add(prefix + "PRIMARY_SLASH_DESCRIPTION", Helpers.agilePrefix + $"Swing forward for <style=cIsDamage>{100f * StaticValues.swordDamageCoefficient}% damage</style>.");
+            LanguageAPI.Add(prefix + "PRIMARY_POWPOW_NAME", "Pow-Pow");
+            LanguageAPI.Add(prefix + "PRIMARY_POWPOW_DESCRIPTION",
+                "Basic attacks with Pow-Pow generate a stack of Jinx Rev'd up.png Rev'd up for 2.5 seconds, stacking up to 3 times, with the duration refreshing on subsequent attacks with Pow-Pow." + Environment.NewLine
+            +   "Rev'd up grants bonus attack speed");
+
+            LanguageAPI.Add(prefix + "PRIMARY_FISHBONES_NAME", "Fishbones");
+            LanguageAPI.Add(prefix + "PRIMARY_FISHBONES_DESCRIPTION",
+                "Basic attacks with Fishbones deal 1600% damage to the primary target as well as surrounding enemies.");
             #endregion
 
             #region Secondary

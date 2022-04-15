@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace JinxMod.SkillStates
 {
-    public class Shoot : BaseSkillState
+    public class PowPow : BaseSkillState
     {
         public static float damageCoefficient = Modules.StaticValues.gunDamageCoefficient;
         public static float procCoefficient = 1f;
@@ -27,7 +27,7 @@ namespace JinxMod.SkillStates
         public override void OnEnter()
         {
             base.OnEnter();
-            this.duration = Shoot.baseDuration / this.attackSpeedStat;
+            this.duration = PowPow.baseDuration / this.attackSpeedStat;
             this.fireTime = 0.2f * this.duration;
             base.characterBody.SetAimTimer(2f);
             this.muzzleString = "Muzzle";
@@ -58,19 +58,19 @@ namespace JinxMod.SkillStates
             if (base.isAuthority)
             {
                 Ray aimRay = base.GetAimRay();
-                base.AddRecoil(-1f * Shoot.recoil, -2f * Shoot.recoil, -0.5f * Shoot.recoil, 0.5f * Shoot.recoil);
+                base.AddRecoil(-1f * PowPow.recoil, -2f * PowPow.recoil, -0.5f * PowPow.recoil, 0.5f * PowPow.recoil);
 
                 new BulletAttack
                 {
                     bulletCount = 1,
                     aimVector = aimRay.direction,
                     origin = aimRay.origin,
-                    damage = Shoot.damageCoefficient * this.damageStat,
+                    damage = PowPow.damageCoefficient * this.damageStat,
                     damageColorIndex = DamageColorIndex.Default,
                     damageType = DamageType.Generic,
                     falloffModel = BulletAttack.FalloffModel.DefaultBullet,
-                    maxDistance = Shoot.range,
-                    force = Shoot.force,
+                    maxDistance = PowPow.range,
+                    force = PowPow.force,
                     hitMask = LayerIndex.CommonMasks.bullet,
                     minSpread = 0f,
                     maxSpread = 0f,
@@ -84,7 +84,7 @@ namespace JinxMod.SkillStates
                     sniper = false,
                     stopperMask = LayerIndex.CommonMasks.bullet,
                     weapon = null,
-                    tracerEffectPrefab = Shoot.tracerEffectPrefab,
+                    tracerEffectPrefab = PowPow.tracerEffectPrefab,
                     spreadPitchScale = 0f,
                     spreadYawScale = 0f,
                     queryTriggerInteraction = QueryTriggerInteraction.UseGlobal,

@@ -10,12 +10,8 @@ namespace JinxMod.Modules
         internal static void RegisterStates()
         {
             Modules.Content.AddEntityState(typeof(Switcharoo));
-
-            Modules.Content.AddEntityState(typeof(Shoot));
-
-            Modules.Content.AddEntityState(typeof(Roll));
-
-            Modules.Content.AddEntityState(typeof(ThrowBomb));
+            Modules.Content.AddEntityState(typeof(PowPow));
+            Modules.Content.AddEntityState(typeof(FishBones));
         }
     }
 }

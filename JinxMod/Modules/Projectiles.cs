@@ -1,4 +1,5 @@
-﻿using R2API;
+﻿using JinxMod.Controllers;
+using R2API;
 using RoR2;
 using RoR2.Projectile;
 using UnityEngine;
@@ -25,13 +26,14 @@ namespace JinxMod.Modules
             GameObject.Destroy(missilePrefab.GetComponent<ProjectileSingleTargetImpact>());
 
             ProjectileSteerTowardTarget projectileSteerTowardTarget = missilePrefab.AddComponent<ProjectileSteerTowardTarget>();
-            projectileSteerTowardTarget.rotationSpeed = 180f;
+            projectileSteerTowardTarget.rotationSpeed = 360f;
             projectileSteerTowardTarget.yAxisOnly = false;
 
             ProjectileSphereTargetFinder projectileSphereTargetFinder = missilePrefab.AddComponent<ProjectileSphereTargetFinder>();
-            projectileSphereTargetFinder.lookRange = 10f;
+            projectileSphereTargetFinder.lookRange = 5f;
             projectileSphereTargetFinder.onlySearchIfNoTarget = false;
             projectileSphereTargetFinder.allowTargetLoss = true;
+            projectileSphereTargetFinder.testLoS = true;
             projectileSphereTargetFinder.targetSearchInterval = 0.1f;
 
 
@@ -53,6 +55,9 @@ namespace JinxMod.Modules
             projectileSimple.updateAfterFiring = true;
             projectileSimple.enableVelocityOverLifetime = false;
 
+            BoxCollider boxCollider = missilePrefab.GetComponent<BoxCollider>();
+            boxCollider.size = new Vector3(0.075f, 0.075f, 0.075f);
+
             Rigidbody rigidBody = missilePrefab.GetComponent<Rigidbody>();
             rigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
 
@@ -61,6 +66,9 @@ namespace JinxMod.Modules
             missilePrefab.transform.localScale *= 5;
             ghostPrefab.transform.localScale *= 5;
             projectileController.ghostPrefab = ghostPrefab;
+
+            missilePrefab.AddComponent<ProjectileImpactEventCaller>();
+            missilePrefab.AddComponent<RocketJumpController>();
         }
 
         private static void CreateBomb()

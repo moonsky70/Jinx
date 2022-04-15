@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2349047773
+CRC: 157806070
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e9acda809c2710700102013b7925c1dc
+    Hash: b9f62f6f50ae0fed43eb5d7da13e367f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 81f85a1848bd487af28dc79788e4af96
+    Hash: 85244ba353302c9e8cb2950661b0bbd8
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -45,6 +45,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 199
   Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
 - Class: 221
   Script: {instanceID: 0}
 - Class: 319
@@ -59,16 +61,19 @@ Assets:
 - Assets/Jinx/VFX/ImpactHenrySlash.prefab
 - Assets/Jinx/VFX/HenryBazookaExplosionEffect.prefab
 - Assets/Jinx/VFX/Textures/texHitSpark.png
+- Assets/Jinx/Icons/Pow-Pow.png
 - Assets/Jinx/VFX/Textures/texSmoke.png
 - Assets/Jinx/VFX/Textures/texPunchImpact.png
 - Assets/Jinx/Model/Jinx Dyzcrol Animations V0.1.fbx
 - Assets/Jinx/JinxDisplay.prefab
 - Assets/Jinx/CustomAnimations/RocketOverrideController.overrideController
 - Assets/Jinx/VFX/HenryBazookaMuzzleFlash.prefab
+- Assets/Jinx/Icons/Jinx_Passive.png
 - Assets/Jinx/VFX/Materials/matTrail.mat
 - Assets/Jinx/VFX/Materials/matFire.mat
 - Assets/Jinx/JinxUpper.mask
 - Assets/Jinx/CustomAnimations/animDisplay.controller
+- Assets/Jinx/Icons/Switch.png
 - Assets/Jinx/VFX/Mesh/meshPunchShockwave.mesh
 - Assets/Jinx/VFX/Textures/texHenrySwing2.png
 - Assets/Jinx/CustomAnimations/GatOverrideController.overrideController
@@ -80,6 +85,7 @@ Assets:
 - Assets/Jinx/VFX/Materials/matSmoke.mat
 - Assets/Jinx/VFX/Textures/texLightning.tif
 - Assets/Jinx/VFX/Materials/matSwingShadow.mat
+- Assets/Jinx/Icons/JinxR.png
 - Assets/Jinx/VFX/HenryDustEffect.prefab
 - Assets/Jinx/VFX/Textures/texEmbers.png
 - Assets/Jinx/Model/matJinx.mat
@@ -89,6 +95,7 @@ Assets:
 - Assets/Jinx/VFX/Materials/matPunchImpactShadow.mat
 - Assets/Jinx/VFX/Materials/matRipple.mat
 - Assets/Jinx/CustomAnimations/Jumping UP.anim
+- Assets/Jinx/Icons/JinxW.png
 - Assets/Jinx/VFX/Materials/matHitSpark.mat
 - Assets/Jinx/VFX/Textures/texSwingEffect.png
 - Assets/Jinx/Model/skin0.png
@@ -101,6 +108,7 @@ Assets:
 - Assets/Jinx/VFX/Materials/matEmbers.mat
 - Assets/Jinx/VFX/Materials/matPunchImpact.mat
 - Assets/Jinx/VFX/Textures/texRipple.png
+- Assets/Jinx/Icons/JinxQ.png
 - Assets/Jinx/VFX/Materials/matSlash.mat
 - Assets/Jinx/VFX/Textures/texFistSwing.png
 - Assets/Jinx/CustomAnimations/animJinx.controller

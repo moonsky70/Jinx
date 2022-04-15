@@ -13,17 +13,17 @@ namespace JinxMod.Modules.Survivors
     {
         public override string bodyName => "Jinx";
 
-        public const string HENRY_PREFIX = JinxPlugin.DEVELOPER_PREFIX + "_HENRY_BODY_";
+        public const string JINX_PREFIX = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_";
         //used when registering your survivor's language tokens
-        public override string survivorTokenPrefix => HENRY_PREFIX;
+        public override string survivorTokenPrefix => JINX_PREFIX;
 
         public static SkillDef fishBonesSkillDef;
 
         public override BodyInfo bodyInfo { get; set; } = new BodyInfo
         {
             bodyName = "JinxBody",
-            bodyNameToken = JinxPlugin.DEVELOPER_PREFIX + "_HENRY_BODY_NAME",
-            subtitleNameToken = JinxPlugin.DEVELOPER_PREFIX + "_HENRY_BODY_SUBTITLE",
+            bodyNameToken = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_NAME",
+            subtitleNameToken = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_SUBTITLE",
 
             characterPortrait = Assets.mainAssetBundle.LoadAsset<Texture>("texJinxIcon"),
             bodyColor = Color.white,
@@ -90,18 +90,18 @@ namespace JinxMod.Modules.Survivors
             #region Primary
             //Creates a skilldef for a typical primary 
             SkillDef primarySkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
-                (prefix + "_HENRY_BODY_PRIMARY_SLASH_NAME",
-                prefix + "_HENRY_BODY_PRIMARY_SLASH_DESCRIPTION",
-                Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texPrimaryIcon"),
-                new EntityStates.SerializableEntityStateType(typeof(SkillStates.Shoot)),
+                (prefix + "_JINX_BODY_PRIMARY_POWPOW_NAME",
+                prefix + "_JINX_BODY_PRIMARY_POWPOW_DESCRIPTION",
+                Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Pow-Pow"),
+                new EntityStates.SerializableEntityStateType(typeof(SkillStates.PowPow)),
                 "Weapon",
                 true));
 
             SkillDef fish = Modules.Skills.CreateSkillDef(new SkillDefInfo
-                (prefix + "_HENRY_BODY_PRIMARY_SLASH_NAME",
-                prefix + "_HENRY_BODY_PRIMARY_SLASH_DESCRIPTION",
-                Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texPrimaryIcon"),
-                new EntityStates.SerializableEntityStateType(typeof(SkillStates.ThrowBomb)),
+                (prefix + "_JINX_BODY_PRIMARY_FISHBONES_NAME",
+                prefix + "_JINX_BODY_PRIMARY_FISHBONES_DESCRIPTION",
+                Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("JinxQ"),
+                new EntityStates.SerializableEntityStateType(typeof(SkillStates.FishBones)),
                 "Weapon",
                 true));
 
@@ -112,11 +112,11 @@ namespace JinxMod.Modules.Survivors
             #region Secondary
             SkillDef shootSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
             {
-                skillName = prefix + "_HENRY_BODY_SECONDARY_GUN_NAME",
-                skillNameToken = prefix + "_HENRY_BODY_SECONDARY_GUN_NAME",
-                skillDescriptionToken = prefix + "_HENRY_BODY_SECONDARY_GUN_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSecondaryIcon"),
-                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Shoot)),
+                skillName = prefix + "_JINX_BODY_SECONDARY_GUN_NAME",
+                skillNameToken = prefix + "_JINX_BODY_SECONDARY_GUN_NAME",
+                skillDescriptionToken = prefix + "_JINX_BODY_SECONDARY_GUN_DESCRIPTION",
+                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("JinxW"),
+                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.PowPow)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
                 baseRechargeInterval = 1f,
@@ -141,10 +141,10 @@ namespace JinxMod.Modules.Survivors
             #region Utility
             SkillDef rollSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
             {
-                skillName = prefix + "_HENRY_BODY_UTILITY_ROLL_NAME",
-                skillNameToken = prefix + "_HENRY_BODY_UTILITY_ROLL_NAME",
-                skillDescriptionToken = prefix + "_HENRY_BODY_UTILITY_ROLL_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texUtilityIcon"),
+                skillName = prefix + "_JINX_BODY_UTILITY_ROLL_NAME",
+                skillNameToken = prefix + "_JINX_BODY_UTILITY_ROLL_NAME",
+                skillDescriptionToken = prefix + "_JINX_BODY_UTILITY_ROLL_DESCRIPTION",
+                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Switch"),
                 activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Switcharoo)),
                 activationStateMachineName = "Weapon",
                 baseMaxStock = 1,
@@ -169,11 +169,11 @@ namespace JinxMod.Modules.Survivors
             #region Special
             SkillDef bombSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
             {
-                skillName = prefix + "_HENRY_BODY_SPECIAL_BOMB_NAME",
-                skillNameToken = prefix + "_HENRY_BODY_SPECIAL_BOMB_NAME",
-                skillDescriptionToken = prefix + "_HENRY_BODY_SPECIAL_BOMB_DESCRIPTION",
-                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSpecialIcon"),
-                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.ThrowBomb)),
+                skillName = prefix + "_JINX_BODY_SPECIAL_BOMB_NAME",
+                skillNameToken = prefix + "_JINX_BODY_SPECIAL_BOMB_NAME",
+                skillDescriptionToken = prefix + "_JINX_BODY_SPECIAL_BOMB_DESCRIPTION",
+                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("JinxR"),
+                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.FishBones)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
                 baseRechargeInterval = 10f,
@@ -210,7 +210,7 @@ namespace JinxMod.Modules.Survivors
             List<SkinDef> skins = new List<SkinDef>();
 
             #region DefaultSkin
-            SkinDef defaultSkin = Modules.Skins.CreateSkinDef(JinxPlugin.DEVELOPER_PREFIX + "_HENRY_BODY_DEFAULT_SKIN_NAME",
+            SkinDef defaultSkin = Modules.Skins.CreateSkinDef(JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_DEFAULT_SKIN_NAME",
                 Assets.mainAssetBundle.LoadAsset<Sprite>("texMainSkin"),
                 defaultRenderers,
                 mainRenderer,
@@ -252,7 +252,7 @@ namespace JinxMod.Modules.Survivors
                 masteryMat
             });
 
-            SkinDef masterySkin = Modules.Skins.CreateSkinDef(JinxPlugin.DEVELOPER_PREFIX + "_HENRY_BODY_MASTERY_SKIN_NAME",
+            SkinDef masterySkin = Modules.Skins.CreateSkinDef(JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_MASTERY_SKIN_NAME",
                 Assets.mainAssetBundle.LoadAsset<Sprite>("texMasteryAchievement"),
                 masteryRendererInfos,
                 mainRenderer,
