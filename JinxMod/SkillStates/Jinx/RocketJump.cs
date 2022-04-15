@@ -9,13 +9,41 @@ using UnityEngine.Networking;
 
 namespace JinxMod.Controllers
 {
+    [RequireComponent(typeof(ProjectileController))]
     public class RocketJumpController : MonoBehaviour
     {
+        private ProjectileController projectileController;
         public Rigidbody rigidbody;
         public ProjectileImpactEventCaller projectileImpactEventCaller;
+        private RocketJumpController.OwnerInfo owner;
+        private struct OwnerInfo
+        {
+            public OwnerInfo(GameObject ownerGameObject)
+            {
+                this = default(RocketJumpController.OwnerInfo);
+                this.gameObject = ownerGameObject;
+                if (this.gameObject)
+                {
+                    this.characterBody = this.gameObject.GetComponent<CharacterBody>();
+                    this.characterMotor = this.gameObject.GetComponent<CharacterMotor>();
+                    this.rigidbody = this.gameObject.GetComponent<Rigidbody>();
+                    this.hasEffectiveAuthority = Util.HasEffectiveAuthority(this.gameObject);
+                }
+            }
+            public readonly GameObject gameObject;
+            public readonly CharacterBody characterBody;
+            public readonly CharacterMotor characterMotor;
+            public readonly Rigidbody rigidbody;
+            public readonly bool hasEffectiveAuthority;
+        }
+        private void Start()
+        {
+            this.owner = new RocketJumpController.OwnerInfo(this.projectileController.owner);
+        }
 
         private void Awake()
         {
+            this.projectileController = base.GetComponent<ProjectileController>();
             this.rigidbody = base.GetComponent<Rigidbody>();
             if (NetworkServer.active)
             {
@@ -41,7 +69,7 @@ namespace JinxMod.Controllers
             foreach (Collider collision in objectsInRange)
             {
                 CharacterBody characterBody = collision.GetComponent<CharacterBody>();
-                if (characterBody && characterBody?.bodyIndex == BodyCatalog.FindBodyIndex("JinxBody"))
+                if (this.owner.characterBody == characterBody && characterBody && characterBody?.bodyIndex == BodyCatalog.FindBodyIndex("JinxBody"))
                 {
                     AddExplosionForce(characterBody, 5000f, projectileImpactInfo.estimatedPointOfImpact, 25f, 0f);
                 }
