@@ -116,10 +116,10 @@ namespace JinxMod.Modules.Survivors
                 skillNameToken = prefix + "_JINX_BODY_SECONDARY_GUN_NAME",
                 skillDescriptionToken = prefix + "_JINX_BODY_SECONDARY_GUN_DESCRIPTION",
                 skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("JinxW"),
-                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.PowPow)),
+                activationState = new EntityStates.SerializableEntityStateType(typeof(SkillStates.Zap)),
                 activationStateMachineName = "Slide",
                 baseMaxStock = 1,
-                baseRechargeInterval = 1f,
+                baseRechargeInterval = 6f,
                 beginSkillCooldownOnSkillEnd = false,
                 canceledFromSprinting = false,
                 forceSprintDuringState = false,
@@ -132,7 +132,6 @@ namespace JinxMod.Modules.Survivors
                 rechargeStock = 1,
                 requiredStock = 1,
                 stockToConsume = 1,
-                keywordTokens = new string[] { "KEYWORD_AGILE" }
             });
 
             Modules.Skills.AddSecondarySkills(bodyPrefab, shootSkillDef);

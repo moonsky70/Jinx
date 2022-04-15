@@ -11,13 +11,16 @@ namespace JinxMod.Modules
     {
         internal static GameObject bombPrefab;
         internal static GameObject missilePrefab;
+        internal static GameObject zapPrefab;
 
         internal static void RegisterProjectiles()
         {
             CreateBomb();
             CreateMissile();
+            CreateZap();
             AddProjectile(bombPrefab);
             AddProjectile(missilePrefab);
+            AddProjectile(zapPrefab);
         }
         private static void CreateMissile()
         {
@@ -55,9 +58,6 @@ namespace JinxMod.Modules
             projectileSimple.updateAfterFiring = true;
             projectileSimple.enableVelocityOverLifetime = false;
 
-            BoxCollider boxCollider = missilePrefab.GetComponent<BoxCollider>();
-            boxCollider.size = new Vector3(0.075f, 0.075f, 0.075f);
-
             Rigidbody rigidBody = missilePrefab.GetComponent<Rigidbody>();
             rigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
 
@@ -67,10 +67,21 @@ namespace JinxMod.Modules
             ghostPrefab.transform.localScale *= 5;
             projectileController.ghostPrefab = ghostPrefab;
 
+            BoxCollider boxCollider = missilePrefab.GetComponent<BoxCollider>();
+            boxCollider.size = new Vector3(0.075f, 0.075f, 0.075f);
+
             missilePrefab.AddComponent<ProjectileImpactEventCaller>();
             missilePrefab.AddComponent<RocketJumpController>();
         }
 
+        private static void CreateZap()
+        {
+            zapPrefab = CloneProjectilePrefab("CaptainTazer", "JinxZapProjectile");
+            GameObject.Destroy(zapPrefab.GetComponent<ProjectileStickOnImpact>());
+            ProjectileImpactExplosion ImpactExplosion = zapPrefab.GetComponent<ProjectileImpactExplosion>();
+            ImpactExplosion.destroyOnWorld = true;
+
+        }
         private static void CreateBomb()
         {
             bombPrefab = CloneProjectilePrefab("CommandoGrenadeProjectile", "HenryBombProjectile");

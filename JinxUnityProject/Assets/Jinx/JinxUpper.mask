@@ -32,9 +32,9 @@ AvatarMask:
   - m_Path: model/Global_Root/Root/Pelvis/L_Hip/L_KneeUpper/L_KneeLower/L_Foot/L_Toe
     m_Weight: 0
   - m_Path: model/Global_Root/Root/Pelvis/L_Hip/Pistol
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: model/Global_Root/Root/Pelvis/L_Hip/Pistol/Cstm_Buffbone_Pistol
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: model/Global_Root/Root/Pelvis/Minigun
     m_Weight: 1
   - m_Path: model/Global_Root/Root/Pelvis/Minigun/Cstm_Buffbone_Minigun

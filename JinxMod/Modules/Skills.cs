@@ -210,9 +210,6 @@ namespace JinxMod.Modules
             this.stockToConsume = 0;
 
             this.cancelSprintingOnActivation = !agile;
-
-            if (agile) this.keywordTokens = new string[] { "KEYWORD_AGILE" };
-
         }
         #endregion construction complete
     }
