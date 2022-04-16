@@ -59,7 +59,6 @@ namespace JinxMod.SkillStates
             Ray aimRay = base.GetAimRay();
             base.AddRecoil(-1f * 6f, -2f * 6f, -0.5f * 6f, 0.5f * 6f);
             GameObject projectilePrefab = Modules.Projectiles.missilePrefab;
-            float num = 3f;
             bool isCrit = Util.CheckRoll(this.characterBody.crit, this.characterBody.master);
             FireProjectileInfo fireProjectileInfo = new FireProjectileInfo
             {
@@ -69,7 +68,7 @@ namespace JinxMod.SkillStates
                 procChainMask = default(ProcChainMask),
                 target = null,
                 owner = this.characterBody.gameObject,
-                damage = this.characterBody.damage * num,
+                damage = this.characterBody.damage * FishBones.damageCoefficient,
                 crit = isCrit,
                 force = 200f,
                 damageColorIndex = DamageColorIndex.Default

@@ -1,4 +1,5 @@
 ﻿using EntityStates;
+using EntityStates.Captain.Weapon;
 using RoR2;
 using RoR2.Projectile;
 using UnityEngine;
@@ -60,8 +61,12 @@ namespace JinxMod.SkillStates
             Ray aimRay = base.GetAimRay();
             if (this.projectilePrefab != null)
             {
-                float num = 3f;
                 bool isCrit = Util.CheckRoll(this.characterBody.crit, this.characterBody.master);
+                base.AddRecoil(-1f * FireTazer.recoilAmplitude, -1.5f * FireTazer.recoilAmplitude, -0.25f * FireTazer.recoilAmplitude, 0.25f * FireTazer.recoilAmplitude);
+                if (FireTazer.muzzleflashEffectPrefab)
+                {
+                    EffectManager.SimpleMuzzleFlash(FireTazer.muzzleflashEffectPrefab, base.gameObject, "Muzzle", false);
+                }
                 FireProjectileInfo fireProjectileInfo = new FireProjectileInfo
                 {
                     projectilePrefab = this.projectilePrefab,
@@ -70,7 +75,7 @@ namespace JinxMod.SkillStates
                     procChainMask = default(ProcChainMask),
                     target = null,
                     owner = this.characterBody.gameObject,
-                    damage = this.characterBody.damage * num,
+                    damage = this.characterBody.damage * Zap.damageCoefficient,
                     crit = isCrit,
                     force = 200f,
                     damageColorIndex = DamageColorIndex.Default

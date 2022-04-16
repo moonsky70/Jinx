@@ -484,6 +484,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 284509964382899371, guid: ba37884397befdc40b8598199d76bba3,
+        type: 3}
+      propertyPath: transformPairs.Array.data[6].name
+      value: Muzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 284509964382899371, guid: ba37884397befdc40b8598199d76bba3,
+        type: 3}
+      propertyPath: transformPairs.Array.data[7].name
+      value: PowPowMuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 284509964382899371, guid: ba37884397befdc40b8598199d76bba3,
+        type: 3}
+      propertyPath: transformPairs.Array.data[8].name
+      value: FishBonesMuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 284509964382899371, guid: ba37884397befdc40b8598199d76bba3,
+        type: 3}
+      propertyPath: transformPairs.Array.data[6].transform
+      value: 
+      objectReference: {fileID: 3283172364607454399}
+    - target: {fileID: 284509964382899371, guid: ba37884397befdc40b8598199d76bba3,
+        type: 3}
+      propertyPath: transformPairs.Array.data[7].transform
+      value: 
+      objectReference: {fileID: 3283172364607454398}
+    - target: {fileID: 284509964382899371, guid: ba37884397befdc40b8598199d76bba3,
+        type: 3}
+      propertyPath: transformPairs.Array.data[8].transform
+      value: 
+      objectReference: {fileID: 3283172364607454397}
     - target: {fileID: 8221071625855975784, guid: ba37884397befdc40b8598199d76bba3,
         type: 3}
       propertyPath: m_RootOrder
@@ -546,6 +576,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba37884397befdc40b8598199d76bba3, type: 3}
+--- !u!4 &3283172364607454397 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 787248574894140140, guid: ba37884397befdc40b8598199d76bba3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3283172364607454396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3283172364607454398 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3042136271627019202, guid: ba37884397befdc40b8598199d76bba3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3283172364607454396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3283172364607454399 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8818465462382533786, guid: ba37884397befdc40b8598199d76bba3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3283172364607454396}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8026021456361496568
 PrefabInstance:
   m_ObjectHideFlags: 0

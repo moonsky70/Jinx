@@ -43,18 +43,18 @@ namespace JinxMod.Modules
             #endregion
 
             #region Secondary
-            LanguageAPI.Add(prefix + "SECONDARY_GUN_NAME", "Handgun");
-            LanguageAPI.Add(prefix + "SECONDARY_GUN_DESCRIPTION", Helpers.agilePrefix + $"Fire a handgun for <style=cIsDamage>{100f * StaticValues.gunDamageCoefficient}% damage</style>.");
+            LanguageAPI.Add(prefix + "SECONDARY_GUN_NAME", "Zap");
+            LanguageAPI.Add(prefix + "SECONDARY_GUN_DESCRIPTION", "Zap");
             #endregion
 
             #region Utility
-            LanguageAPI.Add(prefix + "UTILITY_ROLL_NAME", "Roll");
-            LanguageAPI.Add(prefix + "UTILITY_ROLL_DESCRIPTION", "Roll a short distance, gaining <style=cIsUtility>300 armor</style>. <style=cIsUtility>You cannot be hit during the roll.</style>");
+            LanguageAPI.Add(prefix + "UTILITY_ROLL_NAME", "Switcharoo");
+            LanguageAPI.Add(prefix + "UTILITY_ROLL_DESCRIPTION", "Switcharoo");
             #endregion
 
             #region Special
             LanguageAPI.Add(prefix + "SPECIAL_BOMB_NAME", "Bomb");
-            LanguageAPI.Add(prefix + "SPECIAL_BOMB_DESCRIPTION", $"Throw a bomb for <style=cIsDamage>{100f * StaticValues.bombDamageCoefficient}% damage</style>.");
+            LanguageAPI.Add(prefix + "SPECIAL_BOMB_DESCRIPTION", "Bomb");
             #endregion
 
             #region Achievements

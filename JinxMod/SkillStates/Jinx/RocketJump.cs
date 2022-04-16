@@ -64,6 +64,11 @@ namespace JinxMod.Controllers
         }
         private void OnImpact(ProjectileImpactInfo projectileImpactInfo)
         {
+            if (projectileImpactInfo.collider.transform.gameObject.layer != LayerIndex.world.intVal)
+            {
+                return;
+            }
+
             Collider[] objectsInRange = Physics.OverlapSphere(projectileImpactInfo.estimatedPointOfImpact, 25f);
 
             foreach (Collider collision in objectsInRange)

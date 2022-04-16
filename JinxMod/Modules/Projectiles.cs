@@ -80,6 +80,7 @@ namespace JinxMod.Modules
             GameObject.Destroy(zapPrefab.GetComponent<ProjectileStickOnImpact>());
             ProjectileImpactExplosion ImpactExplosion = zapPrefab.GetComponent<ProjectileImpactExplosion>();
             ImpactExplosion.destroyOnWorld = true;
+            ImpactExplosion.blastRadius *= 8f;
 
         }
         private static void CreateBomb()

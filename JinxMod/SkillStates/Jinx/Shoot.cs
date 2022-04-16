@@ -6,7 +6,7 @@ namespace JinxMod.SkillStates
 {
     public class PowPow : BaseSkillState
     {
-        public static float damageCoefficient = Modules.StaticValues.gunDamageCoefficient;
+        public static float damageCoefficient = 1f;
         public static float procCoefficient = 1f;
         public static float baseDuration = 1.0f;
         public static float force = 400f;
@@ -30,7 +30,7 @@ namespace JinxMod.SkillStates
             this.duration = PowPow.baseDuration / this.attackSpeedStat;
             this.fireTime = 0.2f * this.duration;
             base.characterBody.SetAimTimer(2f);
-            this.muzzleString = "Muzzle";
+            this.muzzleString = "PowPowMuzzle";
             this.animator = base.GetModelAnimator();
 
             if (this.animator.GetBool("isMoving") || (!(this.animator.GetBool("isGrounded"))))
