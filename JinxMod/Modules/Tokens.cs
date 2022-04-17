@@ -5,6 +5,11 @@ namespace JinxMod.Modules
 {
     internal static class Tokens
     {
+        //<color=#c9aa71> tan
+        //<color=#ffffff> white
+        //<color=#f68835> orange
+        //<color=#d62d20> red
+        //<color=#AF1AAF> purple
         internal static void AddTokens()
         {
             #region Jinx
@@ -27,40 +32,38 @@ namespace JinxMod.Modules
             LanguageAPI.Add(prefix + "OUTRO_FAILURE", outroFailure);
 
             #region Passive
-            LanguageAPI.Add(prefix + "PASSIVE_NAME", "Jinx passive");
-            LanguageAPI.Add(prefix + "PASSIVE_DESCRIPTION", "Sample text.");
+            LanguageAPI.Add(prefix + "PASSIVE_NAME", "Get Excited!");
+            LanguageAPI.Add(prefix + "PASSIVE_DESCRIPTION", "Whenever Jinx scores a takedown against an enemy within 3 seconds of damaging them, she gains 175% bonus movement speed which decays over 6 seconds");
             #endregion
 
             #region Primary
             LanguageAPI.Add(prefix + "PRIMARY_POWPOW_NAME", "Pow-Pow");
             LanguageAPI.Add(prefix + "PRIMARY_POWPOW_DESCRIPTION",
-                "Basic attacks with Pow-Pow generate a stack of Jinx Rev'd up.png Rev'd up for 2.5 seconds, stacking up to 3 times, with the duration refreshing on subsequent attacks with Pow-Pow." + Environment.NewLine
-            +   "Rev'd up grants bonus attack speed");
+                "Basic attacks with Pow-Pow generate a stack of Rev'd up for 2.5 seconds, stacking up to 3 times, with the duration refreshing on subsequent attacks with Pow-Pow." + Environment.NewLine
+            +   "Rev'd up grants 30% bonus attack speed");
 
             LanguageAPI.Add(prefix + "PRIMARY_FISHBONES_NAME", "Fishbones");
             LanguageAPI.Add(prefix + "PRIMARY_FISHBONES_DESCRIPTION",
-                "Basic attacks with Fishbones deal 1600% damage to the primary target as well as surrounding enemies.");
+                "Basic attacks with Fishbones deal 800% damage to the primary target as well as surrounding enemies." + Environment.NewLine
+            + "Jinx can Rocket Jump with Fishbones" + Environment.NewLine
+            + "Jinx nullifies fall damage if she's knocked back by her own Rocket");
             #endregion
 
             #region Secondary
             LanguageAPI.Add(prefix + "SECONDARY_GUN_NAME", "Zap");
-            LanguageAPI.Add(prefix + "SECONDARY_GUN_DESCRIPTION", "Zap");
+            LanguageAPI.Add(prefix + "SECONDARY_GUN_DESCRIPTION", "Jinx fires a shock blast that deals 1600% damage.");
             #endregion
 
             #region Utility
             LanguageAPI.Add(prefix + "UTILITY_ROLL_NAME", "Switcharoo");
-            LanguageAPI.Add(prefix + "UTILITY_ROLL_DESCRIPTION", "Switcharoo");
+            LanguageAPI.Add(prefix + "UTILITY_ROLL_DESCRIPTION", "Jinx switches between Pow-Pow, her minigun, and Fishbones, her rocket launcher." + Environment.NewLine
+            + "Jinx can Rocket Jump with Fishbones" + Environment.NewLine
+            + "Jinx nullifies fall damage if she's knocked back by her own Rocket");
             #endregion
 
             #region Special
             LanguageAPI.Add(prefix + "SPECIAL_BOMB_NAME", "Bomb");
             LanguageAPI.Add(prefix + "SPECIAL_BOMB_DESCRIPTION", "Bomb");
-            #endregion
-
-            #region Achievements
-            LanguageAPI.Add(prefix + "MASTERYUNLOCKABLE_ACHIEVEMENT_NAME", "Jinx: Mastery");
-            LanguageAPI.Add(prefix + "MASTERYUNLOCKABLE_ACHIEVEMENT_DESC", "As Jinx, beat the game or obliterate on Monsoon.");
-            LanguageAPI.Add(prefix + "MASTERYUNLOCKABLE_UNLOCKABLE_NAME", "Jinx: Mastery");
             #endregion
             #endregion
         }

@@ -20,7 +20,11 @@ namespace JinxMod.Modules
             list.CopyTo(array, orig);
             return array;
         }
-
         public static Func<T[], T[]> AppendDel<T>(List<T> list) => (r) => Append(ref r, list);
+
+        internal static string colorText(string v1, string v2)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

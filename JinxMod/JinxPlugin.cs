@@ -1,4 +1,5 @@
 ﻿using BepInEx;
+using JinxMod.Controller;
 using JinxMod.Modules.Survivors;
 using R2API.Utils;
 using RoR2;
@@ -71,9 +72,9 @@ namespace JinxMod
             // a simple stat hook, adds armor after stats are recalculated
             if (self)
             {
-                if (self.HasBuff(Modules.Buffs.armorBuff))
+                if (self.HasBuff(Modules.Buffs.revdUp))
                 {
-                    self.armor += 300f;
+                    self.attackSpeed += self.attackSpeed * (self.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient);
                 }
             }
         }

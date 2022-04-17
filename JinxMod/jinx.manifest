@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 611958106
+CRC: 867787567
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b792b40578b78ace0890cfcc4db777b0
+    Hash: 4357b59995518d20525b465fe311d73d
   TypeTreeHash:
     serializedVersion: 2
     Hash: 85244ba353302c9e8cb2950661b0bbd8
@@ -53,6 +53,7 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Jinx/Icons/Rev_d_up.png
 - Assets/Jinx/VFX/Materials/matAnimeShapes.mat
 - Assets/Jinx/CustomAnimations/Falling Idle.anim
 - Assets/Jinx/VFX/HenryFistSwingEffect.prefab

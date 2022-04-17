@@ -28,6 +28,13 @@ namespace JinxMod.Modules
             skillLocator.secondary = CreateGenericSkillWithSkillFamily(targetPrefab, "Secondary");
             skillLocator.utility = CreateGenericSkillWithSkillFamily(targetPrefab, "Utility");
             skillLocator.special = CreateGenericSkillWithSkillFamily(targetPrefab, "Special");
+
+            string prefix = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_";
+
+            skillLocator.passiveSkill.enabled = true;
+            skillLocator.passiveSkill.skillNameToken = prefix + "PASSIVE_NAME";
+            skillLocator.passiveSkill.skillDescriptionToken = prefix + "PASSIVE_DESCRIPTION";
+            skillLocator.passiveSkill.icon = Assets.mainAssetBundle.LoadAsset<Sprite>("Rev_d_up");
         }
 
         public static GenericSkill CreateGenericSkillWithSkillFamily(GameObject targetPrefab, string familyName, bool hidden = false)

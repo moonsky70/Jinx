@@ -7,9 +7,9 @@ namespace JinxMod.SkillStates
 {
     public class FishBones : BaseSkillState
     {
-        public static float damageCoefficient = 16f;
+        public static float damageCoefficient = 8f;
         public static float procCoefficient = 1f;
-        public static float baseDuration = 1.50f;
+        public static float baseDuration = 2.00f;
         public static float throwForce = 80f;
 
         private float duration;
@@ -58,6 +58,7 @@ namespace JinxMod.SkillStates
         {
             Ray aimRay = base.GetAimRay();
             base.AddRecoil(-1f * 6f, -2f * 6f, -0.5f * 6f, 0.5f * 6f);
+            base.characterBody.AddSpreadBloom(1.5f);
             GameObject projectilePrefab = Modules.Projectiles.missilePrefab;
             bool isCrit = Util.CheckRoll(this.characterBody.crit, this.characterBody.master);
             FireProjectileInfo fireProjectileInfo = new FireProjectileInfo

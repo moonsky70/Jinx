@@ -64,6 +64,7 @@ namespace JinxMod.Modules.Survivors
         {
             base.InitializeCharacter();
             bodyPrefab.AddComponent<RocketController>();
+            bodyPrefab.AddComponent<RevdUpController>();
         }
 
         public override void InitializeUnlockables()
@@ -95,7 +96,7 @@ namespace JinxMod.Modules.Survivors
                 Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Pow-Pow"),
                 new EntityStates.SerializableEntityStateType(typeof(SkillStates.PowPow)),
                 "Weapon",
-                true));
+                false));
 
             SkillDef fish = Modules.Skills.CreateSkillDef(new SkillDefInfo
                 (prefix + "_JINX_BODY_PRIMARY_FISHBONES_NAME",
@@ -103,9 +104,10 @@ namespace JinxMod.Modules.Survivors
                 Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("JinxQ"),
                 new EntityStates.SerializableEntityStateType(typeof(SkillStates.FishBones)),
                 "Weapon",
-                true));
+                false));
 
             fishBonesSkillDef = fish;
+
             Modules.Skills.AddPrimarySkills(bodyPrefab, primarySkillDef);
             #endregion
 
@@ -124,10 +126,10 @@ namespace JinxMod.Modules.Survivors
                 canceledFromSprinting = false,
                 forceSprintDuringState = false,
                 fullRestockOnAssign = true,
-                interruptPriority = EntityStates.InterruptPriority.Skill,
+                interruptPriority = EntityStates.InterruptPriority.PrioritySkill,
                 resetCooldownTimerOnUse = false,
                 isCombatSkill = true,
-                mustKeyPress = false,
+                mustKeyPress = true,
                 cancelSprintingOnActivation = false,
                 rechargeStock = 1,
                 requiredStock = 1,
@@ -150,7 +152,7 @@ namespace JinxMod.Modules.Survivors
                 baseRechargeInterval = 1f,
                 beginSkillCooldownOnSkillEnd = false,
                 canceledFromSprinting = false,
-                forceSprintDuringState = false,
+                forceSprintDuringState = true,
                 fullRestockOnAssign = true,
                 interruptPriority = EntityStates.InterruptPriority.PrioritySkill,
                 resetCooldownTimerOnUse = false,
@@ -183,7 +185,7 @@ namespace JinxMod.Modules.Survivors
                 interruptPriority = EntityStates.InterruptPriority.Skill,
                 resetCooldownTimerOnUse = false,
                 isCombatSkill = true,
-                mustKeyPress = false,
+                mustKeyPress = true,
                 cancelSprintingOnActivation = true,
                 rechargeStock = 1,
                 requiredStock = 1,

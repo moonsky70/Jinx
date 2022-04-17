@@ -8,7 +8,7 @@ namespace JinxMod.SkillStates
 {
     public class Zap : BaseSkillState
     {
-        public static float damageCoefficient = 16f;
+        public static float damageCoefficient = 12f;
         public static float procCoefficient = 1f;
         public static float baseDuration = 1.18f;
         public static float throwForce = 80f;
@@ -62,6 +62,7 @@ namespace JinxMod.SkillStates
             if (this.projectilePrefab != null)
             {
                 bool isCrit = Util.CheckRoll(this.characterBody.crit, this.characterBody.master);
+                base.characterBody.AddSpreadBloom(1.5f);
                 base.AddRecoil(-1f * FireTazer.recoilAmplitude, -1.5f * FireTazer.recoilAmplitude, -0.25f * FireTazer.recoilAmplitude, 0.25f * FireTazer.recoilAmplitude);
                 if (FireTazer.muzzleflashEffectPrefab)
                 {

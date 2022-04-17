@@ -8,10 +8,13 @@ namespace JinxMod.Modules
     {
         // armor buff gained during roll
         internal static BuffDef armorBuff;
+        internal static BuffDef revdUp;
 
         internal static void RegisterBuffs()
         {
             armorBuff = AddNewBuff("JinxArmorBuff", RoR2.LegacyResourcesAPI.Load<Sprite>("Textures/BuffIcons/texBuffGenericShield"), Color.white, false, false);
+            revdUp = AddNewBuff("JinxRevdUp", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Rev_d_up"), Color.white, true, false);
+
         }
 
         // simple helper method

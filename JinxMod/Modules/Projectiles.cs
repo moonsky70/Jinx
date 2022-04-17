@@ -1,4 +1,5 @@
-﻿using JinxMod.Controllers;
+﻿using JinxMod.Controller;
+using JinxMod.Controllers;
 using R2API;
 using RoR2;
 using RoR2.Projectile;
@@ -28,17 +29,21 @@ namespace JinxMod.Modules
             GameObject.Destroy(missilePrefab.GetComponent<MissileController>());
             GameObject.Destroy(missilePrefab.GetComponent<ProjectileSingleTargetImpact>());
 
-            ProjectileSteerTowardTarget projectileSteerTowardTarget = missilePrefab.AddComponent<ProjectileSteerTowardTarget>();
-            projectileSteerTowardTarget.rotationSpeed = 360f;
-            projectileSteerTowardTarget.yAxisOnly = false;
+            //ProjectileSteerTowardTarget projectileSteerTowardTarget = missilePrefab.AddComponent<ProjectileSteerTowardTarget>();
+            //projectileSteerTowardTarget.rotationSpeed = 360f;
+            //projectileSteerTowardTarget.yAxisOnly = false;
 
             ProjectileSphereTargetFinder projectileSphereTargetFinder = missilePrefab.AddComponent<ProjectileSphereTargetFinder>();
-            projectileSphereTargetFinder.lookRange = 5f;
+            projectileSphereTargetFinder.lookRange = 15f;
             projectileSphereTargetFinder.onlySearchIfNoTarget = false;
             projectileSphereTargetFinder.allowTargetLoss = true;
             projectileSphereTargetFinder.testLoS = true;
             projectileSphereTargetFinder.targetSearchInterval = 0.1f;
 
+            missilePrefab.AddComponent<JinxMissileController>();
+
+            MissileController missileController = missilePrefab.GetComponent<MissileController>();
+            missileController.maxSeekDistance = 5f;
 
             ProjectileImpactExplosion ImpactExplosion = missilePrefab.AddComponent<ProjectileImpactExplosion>();
             InitializeImpactExplosion(ImpactExplosion);
@@ -80,7 +85,7 @@ namespace JinxMod.Modules
             GameObject.Destroy(zapPrefab.GetComponent<ProjectileStickOnImpact>());
             ProjectileImpactExplosion ImpactExplosion = zapPrefab.GetComponent<ProjectileImpactExplosion>();
             ImpactExplosion.destroyOnWorld = true;
-            ImpactExplosion.blastRadius *= 8f;
+            ImpactExplosion.blastRadius *= 6f;
 
         }
         private static void CreateBomb()
