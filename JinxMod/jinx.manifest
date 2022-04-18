@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 416664273
+CRC: 404026361
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a2cbba9a71ba446f0b71d206e6e12c9b
+    Hash: bcdac3e79a7308e06149fca5575590b4
   TypeTreeHash:
     serializedVersion: 2
     Hash: 85244ba353302c9e8cb2950661b0bbd8
@@ -68,6 +68,7 @@ Assets:
 - Assets/Jinx/Model/Jinx Dyzcrol Animations V0.1.fbx
 - Assets/Jinx/JinxDisplay.prefab
 - Assets/Jinx/CustomAnimations/RocketOverrideController.overrideController
+- Assets/Jinx/Icons/Phase_Rush_rune.png
 - Assets/Jinx/VFX/HenryBazookaMuzzleFlash.prefab
 - Assets/Jinx/Icons/Jinx_Passive.png
 - Assets/Jinx/VFX/Materials/matTrail.mat
@@ -84,6 +85,7 @@ Assets:
 - Assets/Jinx/VFX/Materials/matHitSparkPunch.mat
 - Assets/Jinx/mdlJinx.prefab
 - Assets/Jinx/VFX/Materials/matSmoke.mat
+- Assets/Jinx/Icons/Electrocute_rune.png
 - Assets/Jinx/VFX/Textures/texLightning.tif
 - Assets/Jinx/VFX/Materials/matSwingShadow.mat
 - Assets/Jinx/Icons/JinxR.png
@@ -100,6 +102,7 @@ Assets:
 - Assets/Jinx/VFX/Materials/matHitSpark.mat
 - Assets/Jinx/VFX/Textures/texSwingEffect.png
 - Assets/Jinx/Model/skin0.png
+- Assets/Jinx/Icons/Lethal_Tempo_rune.png
 - Assets/Jinx/Model/Jinx Jump and fall.fbx
 - Assets/Jinx/VFX/HenrySwordSwingEffect.prefab
 - Assets/Jinx/VFX/Mesh/meshBoxingGlove.mesh
@@ -112,6 +115,7 @@ Assets:
 - Assets/Jinx/Icons/JinxQ.png
 - Assets/Jinx/VFX/Materials/matSlash.mat
 - Assets/Jinx/VFX/Textures/texFistSwing.png
+- Assets/Jinx/Icons/Conqueror_rune.png
 - Assets/Jinx/CustomAnimations/animJinx.controller
 - Assets/Jinx/VFX/FistBarrageEffect.prefab
 - Assets/Jinx/VFX/Mesh/meshSwing.asset

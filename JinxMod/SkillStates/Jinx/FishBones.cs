@@ -1,6 +1,7 @@
 ﻿using EntityStates;
 using EntityStates.Commando.CommandoWeapon;
 using JinxMod.Controller;
+using R2API;
 using RoR2;
 using RoR2.Projectile;
 using UnityEngine;

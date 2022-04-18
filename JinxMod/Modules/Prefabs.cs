@@ -3,6 +3,7 @@ using RoR2;
 using System.Collections.Generic;
 using UnityEngine;
 using JinxMod.Modules.Characters;
+using JinxMod.Controller;
 
 namespace JinxMod.Modules {
     // module for creating body prefabs and whatnot
@@ -104,6 +105,8 @@ namespace JinxMod.Modules {
             bodyComponent.hullClassification = HullClassification.Human;
 
             bodyComponent.isChampion = false;
+
+            newBodyPrefab.AddComponent<KeyStoneHandler>();
             #endregion
 
             SetupCameraTargetParams(newBodyPrefab, bodyInfo);

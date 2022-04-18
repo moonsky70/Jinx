@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using JinxMod;
 using UnityEngine;
+using JinxMod.Controller;
 
 namespace JinxMod.Modules
 {
@@ -28,6 +29,10 @@ namespace JinxMod.Modules
             skillLocator.secondary = CreateGenericSkillWithSkillFamily(targetPrefab, "Secondary");
             skillLocator.utility = CreateGenericSkillWithSkillFamily(targetPrefab, "Utility");
             skillLocator.special = CreateGenericSkillWithSkillFamily(targetPrefab, "Special");
+
+            KeyStoneHandler keyStoneHandler = targetPrefab.GetComponent<KeyStoneHandler>();
+            keyStoneHandler.keyStone = CreateGenericSkillWithSkillFamily(targetPrefab, "KeyStone");
+
 
             string prefix = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_";
 
@@ -92,6 +97,11 @@ namespace JinxMod.Modules
         public static void AddSpecialSkills(GameObject targetPrefab, params SkillDef[] skillDefs)
         {
             AddSkillsToFamily(targetPrefab.GetComponent<SkillLocator>().special.skillFamily, skillDefs);
+        }
+
+        public static void AddKeyStone(GameObject targetPrefab, params SkillDef[] skillDefs)
+        {
+            AddSkillsToFamily(targetPrefab.GetComponent<KeyStoneHandler>().keyStone.skillFamily, skillDefs);
         }
 
         /// <summary>

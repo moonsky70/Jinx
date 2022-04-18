@@ -195,6 +195,50 @@ namespace JinxMod.Modules.Survivors
 
             Modules.Skills.AddSpecialSkills(bodyPrefab, bombSkillDef);
             #endregion
+
+            #region KeyStone
+
+            SkillDef conquerorSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
+            {
+                skillName = "JINX_CONQUEROR_NAME",
+                skillNameToken = "JINX_CONQUEROR_NAME",
+                skillDescriptionToken = "JINX_CONQUEROR_DESC",
+                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Conqueror_rune"),
+            });
+
+            Modules.Skills.AddKeyStone(bodyPrefab, conquerorSkillDef);
+
+            SkillDef lethalSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
+            {
+                skillName = "JINX_LETHAL_NAME",
+                skillNameToken = "JINX_LETHAL_NAME",
+                skillDescriptionToken = "JINX_LETHAL_DESC",
+                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Lethal_Tempo_rune"),
+            });
+
+            Modules.Skills.AddKeyStone(bodyPrefab, lethalSkillDef);
+
+            SkillDef phaseSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
+            {
+                skillName = "JINX_PHASE_RUSH_NAME",
+                skillNameToken = "JINX_PHASE_RUSH_NAME",
+                skillDescriptionToken = "JINX_PHASE_RUSH_DESC",
+                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Phase_Rush_rune"),
+            });
+
+            Modules.Skills.AddKeyStone(bodyPrefab, phaseSkillDef);
+
+            SkillDef electrocuteSkillDef = Modules.Skills.CreateSkillDef(new SkillDefInfo
+            {
+                skillName = "JINX_ELECTROCUTE_NAME",
+                skillNameToken = "JINX_ELECTROCUTE_NAME",
+                skillDescriptionToken = "JINX_ELECTROCUTE_DESC",
+                skillIcon = Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Electrocute_rune"),
+            });
+
+            Modules.Skills.AddKeyStone(bodyPrefab, electrocuteSkillDef);
+
+            #endregion KeyStone
         }
 
         public override void InitializeSkins()

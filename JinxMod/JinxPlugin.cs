@@ -1,12 +1,14 @@
 ﻿using BepInEx;
 using JinxMod.Controller;
 using JinxMod.Modules.Survivors;
+using R2API;
 using R2API.Utils;
 using RoR2;
 using RoR2.Skills;
 using System.Collections.Generic;
 using System.Security;
 using System.Security.Permissions;
+using UnityEngine;
 
 [module: UnverifiableCode]
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
@@ -21,6 +23,7 @@ namespace JinxMod
         "PrefabAPI",
         "LanguageAPI",
         "SoundAPI",
+        "DamageAPI"
     })]
 
     public class JinxPlugin : BaseUnityPlugin
@@ -36,11 +39,12 @@ namespace JinxMod
         public const string DEVELOPER_PREFIX = "Lemonlust";
 
         public static JinxPlugin instance;
+        public static DamageAPI.ModdedDamageType jinxDamage;
 
         private void Awake()
         {
             instance = this;
-
+            jinxDamage = DamageAPI.ReserveDamageType();
             Log.Init(Logger);
             Modules.Assets.Initialize(); // load assets and read config
             Modules.Config.ReadConfig();
@@ -72,9 +76,27 @@ namespace JinxMod
             // a simple stat hook, adds armor after stats are recalculated
             if (self)
             {
+                float _level = Mathf.Floor(self.level / 4f);
                 if (self.HasBuff(Modules.Buffs.revdUp))
                 {
                     self.attackSpeed += self.attackSpeed * (self.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient);
+                }
+
+                if (self.HasBuff(Modules.Buffs.lethalBuff))
+                {
+                    float count = self.GetBuffCount(Modules.Buffs.lethalBuff);
+                    self.attackSpeed += self.attackSpeed * (count * 0.10f);
+                }
+
+                if (self.HasBuff(Modules.Buffs.conquerorBuff))
+                {
+                    float count = self.GetBuffCount(Modules.Buffs.conquerorBuff);
+                    self.damage += count * (0.6f + (_level * 0.045f));
+                }
+
+                if (self.HasBuff(Modules.Buffs.movementSpeedBuff))
+                {
+                    self.moveSpeed += self.moveSpeed * (0.30f + (_level * 0.05f));
                 }
             }
         }

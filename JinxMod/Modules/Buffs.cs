@@ -10,10 +10,27 @@ namespace JinxMod.Modules
         internal static BuffDef armorBuff;
         internal static BuffDef revdUp;
 
+        internal static BuffDef conquerorBuff;
+
+        internal static BuffDef electrocuteDebuff;
+        internal static BuffDef lethalBuff;
+        internal static BuffDef movementSpeedBuff;
+
+        internal static BuffDef phaseRushDebuff;
         internal static void RegisterBuffs()
         {
             armorBuff = AddNewBuff("JinxArmorBuff", RoR2.LegacyResourcesAPI.Load<Sprite>("Textures/BuffIcons/texBuffGenericShield"), Color.white, false, false);
             revdUp = AddNewBuff("JinxRevdUp", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Rev_d_up"), Color.white, true, false);
+
+            conquerorBuff = AddNewBuff("ConquerorBuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Conqueror_rune"), Color.white, true, false);
+
+            lethalBuff = AddNewBuff("LethalBuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Lethal_Tempo_rune"), Color.white, true, false);
+
+            phaseRushDebuff = AddNewBuff("PhaseRushDebuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Phase_Rush_rune"), Color.white, true, true);
+
+            electrocuteDebuff = AddNewBuff("ElectrocuteDebuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Electrocute_rune"), Color.white, true, true);
+
+            movementSpeedBuff = AddNewBuff("MovementSpeedBuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Phase_Rush_rune"), Color.white, true, false);
 
         }
 
