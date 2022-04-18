@@ -26,6 +26,7 @@ namespace JinxMod.SkillStates
 
         private float bulletStopWatch;
         private int bulletCount = 3;
+        private RocketController rocketController;
 
         public override void OnEnter()
         {
@@ -50,6 +51,11 @@ namespace JinxMod.SkillStates
                 base.PlayAnimation("FullBody, Override", "powpowattack");
             }
             Util.PlaySound("Play_JinxPowPowShoot", base.gameObject);
+            this.rocketController = base.GetComponent<RocketController>();
+            if (this.rocketController)
+            {
+                this.rocketController.attacks++;
+            }
         }
 
         public override void OnExit()
@@ -79,11 +85,11 @@ namespace JinxMod.SkillStates
                     force = PowPow.force,
                     hitMask = LayerIndex.CommonMasks.bullet,
                     minSpread = 0f,
-                    maxSpread = 0f,
+                    maxSpread = base.characterBody.spreadBloomAngle,
                     isCrit = base.RollCrit(),
                     owner = base.gameObject,
                     muzzleName = muzzleString,
-                    smartCollision = false,
+                    smartCollision = true,
                     procChainMask = default(ProcChainMask),
                     procCoefficient = procCoefficient,
                     radius = 0.75f,

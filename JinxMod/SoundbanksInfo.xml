@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3514422542" Language="SFX" Hash="1079655742">
+		<SoundBank Id="3514422542" Language="SFX" Hash="508590826">
 			<ObjectPath>\SoundBanks\Default Work Unit\JinxBank</ObjectPath>
 			<ShortName>JinxBank</ShortName>
 			<Path>JinxBank.bnk</Path>

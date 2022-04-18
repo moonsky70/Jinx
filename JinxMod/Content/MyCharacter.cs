@@ -65,6 +65,7 @@ namespace JinxMod.Modules.Survivors
             base.InitializeCharacter();
             bodyPrefab.AddComponent<RocketController>();
             bodyPrefab.AddComponent<RevdUpController>();
+            displayPrefab.AddComponent<MenuController>();
         }
 
         public override void InitializeUnlockables()

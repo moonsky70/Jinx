@@ -40,13 +40,13 @@ namespace JinxMod.Modules
             LanguageAPI.Add(prefix + "PRIMARY_POWPOW_NAME", "Pow-Pow");
             LanguageAPI.Add(prefix + "PRIMARY_POWPOW_DESCRIPTION",
                 "Basic attacks with Pow-Pow generate a stack of Rev'd up for 2.5 seconds, stacking up to 3 times, with the duration refreshing on subsequent attacks with Pow-Pow." + Environment.NewLine
-            +   "Rev'd up grants 30% bonus attack speed");
+            +   "Rev'd up grants 30% bonus attack speed.");
 
             LanguageAPI.Add(prefix + "PRIMARY_FISHBONES_NAME", "Fishbones");
             LanguageAPI.Add(prefix + "PRIMARY_FISHBONES_DESCRIPTION",
                 "Basic attacks with Fishbones deal 800% damage to the primary target as well as surrounding enemies." + Environment.NewLine
-            + "Jinx can Rocket Jump with Fishbones" + Environment.NewLine
-            + "Jinx nullifies fall damage if she's knocked back by her own Rocket");
+            + "Jinx can Rocket Jump with Fishbones." + Environment.NewLine
+            + "Jinx nullifies fall damage if she's knocked back by her own Rocket.");
             #endregion
 
             #region Secondary
@@ -57,13 +57,14 @@ namespace JinxMod.Modules
             #region Utility
             LanguageAPI.Add(prefix + "UTILITY_ROLL_NAME", "Switcharoo");
             LanguageAPI.Add(prefix + "UTILITY_ROLL_DESCRIPTION", "Jinx switches between Pow-Pow, her minigun, and Fishbones, her rocket launcher." + Environment.NewLine
-            + "Jinx can Rocket Jump with Fishbones" + Environment.NewLine
-            + "Jinx nullifies fall damage if she's knocked back by her own Rocket");
+            + "Switcharoo reset's Pow-Pow's and Fishbone's attack timer." + Environment.NewLine
+            + "Jinx can Rocket Jump with Fishbones." + Environment.NewLine
+            + "Jinx nullifies fall damage if she's knocked back by her own Rocket.");
             #endregion
 
             #region Special
             LanguageAPI.Add(prefix + "SPECIAL_BOMB_NAME", "Bomb");
-            LanguageAPI.Add(prefix + "SPECIAL_BOMB_DESCRIPTION", "Bomb");
+            LanguageAPI.Add(prefix + "SPECIAL_BOMB_DESCRIPTION", "Bomb.");
             #endregion
             #endregion
         }

@@ -1,4 +1,6 @@
 ﻿using EntityStates;
+using EntityStates.Commando.CommandoWeapon;
+using JinxMod.Controller;
 using RoR2;
 using RoR2.Projectile;
 using UnityEngine;
@@ -16,6 +18,7 @@ namespace JinxMod.SkillStates
         private float fireTime;
         private bool hasFired;
         private Animator animator;
+        private RocketController rocketController;
 
         public override void OnEnter()
         {
@@ -24,6 +27,11 @@ namespace JinxMod.SkillStates
             this.fireTime = 0.11f;
             base.characterBody.SetAimTimer(2f);
             this.animator = base.GetModelAnimator();
+            this.rocketController = base.GetComponent<RocketController>();
+            if (this.rocketController)
+            {
+                this.rocketController.attacks++;
+            }
 
             if (this.animator.GetBool("isMoving") || (!(this.animator.GetBool("isGrounded"))))
             {
@@ -33,6 +41,7 @@ namespace JinxMod.SkillStates
             {
                 base.PlayAnimation("FullBody, Override", "fishbonesattack");
             }
+
         }
 
         public override void OnExit()
@@ -61,6 +70,10 @@ namespace JinxMod.SkillStates
             base.characterBody.AddSpreadBloom(1.5f);
             GameObject projectilePrefab = Modules.Projectiles.missilePrefab;
             bool isCrit = Util.CheckRoll(this.characterBody.crit, this.characterBody.master);
+            if (FireRocket.effectPrefab)
+            {
+                EffectManager.SimpleMuzzleFlash(FireRocket.effectPrefab, base.gameObject, "FishBonesMuzzle", false);
+            }
             FireProjectileInfo fireProjectileInfo = new FireProjectileInfo
             {
                 projectilePrefab = projectilePrefab,

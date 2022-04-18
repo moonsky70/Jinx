@@ -7,6 +7,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4470330948460871461, guid: a0ed2df67213be54d98b3d240db7f857,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c400c03536fc716488d7fbbbe3535f8e, type: 2}
+    - target: {fileID: 4908219203080072812, guid: a0ed2df67213be54d98b3d240db7f857,
+        type: 3}
+      propertyPath: m_Name
+      value: JinxDisplay
+      objectReference: {fileID: 0}
     - target: {fileID: 7142855948032098522, guid: a0ed2df67213be54d98b3d240db7f857,
         type: 3}
       propertyPath: m_RootOrder
