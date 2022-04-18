@@ -45,7 +45,7 @@ namespace JinxMod.SkillStates
             if (!this.hasFired)
             {
                 this.hasFired = true;
-                Util.PlaySound("JinxBombThrow", base.gameObject);
+                Util.PlaySound("Play_JinxFishBonesShoot", base.gameObject);
 
                 if (base.isAuthority)
                 {

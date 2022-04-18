@@ -22,6 +22,8 @@ namespace JinxMod.Modules
         // networked hit sounds
         internal static NetworkSoundEventDef swordHitSoundEvent;
 
+        internal static NetworkSoundEventDef explosionHitSoundEvent;
+
         // cache these and use to create our own materials
         internal static Shader hotpoo = RoR2.LegacyResourcesAPI.Load<Shader>("Shaders/Deferred/HGStandard");
         internal static Material commandoMat;
@@ -83,6 +85,8 @@ namespace JinxMod.Modules
             }
 
             bombExplosionEffect = LoadEffect("BombExplosionEffect", "HenryBombExplosion");
+
+            explosionHitSoundEvent = CreateNetworkSoundEventDef("Play_JinxFishBonesImpact");
 
             if (bombExplosionEffect)
             {

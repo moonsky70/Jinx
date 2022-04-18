@@ -35,6 +35,8 @@ namespace JinxMod.SkillStates
             {
                 base.PlayAnimation("FullBody, Override", "zap");
             }
+            Util.PlaySound("Play_JinxZapSFX", base.gameObject);
+
         }
 
         public override void OnExit()
@@ -47,7 +49,8 @@ namespace JinxMod.SkillStates
             if (!this.hasFired)
             {
                 this.hasFired = true;
-                Util.PlaySound("JinxBombThrow", base.gameObject);
+                Util.PlaySound("Play_JinxZapShoot", base.gameObject);
+                Util.PlaySound("Play_JinxZapVO", base.gameObject);
 
                 if (base.isAuthority)
                 {

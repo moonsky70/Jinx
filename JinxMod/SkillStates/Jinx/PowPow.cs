@@ -49,7 +49,7 @@ namespace JinxMod.SkillStates
             {
                 base.PlayAnimation("FullBody, Override", "powpowattack");
             }
-
+            Util.PlaySound("Play_JinxPowPowShoot", base.gameObject);
         }
 
         public override void OnExit()
@@ -61,8 +61,6 @@ namespace JinxMod.SkillStates
         {
             base.characterBody.AddSpreadBloom(1.5f);
             EffectManager.SimpleMuzzleFlash(EntityStates.Commando.CommandoWeapon.FirePistol2.muzzleEffectPrefab, base.gameObject, this.muzzleString, false);
-            Util.PlaySound("JinxShootPistol", base.gameObject);
-
             if (base.isAuthority)
             {
                 Ray aimRay = base.GetAimRay();
