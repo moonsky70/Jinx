@@ -53,11 +53,9 @@ namespace JinxMod.Modules
             ImpactExplosion.destroyOnWorld = true;
             ImpactExplosion.lifetime = 12f;
             ImpactExplosion.impactEffect = Modules.Assets.bombExplosionEffect;
-            //ImpactExplosion.lifetimeExpiredSound = Modules.Assets.explosionHitSoundEvent;
+            ImpactExplosion.lifetimeExpiredSound = Modules.Assets.explosionHitSoundEvent;
             ImpactExplosion.timerAfterImpact = true;
             ImpactExplosion.lifetimeAfterImpact = 0.1f;
-            EffectComponent effectComponent = ImpactExplosion.impactEffect.GetComponent<EffectComponent>();
-            effectComponent.soundName = "Play_JinxFishBonesImpact";
 
             ProjectileSimple projectileSimple = missilePrefab.AddComponent<ProjectileSimple>();
             projectileSimple.desiredForwardSpeed = 60f;
