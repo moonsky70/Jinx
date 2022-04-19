@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	413039194	Play_JinxDeathVO			\Default Work Unit\VO\Play_JinxDeathVO	
 	658490866	Play_JinxMegaRocketShootInitial			\Default Work Unit\SFX\Play_JinxMegaRocketShootInitial	
 	784453373	Play_JinxZapShoot			\Default Work Unit\SFX\Play_JinxZapShoot	
+	800243667	Stop_JinxRocketLoop			\Default Work Unit\SFX\Stop_JinxRocketLoop	
 	970427012	Play_JinxTauntVO			\Default Work Unit\VO\Play_JinxTauntVO	
 	1150441829	Play_JinxRocketLoop			\Default Work Unit\SFX\Play_JinxRocketLoop	
 	1207933611	Play_JinxFishBonesShoot			\Default Work Unit\SFX\Play_JinxFishBonesShoot	

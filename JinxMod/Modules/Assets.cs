@@ -84,7 +84,7 @@ namespace JinxMod.Modules
                 return;
             }
 
-            bombExplosionEffect = LoadEffect("BombExplosionEffect", "HenryBombExplosion");
+            bombExplosionEffect = LoadEffect("BombExplosionEffect", "Play_JinxFishBonesImpact");
 
             explosionHitSoundEvent = CreateNetworkSoundEventDef("Play_JinxFishBonesImpact");
 

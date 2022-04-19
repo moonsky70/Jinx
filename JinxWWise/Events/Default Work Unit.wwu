@@ -251,6 +251,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_JinxRocketLoop" ID="{FB4A2E20-BA05-49F2-B808-4F32A1D83526}">
+							<ChildrenList>
+								<Action Name="" ID="{B0ECAEF9-64B0-4D4D-B995-7A6423A686C9}" ShortID="655499699">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="JinxRocketLoop" ID="{494B7A96-50BF-4575-9DDC-C7840D36C3AE}" WorkUnitID="{A76274DA-E6F4-4F6F-96F1-B3C9BE656C19}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

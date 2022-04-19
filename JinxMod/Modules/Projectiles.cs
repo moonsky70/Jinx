@@ -2,6 +2,7 @@
 using JinxMod.Controllers;
 using R2API;
 using RoR2;
+using RoR2.Audio;
 using RoR2.Projectile;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -12,15 +13,18 @@ namespace JinxMod.Modules
     {
         internal static GameObject bombPrefab;
         internal static GameObject missilePrefab;
+        internal static GameObject megaRocketPrefab;
         internal static GameObject zapPrefab;
 
         internal static void RegisterProjectiles()
         {
             CreateBomb();
             CreateMissile();
+            CreateMegaRocket();
             CreateZap();
             AddProjectile(bombPrefab);
             AddProjectile(missilePrefab);
+            AddProjectile(megaRocketPrefab);
             AddProjectile(zapPrefab);
         }
         private static void CreateMissile()
@@ -53,7 +57,7 @@ namespace JinxMod.Modules
             ImpactExplosion.destroyOnWorld = true;
             ImpactExplosion.lifetime = 12f;
             ImpactExplosion.impactEffect = Modules.Assets.bombExplosionEffect;
-            ImpactExplosion.lifetimeExpiredSound = Modules.Assets.explosionHitSoundEvent;
+            //ImpactExplosion.lifetimeExpiredSound = Modules.Assets.explosionHitSoundEvent;
             ImpactExplosion.timerAfterImpact = true;
             ImpactExplosion.lifetimeAfterImpact = 0.1f;
 
@@ -79,6 +83,51 @@ namespace JinxMod.Modules
             missilePrefab.AddComponent<RocketJumpController>();
         }
 
+        private static void CreateMegaRocket()
+        {
+            megaRocketPrefab = CloneProjectilePrefab("MissileProjectile", "JinxMegaRocketProjectile");
+            GameObject.Destroy(megaRocketPrefab.GetComponent<MissileController>());
+            GameObject.Destroy(megaRocketPrefab.GetComponent<ProjectileSingleTargetImpact>());
+
+            ProjectileImpactExplosion ImpactExplosion = megaRocketPrefab.AddComponent<ProjectileImpactExplosion>();
+            InitializeImpactExplosion(ImpactExplosion);
+
+            ImpactExplosion.blastRadius = 64f;
+            ImpactExplosion.destroyOnEnemy = true;
+            ImpactExplosion.destroyOnWorld = true;
+            ImpactExplosion.lifetime = 12f;
+            ImpactExplosion.impactEffect = Modules.Assets.bombExplosionEffect;
+            ImpactExplosion.lifetimeExpiredSound = Modules.Assets.explosionHitSoundEvent;
+            ImpactExplosion.timerAfterImpact = true;
+            ImpactExplosion.lifetimeAfterImpact = 0.1f;
+
+            ProjectileSimple projectileSimple = megaRocketPrefab.AddComponent<ProjectileSimple>();
+            projectileSimple.desiredForwardSpeed = 90f;
+            projectileSimple.oscillate = false;
+            projectileSimple.updateAfterFiring = true;
+            projectileSimple.enableVelocityOverLifetime = false;
+
+            Rigidbody rigidBody = megaRocketPrefab.GetComponent<Rigidbody>();
+            rigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+
+            ProjectileController projectileController = megaRocketPrefab.GetComponent<ProjectileController>();
+            var ghostPrefab = PrefabAPI.InstantiateClone(projectileController.ghostPrefab, "MegaRocketGhost", false);
+            megaRocketPrefab.transform.localScale *= 20;
+            ghostPrefab.transform.localScale *= 20;
+            projectileController.ghostPrefab = ghostPrefab;
+
+            LoopSoundDef loopSoundDef = ScriptableObject.CreateInstance<LoopSoundDef>();
+            loopSoundDef.startSoundName = "Play_JinxRocketLoop";
+            loopSoundDef.stopSoundName = "Stop_JinxRocketLoop";
+            projectileController.flightSoundLoop = loopSoundDef;
+
+            BoxCollider boxCollider = megaRocketPrefab.GetComponent<BoxCollider>();
+            boxCollider.size = new Vector3(0.075f, 0.075f, 0.075f);
+
+            megaRocketPrefab.AddComponent<ProjectileImpactEventCaller>();
+            megaRocketPrefab.AddComponent<RocketJumpController>();
+        }
+
         private static void CreateZap()
         {
             zapPrefab = CloneProjectilePrefab("CaptainTazer", "JinxZapProjectile");
@@ -87,7 +136,6 @@ namespace JinxMod.Modules
             ImpactExplosion.destroyOnWorld = true;
             ImpactExplosion.lifetimeExpiredSound = Modules.Assets.CreateNetworkSoundEventDef("Play_JinxZapImpact");
             ImpactExplosion.blastRadius *= 6f;
-
         }
         private static void CreateBomb()
         {

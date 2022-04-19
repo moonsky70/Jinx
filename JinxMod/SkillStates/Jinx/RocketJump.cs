@@ -58,7 +58,7 @@ namespace JinxMod.Controllers
 
         private void OnDestroy()
         {
-            if (NetworkServer.active) PointSoundManager.EmitSoundServer(Modules.Assets.explosionHitSoundEvent.index, base.transform.position);
+            //if (NetworkServer.active) PointSoundManager.EmitSoundServer(Modules.Assets.explosionHitSoundEvent.index, base.transform.position);
             if (projectileImpactEventCaller)
             {
                 projectileImpactEventCaller.impactEvent.RemoveListener(new UnityAction<ProjectileImpactInfo>(this.OnImpact));

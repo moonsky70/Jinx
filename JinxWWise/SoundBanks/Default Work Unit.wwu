@@ -17,6 +17,7 @@
 						<ObjectRef Name="Play_JinxMegaRocketVO" ID="{43F6B16B-73CB-46CE-AC5D-BF7A5B423317}" WorkUnitID="{A71B4CB2-B72D-4E6D-8033-173A17284DA4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_JinxMegaRocketImpact" ID="{DAF77EB3-5901-48EC-A6B7-D247BFFABEAC}" WorkUnitID="{A71B4CB2-B72D-4E6D-8033-173A17284DA4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_JinxDeathVO" ID="{82D41D8C-5BCE-4903-A00C-69079D1E09FE}" WorkUnitID="{A71B4CB2-B72D-4E6D-8033-173A17284DA4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_JinxRocketLoop" ID="{FB4A2E20-BA05-49F2-B808-4F32A1D83526}" WorkUnitID="{A71B4CB2-B72D-4E6D-8033-173A17284DA4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_JinxZapImpact" ID="{20ED5DE1-1CA9-4AA3-8EB1-5F1706EB324D}" WorkUnitID="{A71B4CB2-B72D-4E6D-8033-173A17284DA4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_JinxJokeVO" ID="{F2D3FD98-4691-4C4C-A669-A84ED749D6BA}" WorkUnitID="{A71B4CB2-B72D-4E6D-8033-173A17284DA4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_JinxMegaRocketShootInitial" ID="{EA91ED18-4D75-4C55-AA53-0ADFE633767E}" WorkUnitID="{A71B4CB2-B72D-4E6D-8033-173A17284DA4}" Origin="Manual" Filter="7"/>

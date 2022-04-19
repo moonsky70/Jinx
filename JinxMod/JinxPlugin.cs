@@ -79,24 +79,7 @@ namespace JinxMod
                 float _level = Mathf.Floor(self.level / 4f);
                 if (self.HasBuff(Modules.Buffs.revdUp))
                 {
-                    self.attackSpeed += self.attackSpeed * (self.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient);
-                }
-
-                if (self.HasBuff(Modules.Buffs.lethalBuff))
-                {
-                    float count = self.GetBuffCount(Modules.Buffs.lethalBuff);
-                    self.attackSpeed += self.attackSpeed * (count * 0.10f);
-                }
-
-                if (self.HasBuff(Modules.Buffs.conquerorBuff))
-                {
-                    float count = self.GetBuffCount(Modules.Buffs.conquerorBuff);
-                    self.damage += count * (0.6f + (_level * 0.045f));
-                }
-
-                if (self.HasBuff(Modules.Buffs.movementSpeedBuff))
-                {
-                    self.moveSpeed += self.moveSpeed * (0.30f + (_level * 0.05f));
+                    self.attackSpeed *= 1 + ((self.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient));
                 }
             }
         }
