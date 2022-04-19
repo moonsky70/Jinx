@@ -8,8 +8,8 @@ namespace JinxMod.SkillStates
 {
     public class PowPow : BaseSkillState
     {
-        public static float damageCoefficient = 2f;
-        public static float procCoefficient = 1f;
+        public static float damageCoefficient = 1f;
+        public static float procCoefficient = .7f;
         public static float baseDuration = 1.0f;
         public static float force = 400f;
         public static float recoil = 1f;

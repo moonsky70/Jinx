@@ -25,7 +25,7 @@ namespace JinxMod.SkillStates
         {
             base.OnEnter();
             this.duration = FishBones.baseDuration / this.attackSpeedStat;
-            this.fireTime = 0.11f;
+            this.fireTime = 0.2f;
             base.characterBody.SetAimTimer(2f);
             this.animator = base.GetModelAnimator();
             this.rocketController = base.GetComponent<RocketController>();

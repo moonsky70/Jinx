@@ -12,7 +12,7 @@ namespace JinxMod.SkillStates
     {
         public static float damageCoefficient = 32f;
         public static float procCoefficient = 1f;
-        public static float baseDuration = 0.7f;
+        public static float baseDuration = 1.2f;
         public static float throwForce = 80f;
 
         private float duration;
@@ -25,7 +25,7 @@ namespace JinxMod.SkillStates
         {
             base.OnEnter();
             this.duration = MegaRocket.baseDuration;
-            this.fireTime = 0.26f;
+            this.fireTime = 0.53f;
             base.characterBody.SetAimTimer(2f);
             this.animator = base.GetModelAnimator();
             this.rocketController = base.GetComponent<RocketController>();

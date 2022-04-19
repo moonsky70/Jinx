@@ -52,7 +52,7 @@ namespace JinxMod.Modules
             ProjectileImpactExplosion ImpactExplosion = missilePrefab.AddComponent<ProjectileImpactExplosion>();
             InitializeImpactExplosion(ImpactExplosion);
 
-            ImpactExplosion.blastRadius = 16f;
+            ImpactExplosion.blastRadius = 10f;
             ImpactExplosion.destroyOnEnemy = true;
             ImpactExplosion.destroyOnWorld = true;
             ImpactExplosion.lifetime = 12f;
@@ -74,6 +74,16 @@ namespace JinxMod.Modules
             var ghostPrefab = PrefabAPI.InstantiateClone(projectileController.ghostPrefab, "MissileGhost", false);
             missilePrefab.transform.localScale *= 5;
             ghostPrefab.transform.localScale *= 5;
+
+            var Trail = ghostPrefab.GetComponentInChildren<Transform>().Find("Trail");
+            Trail.transform.localScale *= 2.5f;
+            TrailRenderer trailRenderer = Trail.GetComponent<TrailRenderer>();
+            trailRenderer.time = 1f;
+            trailRenderer.startWidth = 2.5f;
+            trailRenderer.endWidth = 2.5f;
+            var Flare = ghostPrefab.GetComponentInChildren<Transform>().Find("Flare");
+            Flare.transform.localScale *= 2.5f;
+
             projectileController.ghostPrefab = ghostPrefab;
 
             BoxCollider boxCollider = missilePrefab.GetComponent<BoxCollider>();
@@ -92,7 +102,7 @@ namespace JinxMod.Modules
             ProjectileImpactExplosion ImpactExplosion = megaRocketPrefab.AddComponent<ProjectileImpactExplosion>();
             InitializeImpactExplosion(ImpactExplosion);
 
-            ImpactExplosion.blastRadius = 64f;
+            ImpactExplosion.blastRadius = 32f;
             ImpactExplosion.destroyOnEnemy = true;
             ImpactExplosion.destroyOnWorld = true;
             ImpactExplosion.lifetime = 12f;
@@ -114,6 +124,16 @@ namespace JinxMod.Modules
             var ghostPrefab = PrefabAPI.InstantiateClone(projectileController.ghostPrefab, "MegaRocketGhost", false);
             megaRocketPrefab.transform.localScale *= 20;
             ghostPrefab.transform.localScale *= 20;
+
+            var Trail = ghostPrefab.GetComponentInChildren<Transform>().Find("Trail");
+            Trail.transform.localScale *= 10f;
+            TrailRenderer trailRenderer = Trail.GetComponent<TrailRenderer>();
+            trailRenderer.time = 1f;
+            trailRenderer.startWidth = 10f;
+            trailRenderer.endWidth = 10f;
+            var Flare = ghostPrefab.GetComponentInChildren<Transform>().Find("Flare");
+            Flare.transform.localScale *= 10f;
+
             projectileController.ghostPrefab = ghostPrefab;
 
             LoopSoundDef loopSoundDef = ScriptableObject.CreateInstance<LoopSoundDef>();
