@@ -18,7 +18,7 @@ namespace JinxMod.Controller
         {
             this.isRocket = false;
             this.body = base.GetComponent<CharacterBody>();
-            random = UnityEngine.Random.Range(30 * this.body.attackSpeed, 60 * this.body.attackSpeed);
+            random = UnityEngine.Random.Range(15 * this.body.attackSpeed, 30 * this.body.attackSpeed);
         }
 
         public void Update()
@@ -27,7 +27,7 @@ namespace JinxMod.Controller
             {
                 attacks = 0;
                 Util.PlaySound("Play_JinxAttackVO", base.gameObject);
-                random = UnityEngine.Random.Range(30 * this.body.attackSpeed, 60 * this.body.attackSpeed);
+                random = UnityEngine.Random.Range(15 * this.body.attackSpeed, 30 * this.body.attackSpeed);
             }
         }
     }

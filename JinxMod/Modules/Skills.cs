@@ -30,10 +30,6 @@ namespace JinxMod.Modules
             skillLocator.utility = CreateGenericSkillWithSkillFamily(targetPrefab, "Utility");
             skillLocator.special = CreateGenericSkillWithSkillFamily(targetPrefab, "Special");
 
-            KeyStoneHandler keyStoneHandler = targetPrefab.GetComponent<KeyStoneHandler>();
-            keyStoneHandler.keyStone = CreateGenericSkillWithSkillFamily(targetPrefab, "KeyStone");
-
-
             string prefix = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_";
 
             skillLocator.passiveSkill.enabled = true;
@@ -97,11 +93,6 @@ namespace JinxMod.Modules
         public static void AddSpecialSkills(GameObject targetPrefab, params SkillDef[] skillDefs)
         {
             AddSkillsToFamily(targetPrefab.GetComponent<SkillLocator>().special.skillFamily, skillDefs);
-        }
-
-        public static void AddKeyStone(GameObject targetPrefab, params SkillDef[] skillDefs)
-        {
-            AddSkillsToFamily(targetPrefab.GetComponent<KeyStoneHandler>().keyStone.skillFamily, skillDefs);
         }
 
         /// <summary>

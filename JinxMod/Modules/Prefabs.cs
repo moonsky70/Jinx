@@ -106,7 +106,6 @@ namespace JinxMod.Modules {
 
             bodyComponent.isChampion = false;
 
-            newBodyPrefab.AddComponent<KeyStoneHandler>();
             #endregion
 
             SetupCameraTargetParams(newBodyPrefab, bodyInfo);
