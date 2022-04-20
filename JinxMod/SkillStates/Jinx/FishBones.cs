@@ -5,12 +5,13 @@ using R2API;
 using RoR2;
 using RoR2.Projectile;
 using UnityEngine;
+using UnityEngine.Networking;
 
 namespace JinxMod.SkillStates
 {
     public class FishBones : BaseSkillState
     {
-        public static float damageCoefficient = 8f;
+        public static float damageCoefficient = 6f;
         public static float procCoefficient = 1f;
         public static float baseDuration = 2.00f;
         public static float throwForce = 80f;
@@ -19,6 +20,7 @@ namespace JinxMod.SkillStates
         private float fireTime;
         private bool hasFired;
         private Animator animator;
+        private RevdUpController revdUpController;
         private RocketController rocketController;
 
         public override void OnEnter()
@@ -28,7 +30,13 @@ namespace JinxMod.SkillStates
             this.fireTime = 0.2f;
             base.characterBody.SetAimTimer(2f);
             this.animator = base.GetModelAnimator();
+            this.revdUpController = base.GetComponent<RevdUpController>();
             this.rocketController = base.GetComponent<RocketController>();
+
+
+            this.revdUpController.RemoveStack();
+
+
             if (this.rocketController)
             {
                 this.rocketController.attacks++;

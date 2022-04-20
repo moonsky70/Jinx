@@ -17,6 +17,8 @@ namespace JinxMod.Modules
 
         internal static GameObject bombExplosionEffect;
 
+        internal static GameObject megaExplosionEffect;
+
         // particle effects
 
         // networked hit sounds
@@ -84,7 +86,9 @@ namespace JinxMod.Modules
                 return;
             }
 
-            bombExplosionEffect = LoadEffect("BombExplosionEffect", "Play_JinxFishBonesImpact");
+            bombExplosionEffect = LoadEffect("BazookaExplosionEffect", "Play_JinxFishBonesImpact");
+
+            megaExplosionEffect = LoadEffect("BazookaExplosionEffect Variant", "Play_JinxMegaRocketImpact");
 
             explosionHitSoundEvent = CreateNetworkSoundEventDef("Play_JinxFishBonesImpact");
 

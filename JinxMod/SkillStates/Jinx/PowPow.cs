@@ -37,10 +37,7 @@ namespace JinxMod.SkillStates
             this.muzzleString = "PowPowMuzzle";
             this.animator = base.GetModelAnimator();
             this.revdUpController = base.GetComponent<RevdUpController>();
-            if (NetworkServer.active)
-            {
-                this.revdUpController.AddStack();
-            }
+            this.revdUpController.AddStack();
 
             if (this.animator.GetBool("isMoving") || (!(this.animator.GetBool("isGrounded"))))
             {

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 820711210
+CRC: 2092435377
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e1a79ba6816690cedd3e21ca58f872f3
+    Hash: 63c8090bbb62e0931872884df4feaaff
   TypeTreeHash:
     serializedVersion: 2
     Hash: 85244ba353302c9e8cb2950661b0bbd8
@@ -56,11 +56,10 @@ Assets:
 - Assets/Jinx/Icons/Rev_d_up.png
 - Assets/Jinx/VFX/Materials/matAnimeShapes.mat
 - Assets/Jinx/CustomAnimations/Falling Idle.anim
-- Assets/Jinx/VFX/HenryFistSwingEffect.prefab
 - Assets/Jinx/VFX/BombExplosionEffect.prefab
 - Assets/Jinx/VFX/Textures/texFire.tga
-- Assets/Jinx/VFX/ImpactHenrySlash.prefab
 - Assets/Jinx/VFX/HenryBazookaExplosionEffect.prefab
+- Assets/Jinx/VFX/BazookaExplosionEffect Variant.prefab
 - Assets/Jinx/VFX/Textures/texHitSpark.png
 - Assets/Jinx/Icons/Pow-Pow.png
 - Assets/Jinx/VFX/Textures/texSmoke.png
@@ -81,7 +80,6 @@ Assets:
 - Assets/Jinx/CustomAnimations/GatOverrideController.overrideController
 - Assets/Jinx/VFX/Materials/matSwingEffect.mat
 - Assets/Jinx/VFX/Materials/matHenrySwing2.mat
-- Assets/Jinx/VFX/ImpactHenryPunch.prefab
 - Assets/Jinx/VFX/Materials/matHitSparkPunch.mat
 - Assets/Jinx/mdlJinx.prefab
 - Assets/Jinx/VFX/Materials/matSmoke.mat
@@ -89,7 +87,6 @@ Assets:
 - Assets/Jinx/VFX/Textures/texLightning.tif
 - Assets/Jinx/VFX/Materials/matSwingShadow.mat
 - Assets/Jinx/Icons/JinxR.png
-- Assets/Jinx/VFX/HenryDustEffect.prefab
 - Assets/Jinx/VFX/Textures/texEmbers.png
 - Assets/Jinx/Model/matJinx.mat
 - Assets/Jinx/VFX/Materials/matDust.mat
@@ -101,10 +98,10 @@ Assets:
 - Assets/Jinx/Icons/JinxW.png
 - Assets/Jinx/VFX/Materials/matHitSpark.mat
 - Assets/Jinx/VFX/Textures/texSwingEffect.png
+- Assets/Jinx/VFX/BazookaExplosionEffect.prefab
 - Assets/Jinx/Model/skin0.png
 - Assets/Jinx/Icons/Lethal_Tempo_rune.png
 - Assets/Jinx/Model/Jinx Jump and fall.fbx
-- Assets/Jinx/VFX/HenrySwordSwingEffect.prefab
 - Assets/Jinx/VFX/Mesh/meshBoxingGlove.mesh
 - Assets/Jinx/VFX/Textures/texPunchImpactShadow.png
 - Assets/Jinx/VFX/Materials/matFistSwing.mat
@@ -117,6 +114,5 @@ Assets:
 - Assets/Jinx/VFX/Textures/texFistSwing.png
 - Assets/Jinx/Icons/Conqueror_rune.png
 - Assets/Jinx/CustomAnimations/animJinx.controller
-- Assets/Jinx/VFX/FistBarrageEffect.prefab
 - Assets/Jinx/VFX/Mesh/meshSwing.asset
 Dependencies: []

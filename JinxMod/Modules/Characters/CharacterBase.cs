@@ -42,7 +42,7 @@ namespace JinxMod.Modules.Characters
             InitializeHurtboxes();
 
             InitializeSkins();
-            InitializeItemDisplays();
+            //InitializeItemDisplays();
 
             InitializeDoppelganger("Merc");
         }

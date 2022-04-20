@@ -52,12 +52,11 @@ namespace JinxMod.Modules
             ProjectileImpactExplosion ImpactExplosion = missilePrefab.AddComponent<ProjectileImpactExplosion>();
             InitializeImpactExplosion(ImpactExplosion);
 
-            ImpactExplosion.blastRadius = 10f;
+            ImpactExplosion.blastRadius = 8f;
             ImpactExplosion.destroyOnEnemy = true;
             ImpactExplosion.destroyOnWorld = true;
             ImpactExplosion.lifetime = 12f;
-            ImpactExplosion.impactEffect = Modules.Assets.bombExplosionEffect;
-            //ImpactExplosion.lifetimeExpiredSound = Modules.Assets.explosionHitSoundEvent;
+            ImpactExplosion.explosionEffect = Modules.Assets.bombExplosionEffect;
             ImpactExplosion.timerAfterImpact = true;
             ImpactExplosion.lifetimeAfterImpact = 0.1f;
 
@@ -90,7 +89,8 @@ namespace JinxMod.Modules
             boxCollider.size = new Vector3(0.075f, 0.075f, 0.075f);
 
             missilePrefab.AddComponent<ProjectileImpactEventCaller>();
-            missilePrefab.AddComponent<RocketJumpController>();
+            RocketJumpController rocketJumpController = missilePrefab.AddComponent<RocketJumpController>();
+            rocketJumpController.explosionForce = 6000f;
         }
 
         private static void CreateMegaRocket()
@@ -102,12 +102,11 @@ namespace JinxMod.Modules
             ProjectileImpactExplosion ImpactExplosion = megaRocketPrefab.AddComponent<ProjectileImpactExplosion>();
             InitializeImpactExplosion(ImpactExplosion);
 
-            ImpactExplosion.blastRadius = 32f;
+            ImpactExplosion.blastRadius = 16f;
             ImpactExplosion.destroyOnEnemy = true;
             ImpactExplosion.destroyOnWorld = true;
             ImpactExplosion.lifetime = 12f;
-            ImpactExplosion.impactEffect = Modules.Assets.bombExplosionEffect;
-            ImpactExplosion.lifetimeExpiredSound = Modules.Assets.explosionHitSoundEvent;
+            ImpactExplosion.explosionEffect = Modules.Assets.megaExplosionEffect;
             ImpactExplosion.timerAfterImpact = true;
             ImpactExplosion.lifetimeAfterImpact = 0.1f;
 
@@ -145,7 +144,9 @@ namespace JinxMod.Modules
             boxCollider.size = new Vector3(0.075f, 0.075f, 0.075f);
 
             megaRocketPrefab.AddComponent<ProjectileImpactEventCaller>();
-            megaRocketPrefab.AddComponent<RocketJumpController>();
+            RocketJumpController rocketJumpController = megaRocketPrefab.AddComponent<RocketJumpController>();
+            rocketJumpController.explosionForce = 12000f;
+
         }
 
         private static void CreateZap()

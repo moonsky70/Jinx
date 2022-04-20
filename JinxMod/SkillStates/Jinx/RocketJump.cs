@@ -14,9 +14,12 @@ namespace JinxMod.Controllers
     public class RocketJumpController : MonoBehaviour
     {
         private ProjectileController projectileController;
+        private ProjectileImpactExplosion projectileImpactExplosion;
         public Rigidbody rigidbody;
         public ProjectileImpactEventCaller projectileImpactEventCaller;
         private RocketJumpController.OwnerInfo owner;
+        public float explosionForce = 4000f;
+        public float explosionRadius;
         private struct OwnerInfo
         {
             public OwnerInfo(GameObject ownerGameObject)
@@ -45,6 +48,7 @@ namespace JinxMod.Controllers
         private void Awake()
         {
             this.projectileController = base.GetComponent<ProjectileController>();
+            this.projectileImpactExplosion = base.GetComponent<ProjectileImpactExplosion>();
             this.rigidbody = base.GetComponent<Rigidbody>();
             if (NetworkServer.active)
             {
@@ -54,6 +58,7 @@ namespace JinxMod.Controllers
                     projectileImpactEventCaller.impactEvent.AddListener(new UnityAction<ProjectileImpactInfo>(this.OnImpact));
                 }
             }
+            this.explosionRadius = this.projectileImpactExplosion.blastRadius;
         }
 
         private void OnDestroy()
@@ -71,7 +76,7 @@ namespace JinxMod.Controllers
                 return;
             }
 
-            Collider[] objectsInRange = Physics.OverlapSphere(projectileImpactInfo.estimatedPointOfImpact, 25f);
+            Collider[] objectsInRange = Physics.OverlapSphere(projectileImpactInfo.estimatedPointOfImpact, explosionRadius);
 
             foreach (Collider collision in objectsInRange)
             {
@@ -80,7 +85,7 @@ namespace JinxMod.Controllers
                 {
                     this.owner.characterMotor.onHitGroundServer += CharacterMotor_onHitGroundServer;
                     this.owner.characterBody.bodyFlags |= CharacterBody.BodyFlags.IgnoreFallDamage;
-                    AddExplosionForce(characterBody, 4000f, projectileImpactInfo.estimatedPointOfImpact, 25f, 0f);
+                    AddExplosionForce(characterBody, explosionForce, projectileImpactInfo.estimatedPointOfImpact, explosionRadius, 0f);
                 }
             }
         }
