@@ -19,7 +19,7 @@ namespace JinxMod.Controllers
         public ProjectileImpactEventCaller projectileImpactEventCaller;
         private RocketJumpController.OwnerInfo owner;
         public float explosionForce = 4000f;
-        public float explosionRadius;
+        public float explosionRadius = 8f;
         private struct OwnerInfo
         {
             public OwnerInfo(GameObject ownerGameObject)
@@ -50,6 +50,7 @@ namespace JinxMod.Controllers
             this.projectileController = base.GetComponent<ProjectileController>();
             this.projectileImpactExplosion = base.GetComponent<ProjectileImpactExplosion>();
             this.rigidbody = base.GetComponent<Rigidbody>();
+            this.explosionRadius = this.projectileImpactExplosion.blastRadius;
             if (NetworkServer.active)
             {
                 this.projectileImpactEventCaller = GetComponent<ProjectileImpactEventCaller>();
@@ -58,12 +59,10 @@ namespace JinxMod.Controllers
                     projectileImpactEventCaller.impactEvent.AddListener(new UnityAction<ProjectileImpactInfo>(this.OnImpact));
                 }
             }
-            this.explosionRadius = this.projectileImpactExplosion.blastRadius;
         }
 
         private void OnDestroy()
         {
-            //if (NetworkServer.active) PointSoundManager.EmitSoundServer(Modules.Assets.explosionHitSoundEvent.index, base.transform.position);
             if (projectileImpactEventCaller)
             {
                 projectileImpactEventCaller.impactEvent.RemoveListener(new UnityAction<ProjectileImpactInfo>(this.OnImpact));
@@ -71,6 +70,11 @@ namespace JinxMod.Controllers
         }
         private void OnImpact(ProjectileImpactInfo projectileImpactInfo)
         {
+            if (this.owner.characterBody.bodyFlags.HasFlag(CharacterBody.BodyFlags.IgnoreFallDamage))
+            {
+                return;
+            }
+
             if (projectileImpactInfo.collider.transform.gameObject.layer != LayerIndex.world.intVal)
             {
                 return;

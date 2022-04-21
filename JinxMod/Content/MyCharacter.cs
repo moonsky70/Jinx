@@ -53,7 +53,7 @@ namespace JinxMod.Modules.Survivors
 
         public override Type characterMainState => typeof(EntityStates.GenericCharacterMain);
 
-        public override ItemDisplaysBase itemDisplays => new JinxItemDisplays();
+        //public override ItemDisplaysBase itemDisplays => new JinxItemDisplays();
 
                                                                           //if you have more than one character, easily create a config to enable/disable them like this
         public override ConfigEntry<bool> characterEnabledConfig => null; //Modules.Config.CharacterEnableConfig(bodyName);

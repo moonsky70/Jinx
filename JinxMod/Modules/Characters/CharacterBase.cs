@@ -18,7 +18,7 @@ namespace JinxMod.Modules.Characters
         public abstract Type characterMainState { get; }
         public virtual Type characterSpawnState { get; }
 
-        public abstract ItemDisplaysBase itemDisplays { get; }
+        //public abstract ItemDisplaysBase itemDisplays { get; }
 
         public virtual GameObject bodyPrefab { get; set; }
         public virtual CharacterModel characterBodyModel { get; set; }
@@ -92,15 +92,15 @@ namespace JinxMod.Modules.Characters
 
             characterBodyModel.itemDisplayRuleSet = itemDisplayRuleSet;
 
-            if (itemDisplays != null)
+            //if (itemDisplays != null)
             {
-                RoR2.RoR2Application.onLoad += SetItemDisplays;
+                //RoR2.RoR2Application.onLoad += SetItemDisplays;
             }
         }
 
         public void SetItemDisplays()
         {
-            itemDisplays.SetItemDIsplays(characterBodyModel.itemDisplayRuleSet);
+            //itemDisplays.SetItemDIsplays(characterBodyModel.itemDisplayRuleSet);
         }
 
     }

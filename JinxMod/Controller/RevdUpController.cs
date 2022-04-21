@@ -20,28 +20,11 @@ namespace JinxMod.Controller
         {
             this.body = base.GetComponent<CharacterBody>();
         }
-
-        public void AddStack()
+        public void ResetStopWatch()
         {
-            if (NetworkServer.active)
-            {
-                if (this.body.GetBuffCount(revdUp) < 3)
-                {
-                    this.body.AddBuff(revdUp);
-                    stopwatch = 0;
-                }
-
-            }
+            stopwatch = 0f;
         }
 
-        public void RemoveStack()
-        {
-            if (NetworkServer.active)
-            {
-                this.body.RemoveBuff(revdUp);
-                stopwatch = 0;
-            }
-        }
         private void FixedUpdate()
         {
             if (this.body.GetBuffCount(revdUp) > 0)
@@ -52,7 +35,11 @@ namespace JinxMod.Controller
                 }
                 if (stopwatch > duration)
                 {
-                    RemoveStack();
+                    if (NetworkServer.active)
+                    {
+                        ResetStopWatch();
+                        this.body.RemoveBuff(Modules.Buffs.revdUp);
+                    }
                 }
             }
         }

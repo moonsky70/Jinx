@@ -28,15 +28,14 @@ namespace JinxMod.SkillStates
             base.OnEnter();
             this.duration = FishBones.baseDuration / this.attackSpeedStat;
             this.fireTime = 0.2f;
+            if (this.duration < this.fireTime)
+            {
+                this.fireTime = this.duration * 0.2f;
+            }
             base.characterBody.SetAimTimer(2f);
             this.animator = base.GetModelAnimator();
             this.revdUpController = base.GetComponent<RevdUpController>();
             this.rocketController = base.GetComponent<RocketController>();
-
-
-            this.revdUpController.RemoveStack();
-
-
             if (this.rocketController)
             {
                 this.rocketController.attacks++;
@@ -49,6 +48,15 @@ namespace JinxMod.SkillStates
             else if ((!(this.animator.GetBool("isMoving"))) && this.animator.GetBool("isGrounded"))
             {
                 base.PlayAnimation("FullBody, Override", "fishbonesattack");
+            }
+
+            if (base.characterBody.GetBuffCount(Modules.Buffs.revdUp) > 0)
+            {
+                this.revdUpController.ResetStopWatch();
+                if (NetworkServer.active)
+                {
+                    base.characterBody.RemoveBuff(Modules.Buffs.revdUp);
+                }
             }
 
         }

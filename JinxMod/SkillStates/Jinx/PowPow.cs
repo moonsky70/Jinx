@@ -8,7 +8,7 @@ namespace JinxMod.SkillStates
 {
     public class PowPow : BaseSkillState
     {
-        public static float damageCoefficient = 1f;
+        public static float damageCoefficient = 2f;
         public static float procCoefficient = .7f;
         public static float baseDuration = 1.0f;
         public static float force = 400f;
@@ -37,7 +37,6 @@ namespace JinxMod.SkillStates
             this.muzzleString = "PowPowMuzzle";
             this.animator = base.GetModelAnimator();
             this.revdUpController = base.GetComponent<RevdUpController>();
-            this.revdUpController.AddStack();
 
             if (this.animator.GetBool("isMoving") || (!(this.animator.GetBool("isGrounded"))))
             {
@@ -53,6 +52,16 @@ namespace JinxMod.SkillStates
             {
                 this.rocketController.attacks++;
             }
+
+            if (base.characterBody.GetBuffCount(Modules.Buffs.revdUp) < 3)
+            {
+                this.revdUpController.ResetStopWatch();
+                if (NetworkServer.active)
+                {
+                    base.characterBody.AddBuff(Modules.Buffs.revdUp);
+                }
+            }
+
         }
 
         public override void OnExit()

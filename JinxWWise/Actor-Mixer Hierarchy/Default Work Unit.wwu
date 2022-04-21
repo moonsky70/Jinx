@@ -2104,7 +2104,13 @@
 											</ChildrenList>
 										</BlendContainer>
 										<RandomSequenceContainer Name="JinxMegaRocketImpact" ID="{33A91052-BDB4-4A0F-83BF-1B1A49671E43}" ShortID="558803506">
+											<PropertyList>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="New Attenuation" ID="{1CBED043-7F65-4DC9-8746-81CC3A621723}" WorkUnitID="{4D589691-DE7C-43E5-B97C-3605DB3CD79E}"/>
+												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7644C83A-CFDC-47C5-85D1-689579C9C42E}"/>
 												</Reference>

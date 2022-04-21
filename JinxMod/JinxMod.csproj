@@ -8,6 +8,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Content\ItemDisplays\HenryItemDisplays.cs" />
+	  <Compile Remove="Modules\ItemDisplays.cs" />
+	  <Compile Remove="Modules\ItemDisplaysBase.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<None Remove="jinx" />
 		<None Remove="JinxBank.bnk" />
 		<None Remove="Modules\Characters\Jinx.cs~RF6221a098.TMP" />
@@ -34,6 +40,10 @@
 		<Reference Include="MMHOOK_RoR2">
 			<HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Risk of Rain 2\BepInEx\plugins\MMHOOK\MMHOOK_RoR2.dll</HintPath>
 		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Content\ItemDisplays\" />
 	</ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
