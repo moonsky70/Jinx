@@ -1,8 +1,11 @@
 ﻿using EntityStates;
 using JinxMod.Controller;
 using RoR2;
+using RoR2.Audio;
+using System;
 using UnityEngine;
 using UnityEngine.Networking;
+using static RoR2.BulletAttack;
 
 namespace JinxMod.SkillStates
 {
@@ -55,12 +58,12 @@ namespace JinxMod.SkillStates
 
             if (base.characterBody.GetBuffCount(Modules.Buffs.revdUp) < 3)
             {
-                this.revdUpController.ResetStopWatch();
                 if (NetworkServer.active)
                 {
                     base.characterBody.AddBuff(Modules.Buffs.revdUp);
                 }
             }
+            this.revdUpController.ResetStopWatch();
 
         }
 
@@ -107,8 +110,22 @@ namespace JinxMod.SkillStates
                     spreadYawScale = 0f,
                     queryTriggerInteraction = QueryTriggerInteraction.UseGlobal,
                     hitEffectPrefab = EntityStates.Commando.CommandoWeapon.FirePistol2.hitEffectPrefab,
+                    hitCallback = bulletHitCallback,
                 }.Fire();
             }
+        }
+
+        private bool bulletHitCallback(BulletAttack bulletAttack, ref BulletHit hitInfo)
+        {
+            var result = BulletAttack.defaultHitCallback(bulletAttack, ref hitInfo);
+            if (NetworkServer.active)
+            {
+                if (hitInfo.hitHurtBox)
+                {
+                    PointSoundManager.EmitSoundServer(Modules.Assets.bulletHitSoundEvent.index, hitInfo.hitHurtBox.transform.position);
+                }
+            }
+            return result;
         }
 
         public override void FixedUpdate()
