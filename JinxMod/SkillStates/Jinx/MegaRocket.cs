@@ -10,7 +10,7 @@ namespace JinxMod.SkillStates
 {
     public class MegaRocket : BaseSkillState
     {
-        public static float damageCoefficient = 27f;
+        public static float damageCoefficient = 16f;
         public static float procCoefficient = 1f;
         public static float baseDuration = 1.0f;
         public static float throwForce = 80f;
@@ -35,7 +35,7 @@ namespace JinxMod.SkillStates
             }
             base.PlayAnimation("FullBody, Override", "megarocket");
             Util.PlaySound("Play_JinxMegaRocketShootInitial", base.gameObject);
-
+            Util.PlaySound("Play_JinxMegaRocketVO", base.gameObject);
         }
 
         public override void OnExit()

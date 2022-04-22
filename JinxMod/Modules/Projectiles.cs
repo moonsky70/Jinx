@@ -115,6 +115,8 @@ namespace JinxMod.Modules
             ImpactExplosion.timerAfterImpact = true;
             ImpactExplosion.lifetimeAfterImpact = 0.1f;
 
+            megaRocketPrefab.AddComponent<JinxMegaImpact>();
+
             ProjectileSimple projectileSimple = megaRocketPrefab.AddComponent<ProjectileSimple>();
             projectileSimple.desiredForwardSpeed = 90f;
             projectileSimple.oscillate = false;
@@ -126,17 +128,17 @@ namespace JinxMod.Modules
 
             ProjectileController projectileController = megaRocketPrefab.GetComponent<ProjectileController>();
             var ghostPrefab = PrefabAPI.InstantiateClone(projectileController.ghostPrefab, "MegaRocketGhost", false);
-            megaRocketPrefab.transform.localScale *= 20;
-            ghostPrefab.transform.localScale *= 20;
+            megaRocketPrefab.transform.localScale *= 10;
+            ghostPrefab.transform.localScale *= 10;
 
             var Trail = ghostPrefab.GetComponentInChildren<Transform>().Find("Trail");
-            Trail.transform.localScale *= 10f;
+            Trail.transform.localScale *= 7.5f;
             TrailRenderer trailRenderer = Trail.GetComponent<TrailRenderer>();
             trailRenderer.time = 1f;
-            trailRenderer.startWidth = 10f;
-            trailRenderer.endWidth = 10f;
+            trailRenderer.startWidth = 7.5f;
+            trailRenderer.endWidth = 7.5f;
             var Flare = ghostPrefab.GetComponentInChildren<Transform>().Find("Flare");
-            Flare.transform.localScale *= 10f;
+            Flare.transform.localScale *= 7.5f;
 
             projectileController.ghostPrefab = ghostPrefab;
 
