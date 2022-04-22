@@ -26,7 +26,7 @@ namespace JinxMod.Modules.Survivors
             subtitleNameToken = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_SUBTITLE",
 
             characterPortrait = Assets.mainAssetBundle.LoadAsset<Texture>("JinxSquareTex"),
-            bodyColor = Color.white,
+            bodyColor = Color.cyan,
 
             crosshair = Modules.Assets.LoadCrosshair("Standard"),
             podPrefab = RoR2.LegacyResourcesAPI.Load<GameObject>("Prefabs/NetworkedObjects/SurvivorPod"),
@@ -34,6 +34,8 @@ namespace JinxMod.Modules.Survivors
             maxHealth = 110f,
             healthRegen = 1f,
             armor = 0f,
+
+            damage = 12f,
 
             jumpCount = 1,
 

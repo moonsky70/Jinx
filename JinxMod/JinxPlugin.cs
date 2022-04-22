@@ -86,16 +86,12 @@ namespace JinxMod
         private void CharacterBody_RecalculateStats(On.RoR2.CharacterBody.orig_RecalculateStats orig, CharacterBody self)
         {
             orig(self);
-
-            // a simple stat hook, adds armor after stats are recalculated
             if (self)
             {
-                float _level = Mathf.Floor(self.level / 4f);
                 if (self.HasBuff(Modules.Buffs.revdUp))
                 {
                     self.attackSpeed *= 1 + ((self.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient));
                 }
-
                 GetExcitedController getExcitedController = self.GetComponent<GetExcitedController>();
                 if (getExcitedController && self.HasBuff(Modules.Buffs.getExcitedSpeedBuff))
                 {

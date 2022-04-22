@@ -37,7 +37,7 @@ namespace JinxMod.Controller
         private void ResetTimer()
         {
             stopwatch = 0f;
-            currentDuration = 6f;
+            currentDuration = baseDuration;
         }
 
         private void FixedUpdate()

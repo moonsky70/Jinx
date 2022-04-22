@@ -11,7 +11,7 @@ namespace JinxMod.SkillStates
 {
     public class FishBones : BaseSkillState
     {
-        public static float damageCoefficient = 6f;
+        public static float damageCoefficient = 6.5f;
         public static float procCoefficient = 1f;
         public static float baseDuration = 1.50f;
         public static float throwForce = 80f;
@@ -101,7 +101,7 @@ namespace JinxMod.SkillStates
                 owner = this.characterBody.gameObject,
                 damage = this.characterBody.damage * FishBones.damageCoefficient,
                 crit = isCrit,
-                force = 200f,
+                force = 600f,
                 damageColorIndex = DamageColorIndex.Default
             };
             ProjectileManager.instance.FireProjectile(fireProjectileInfo);

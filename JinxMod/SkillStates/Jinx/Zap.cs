@@ -8,7 +8,7 @@ namespace JinxMod.SkillStates
 {
     public class Zap : BaseSkillState
     {
-        public static float damageCoefficient = 4f;
+        public static float damageCoefficient = 10f;
         public static float procCoefficient = 1f;
         public static float baseDuration = 1.18f;
         public static float throwForce = 80f;

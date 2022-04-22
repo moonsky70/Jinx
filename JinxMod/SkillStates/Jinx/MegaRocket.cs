@@ -10,7 +10,7 @@ namespace JinxMod.SkillStates
 {
     public class MegaRocket : BaseSkillState
     {
-        public static float damageCoefficient = 32f;
+        public static float damageCoefficient = 27f;
         public static float procCoefficient = 1f;
         public static float baseDuration = 1.0f;
         public static float throwForce = 80f;
@@ -79,7 +79,7 @@ namespace JinxMod.SkillStates
                 owner = this.characterBody.gameObject,
                 damage = this.characterBody.damage * MegaRocket.damageCoefficient,
                 crit = isCrit,
-                force = 200f,
+                force = 1200f,
                 damageColorIndex = DamageColorIndex.Default
             };
             ProjectileManager.instance.FireProjectile(fireProjectileInfo);
