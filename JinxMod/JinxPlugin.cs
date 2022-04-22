@@ -67,6 +67,20 @@ namespace JinxMod
         {
             // run hooks here, disabling one is as simple as commenting out the line
             On.RoR2.CharacterBody.RecalculateStats += CharacterBody_RecalculateStats;
+            RoR2.GlobalEventManager.onCharacterDeathGlobal += GlobalEventManager_onCharacterDeathGlobal;
+        }
+
+        private void GlobalEventManager_onCharacterDeathGlobal(DamageReport damageReport)
+        {
+            if (damageReport is null) return;
+            if (damageReport.victimBody is null) return;
+            if (damageReport.attackerBody is null) return;
+
+            if (damageReport.victimTeamIndex != TeamIndex.Player && damageReport.attackerBody.bodyIndex == BodyCatalog.FindBodyIndex("JinxBody") && (damageReport.victimIsChampion || damageReport.victimIsBoss || damageReport.victimIsElite))
+            {
+                GetExcitedController getExcitedController = damageReport.attackerBody.GetComponent<GetExcitedController>();
+                getExcitedController.GetExcited();
+            }
         }
 
         private void CharacterBody_RecalculateStats(On.RoR2.CharacterBody.orig_RecalculateStats orig, CharacterBody self)
@@ -80,6 +94,14 @@ namespace JinxMod
                 if (self.HasBuff(Modules.Buffs.revdUp))
                 {
                     self.attackSpeed *= 1 + ((self.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient));
+                }
+
+                GetExcitedController getExcitedController = self.GetComponent<GetExcitedController>();
+                if (getExcitedController && self.HasBuff(Modules.Buffs.getExcitedSpeedBuff))
+                {
+                    var currentDuration = getExcitedController.currentDuration;
+                    self.moveSpeed *= (1 + (currentDuration * .125f));
+                    self.attackSpeed *= 1.25f;
                 }
             }
         }

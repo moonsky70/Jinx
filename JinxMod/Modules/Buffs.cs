@@ -15,6 +15,8 @@ namespace JinxMod.Modules
         internal static BuffDef electrocuteDebuff;
         internal static BuffDef lethalBuff;
         internal static BuffDef movementSpeedBuff;
+        internal static BuffDef getExcitedSpeedBuff;
+
 
         internal static BuffDef phaseRushDebuff;
         internal static void RegisterBuffs()
@@ -31,6 +33,8 @@ namespace JinxMod.Modules
             electrocuteDebuff = AddNewBuff("ElectrocuteDebuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Electrocute_rune"), Color.white, true, true);
 
             movementSpeedBuff = AddNewBuff("MovementSpeedBuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Phase_Rush_rune"), Color.white, true, false);
+
+            getExcitedSpeedBuff = AddNewBuff("GetExcitedMovementSpeedBuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Jinx_Passive"), Color.white, true, false);
 
         }
 

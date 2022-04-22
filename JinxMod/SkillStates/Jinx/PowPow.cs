@@ -35,7 +35,7 @@ namespace JinxMod.SkillStates
         {
             base.OnEnter();
             this.duration = PowPow.baseDuration / this.attackSpeedStat;
-            this.fireTime = 0.2f * this.duration;
+            this.fireTime = 0.1f * this.duration;
             base.characterBody.SetAimTimer(2f);
             this.muzzleString = "PowPowMuzzle";
             this.animator = base.GetModelAnimator();
@@ -64,7 +64,6 @@ namespace JinxMod.SkillStates
                 }
             }
             this.revdUpController.ResetStopWatch();
-
         }
 
         public override void OnExit()
@@ -131,11 +130,11 @@ namespace JinxMod.SkillStates
         public override void FixedUpdate()
         {
             base.FixedUpdate();
-            if (bulletStopWatch < this.fireTime / 3f)
+            if (bulletStopWatch < this.fireTime / bulletCount)
             {
                 bulletStopWatch += Time.fixedDeltaTime;
             }
-            if (base.fixedAge >= this.fireTime && bulletStopWatch > this.fireTime / 3f && bulletCount > 0)
+            if (base.fixedAge >= this.fireTime && bulletStopWatch > this.fireTime / bulletCount && bulletCount > 0)
             {
                 bulletStopWatch = 0f;
                 bulletCount--;

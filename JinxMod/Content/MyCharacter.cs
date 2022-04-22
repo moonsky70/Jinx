@@ -25,7 +25,7 @@ namespace JinxMod.Modules.Survivors
             bodyNameToken = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_NAME",
             subtitleNameToken = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_SUBTITLE",
 
-            characterPortrait = Assets.mainAssetBundle.LoadAsset<Texture>("texJinxIcon"),
+            characterPortrait = Assets.mainAssetBundle.LoadAsset<Texture>("JinxSquareTex"),
             bodyColor = Color.white,
 
             crosshair = Modules.Assets.LoadCrosshair("Standard"),
@@ -65,6 +65,7 @@ namespace JinxMod.Modules.Survivors
             base.InitializeCharacter();
             bodyPrefab.AddComponent<RocketController>();
             bodyPrefab.AddComponent<RevdUpController>();
+            bodyPrefab.AddComponent<GetExcitedController>();
             displayPrefab.AddComponent<MenuController>();
         }
 
@@ -97,7 +98,7 @@ namespace JinxMod.Modules.Survivors
                 Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Pow-Pow"),
                 new EntityStates.SerializableEntityStateType(typeof(SkillStates.PowPow)),
                 "Weapon",
-                false));
+                true));
 
             SkillDef fish = Modules.Skills.CreateSkillDef(new SkillDefInfo
                 (prefix + "_JINX_BODY_PRIMARY_FISHBONES_NAME",
@@ -213,7 +214,7 @@ namespace JinxMod.Modules.Survivors
 
             #region DefaultSkin
             SkinDef defaultSkin = Modules.Skins.CreateSkinDef(JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_DEFAULT_SKIN_NAME",
-                Assets.mainAssetBundle.LoadAsset<Sprite>("texMainSkin"),
+                Assets.mainAssetBundle.LoadAsset<Sprite>("JinxSquare"),
                 defaultRenderers,
                 mainRenderer,
                 model);

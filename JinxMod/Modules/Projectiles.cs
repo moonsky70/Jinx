@@ -85,6 +85,11 @@ namespace JinxMod.Modules
 
             projectileController.ghostPrefab = ghostPrefab;
 
+            LoopSoundDef loopSoundDef = ScriptableObject.CreateInstance<LoopSoundDef>();
+            loopSoundDef.startSoundName = "Play_JinxRocketLoop";
+            loopSoundDef.stopSoundName = "Stop_JinxRocketLoop";
+            projectileController.flightSoundLoop = loopSoundDef;
+
             BoxCollider boxCollider = missilePrefab.GetComponent<BoxCollider>();
             boxCollider.size = new Vector3(0.075f, 0.075f, 0.075f);
 

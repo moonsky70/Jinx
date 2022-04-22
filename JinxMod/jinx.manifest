@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2092435377
+CRC: 2831342728
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 63c8090bbb62e0931872884df4feaaff
+    Hash: a0aa58d93bf05d43006609d6ea7ef2e2
   TypeTreeHash:
     serializedVersion: 2
     Hash: 85244ba353302c9e8cb2950661b0bbd8
@@ -78,6 +78,7 @@ Assets:
 - Assets/Jinx/VFX/Mesh/meshPunchShockwave.mesh
 - Assets/Jinx/VFX/Textures/texHenrySwing2.png
 - Assets/Jinx/CustomAnimations/GatOverrideController.overrideController
+- Assets/Jinx/Icons/JinxSquare.png
 - Assets/Jinx/VFX/Materials/matSwingEffect.mat
 - Assets/Jinx/VFX/Materials/matHenrySwing2.mat
 - Assets/Jinx/VFX/Materials/matHitSparkPunch.mat
@@ -97,6 +98,7 @@ Assets:
 - Assets/Jinx/CustomAnimations/Jumping UP.anim
 - Assets/Jinx/Icons/JinxW.png
 - Assets/Jinx/VFX/Materials/matHitSpark.mat
+- Assets/Jinx/Icons/JinxSquareTex.png
 - Assets/Jinx/VFX/Textures/texSwingEffect.png
 - Assets/Jinx/VFX/BazookaExplosionEffect.prefab
 - Assets/Jinx/Model/skin0.png

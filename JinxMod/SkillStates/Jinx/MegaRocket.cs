@@ -12,7 +12,7 @@ namespace JinxMod.SkillStates
     {
         public static float damageCoefficient = 32f;
         public static float procCoefficient = 1f;
-        public static float baseDuration = 1.2f;
+        public static float baseDuration = 1.0f;
         public static float throwForce = 80f;
 
         private float duration;
