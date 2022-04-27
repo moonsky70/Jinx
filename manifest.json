@@ -1,0 +1,10 @@
+{
+    "name": "JinxMod",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/JL907/Jinx",
+    "description": "The Boss.",
+    "dependencies": [
+        "bbepis-BepInExPack-5.4.1903",
+        "tristanmcpherson-R2API-4.3.5"
+    ]
+}

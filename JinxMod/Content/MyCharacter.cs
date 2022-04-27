@@ -105,7 +105,7 @@ namespace JinxMod.Modules.Survivors
                 new EntityStates.SerializableEntityStateType(typeof(SkillStates.PowPow)),
                 "Weapon",
                 true));
-
+            ((ScriptableObject)primarySkillDef).name = "JinxPowPow";
             SkillDef fish = Modules.Skills.CreateSkillDef(new SkillDefInfo
                 (prefix + "_JINX_BODY_PRIMARY_FISHBONES_NAME",
                 prefix + "_JINX_BODY_PRIMARY_FISHBONES_DESCRIPTION",
@@ -113,7 +113,7 @@ namespace JinxMod.Modules.Survivors
                 new EntityStates.SerializableEntityStateType(typeof(SkillStates.FishBones)),
                 "Weapon",
                 true));
-
+            ((ScriptableObject)fish).name = "JinxFishBones";
             fishBonesSkillDef = fish;
 
             Modules.Skills.AddPrimarySkills(bodyPrefab, primarySkillDef);
@@ -142,8 +142,9 @@ namespace JinxMod.Modules.Survivors
                 rechargeStock = 1,
                 requiredStock = 1,
                 stockToConsume = 1,
+                keywordTokens = new string[] { "KEYWORD_SHOCKING" }
             });
-
+            ((ScriptableObject)shootSkillDef).name = "JinxZap";
             Modules.Skills.AddSecondarySkills(bodyPrefab, shootSkillDef);
             #endregion
 
@@ -199,7 +200,7 @@ namespace JinxMod.Modules.Survivors
                 requiredStock = 1,
                 stockToConsume = 1
             });
-
+            ((ScriptableObject)shootSkillDef).name = "JinxMegaRocket";
             Modules.Skills.AddSpecialSkills(bodyPrefab, bombSkillDef);
             #endregion
         }

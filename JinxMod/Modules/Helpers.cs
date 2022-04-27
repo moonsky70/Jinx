@@ -7,6 +7,8 @@ namespace JinxMod.Modules
     {
         internal const string agilePrefix = "<style=cIsUtility>Agile.</style> ";
 
+        internal const string shockingPrefix = "<style=cIsDamage>Shocking.</style> ";
+
         internal static string ScepterDescription(string desc)
         {
             return "\n<color=#d299ff>SCEPTER: " + desc + "</color>";
