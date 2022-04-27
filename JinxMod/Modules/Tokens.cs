@@ -38,7 +38,8 @@ namespace JinxMod.Modules
 
             #region Passive
             LanguageAPI.Add(prefix + "PASSIVE_NAME", "Get Excited!");
-            LanguageAPI.Add(prefix + "PASSIVE_DESCRIPTION", "Whenever Jinx scores a <color=#c9aa71>takedown</color> against Bosses, Champions, or Elites, she gains <color=#F5EE99>175% bonus movement speed</color> which decays over 6 seconds.");
+            LanguageAPI.Add(prefix + "PASSIVE_DESCRIPTION", "Whenever Jinx scores a <color=#c9aa71>takedown</color> against Bosses, Champions, or Elites, she gains <color=#F5EE99>175% bonus movement speed</color> which decays over 6 seconds." + Environment.NewLine
+            + "Jinx also gains <color=#f68835>25% bonus attack speed.</color>");
             #endregion
 
             #region Primary
