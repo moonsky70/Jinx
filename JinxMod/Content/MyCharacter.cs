@@ -200,7 +200,7 @@ namespace JinxMod.Modules.Survivors
                 requiredStock = 1,
                 stockToConsume = 1
             });
-            ((ScriptableObject)shootSkillDef).name = "JinxMegaRocket";
+            ((ScriptableObject)bombSkillDef).name = "JinxMegaRocket";
             Modules.Skills.AddSpecialSkills(bodyPrefab, bombSkillDef);
             #endregion
         }

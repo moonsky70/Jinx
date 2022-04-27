@@ -18,21 +18,23 @@ namespace JinxMod.Modules
             #region Jinx
             string prefix = JinxPlugin.DEVELOPER_PREFIX + "_JINX_BODY_";
 
-            string desc = "Jinx is a skilled fighter who makes use of a wide arsenal of weaponry to take down his foes.<color=#CCD3E0>" + Environment.NewLine + Environment.NewLine;
-            desc = desc + "< ! > Sword is a good all-rounder while Boxing Gloves are better for laying a beatdown on more powerful foes." + Environment.NewLine + Environment.NewLine;
-            desc = desc + "< ! > Pistol is a powerful anti air, with its low cooldown and high damage." + Environment.NewLine + Environment.NewLine;
-            desc = desc + "< ! > Roll has a lingering armor buff that helps to use it aggressively." + Environment.NewLine + Environment.NewLine;
-            desc = desc + "< ! > Bomb can be used to wipe crowds with ease." + Environment.NewLine + Environment.NewLine;
+            string desc = "Jinx receives massively increased Move Speed and Attack Speed whenever she kills Bosses, Elites, or Champions" + Environment.NewLine + Environment.NewLine;
+            desc = desc + "< ! > Jinx modifies her basic attacks by swapping between Pow-Pow, her minigun and Fishbones, her rocket launcher. " + Environment.NewLine + Environment.NewLine;
+            desc = desc + "< ! > Attacks with Pow-Pow grant Attack Speed, while attacks with Fishbones deal area of effect damage, gain increased range, but attack slower." + Environment.NewLine + Environment.NewLine;
+            desc = desc + "< ! > Jinx uses Zapper, her shock pistol, to fire a blast that deals damage to the first enemy hit, shocking it." + Environment.NewLine + Environment.NewLine;
+            desc = desc + "< ! > Jinx fires a super rocket across the map that gains damage as it travels. The rocket will explode upon colliding with an enemy champion, dealing damage to it and surrounding enemies based on their missing Health." + Environment.NewLine + Environment.NewLine;
 
-            string outro = "..and so he left, searching for a new identity.";
-            string outroFailure = "..and so he vanished, forever a blank slate.";
+            string outro = "I Thought, Maybe You Could Love Me Like You Used To, Even Though I'm Different. But You Changed Too, So, Here's To The New Us.";
+            string outroFailure = "She Left Me. She Is Not My Sister Anymore.";
 
             LanguageAPI.Add(prefix + "NAME", "Jinx");
             LanguageAPI.Add(prefix + "DESCRIPTION", desc);
-            LanguageAPI.Add(prefix + "SUBTITLE", "The Chosen One");
+            LanguageAPI.Add(prefix + "SUBTITLE", "THE LOOSE CANNON");
             LanguageAPI.Add(prefix + "LORE", "sample lore");
             LanguageAPI.Add(prefix + "OUTRO_FLAVOR", outro);
             LanguageAPI.Add(prefix + "OUTRO_FAILURE", outroFailure);
+
+            LanguageAPI.Add(prefix + "DEFAULT_SKIN_NAME", "Default");
 
             #region Passive
             LanguageAPI.Add(prefix + "PASSIVE_NAME", "Get Excited!");
