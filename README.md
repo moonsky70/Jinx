@@ -2,7 +2,7 @@
 ### JinxMod was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games.  Riot Games does not endorse or sponsor this project.
 
 Special Thanks to Dyzcroll for creating custom jump animation for Jinx.  
-Special Thanks to Smallegreen for the humongus support
+Special Thanks to Smallegreen for the humongous support
 ![image](https://user-images.githubusercontent.com/7343912/165629624-41dadf32-abf3-4a45-949b-ee3c3f0082d5.png)
 ![image](https://user-images.githubusercontent.com/7343912/165630033-8498e398-b0ea-4ab3-bd26-32aa8c9eaca8.png)
 
