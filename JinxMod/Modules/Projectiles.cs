@@ -33,10 +33,6 @@ namespace JinxMod.Modules
             GameObject.Destroy(missilePrefab.GetComponent<MissileController>());
             GameObject.Destroy(missilePrefab.GetComponent<ProjectileSingleTargetImpact>());
 
-            //ProjectileSteerTowardTarget projectileSteerTowardTarget = missilePrefab.AddComponent<ProjectileSteerTowardTarget>();
-            //projectileSteerTowardTarget.rotationSpeed = 360f;
-            //projectileSteerTowardTarget.yAxisOnly = false;
-
             ProjectileSphereTargetFinder projectileSphereTargetFinder = missilePrefab.AddComponent<ProjectileSphereTargetFinder>();
             projectileSphereTargetFinder.lookRange = 8f;
             projectileSphereTargetFinder.onlySearchIfNoTarget = false;
@@ -45,9 +41,6 @@ namespace JinxMod.Modules
             projectileSphereTargetFinder.targetSearchInterval = 0.1f;
 
             missilePrefab.AddComponent<JinxMissileController>();
-
-            MissileController missileController = missilePrefab.GetComponent<MissileController>();
-            missileController.maxSeekDistance = 5f;
 
             ProjectileImpactExplosion ImpactExplosion = missilePrefab.AddComponent<ProjectileImpactExplosion>();
             InitializeImpactExplosion(ImpactExplosion);

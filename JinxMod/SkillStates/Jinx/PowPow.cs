@@ -30,8 +30,6 @@ namespace JinxMod.SkillStates
         private float bulletStopWatch;
         private int bulletCount = 3;
         private RocketController rocketController;
-        private bool hasHit;
-        private bool hasBuffed;
 
         public override void OnEnter()
         {
@@ -56,6 +54,12 @@ namespace JinxMod.SkillStates
             if (this.rocketController)
             {
                 this.rocketController.attacks++;
+            }
+
+            if (NetworkServer.active && base.characterBody.GetBuffCount(Modules.Buffs.revdUp) < 3)
+            {
+                base.characterBody.AddBuff(Modules.Buffs.revdUp);
+                this.revdUpController.ResetStopWatch();
             }
         }
 
@@ -104,19 +108,17 @@ namespace JinxMod.SkillStates
                     hitEffectPrefab = EntityStates.Commando.CommandoWeapon.FirePistol2.hitEffectPrefab,
                     hitCallback = bulletHitCallback,
                 }.Fire();
+
+
             }
         }
 
         private bool bulletHitCallback(BulletAttack bulletAttack, ref BulletHit hitInfo)
         {
             var result = BulletAttack.defaultHitCallback(bulletAttack, ref hitInfo);
-            if (NetworkServer.active)
+            if (hitInfo.hitHurtBox)
             {
-                if (hitInfo.hitHurtBox)
-                {
-                    PointSoundManager.EmitSoundServer(Modules.Assets.bulletHitSoundEvent.index, hitInfo.hitHurtBox.transform.position);
-                    this.hasHit = true;
-                }
+                if(NetworkServer.active) PointSoundManager.EmitSoundServer(Modules.Assets.bulletHitSoundEvent.index, hitInfo.hitHurtBox.transform.position);
             }
             return result;
         }
@@ -124,18 +126,6 @@ namespace JinxMod.SkillStates
         public override void FixedUpdate()
         {
             base.FixedUpdate();
-            if (hasHit && !hasBuffed)
-            {
-                if (base.characterBody.GetBuffCount(Modules.Buffs.revdUp) < 3)
-                {
-                    if (NetworkServer.active)
-                    {
-                        base.characterBody.AddBuff(Modules.Buffs.revdUp);
-                    }
-                }
-                hasBuffed = true;
-                this.revdUpController.ResetStopWatch();
-            }
             if (bulletStopWatch < this.fireTime / bulletCount)
             {
                 bulletStopWatch += Time.fixedDeltaTime;

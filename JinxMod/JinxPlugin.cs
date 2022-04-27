@@ -115,10 +115,12 @@ namespace JinxMod
             orig(self);
             if (self)
             {
+
                 if (self.HasBuff(Modules.Buffs.revdUp))
                 {
                     self.attackSpeed *= 1 + ((self.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient));
                 }
+
                 GetExcitedController getExcitedController = self.GetComponent<GetExcitedController>();
                 if (getExcitedController && self.HasBuff(Modules.Buffs.getExcitedSpeedBuff))
                 {
