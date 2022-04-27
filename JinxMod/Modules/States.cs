@@ -12,6 +12,8 @@ namespace JinxMod.Modules
             Modules.Content.AddEntityState(typeof(Switcharoo));
             Modules.Content.AddEntityState(typeof(PowPow));
             Modules.Content.AddEntityState(typeof(FishBones));
+            Modules.Content.AddEntityState(typeof(MegaRocket));
+            Modules.Content.AddEntityState(typeof(DeathState));
         }
     }
 }

@@ -32,20 +32,23 @@ namespace JinxMod.Controllers
             }.RefreshCandidates().FilterCandidatesByHurtBoxTeam(TeamMask.GetEnemyTeams(this.projectileController.teamFilter.teamIndex)).FilterCandidatesByDistinctHurtBoxEntities().GetHurtBoxes().ToList();
 
 
-            foreach (HurtBox hurtbox in HurtBoxes)
+            foreach (HurtBox hurtBox in HurtBoxes)
             {
-                float damageDistance = this.projectileDamage.damage * (Mathf.Min(1, age * 0.20f));
-                DamageInfo damageInfo = new DamageInfo();
-                damageInfo.damage = damageDistance + (hurtbox.healthComponent.missingCombinedHealth * 0.35f);
-                damageInfo.crit = false;
-                damageInfo.damageColorIndex = DamageColorIndex.Item;
-                damageInfo.attacker = (this.projectileController.owner ? this.projectileController.owner.gameObject : null);
-                damageInfo.inflictor = base.gameObject;
-                damageInfo.position = impactInfo.estimatedPointOfImpact;
-                damageInfo.force = this.projectileDamage.force * base.transform.forward;
-                damageInfo.procChainMask = this.projectileController.procChainMask;
-                damageInfo.procCoefficient = this.projectileController.procCoefficient;
-                hurtbox.healthComponent.TakeDamage(damageInfo);
+                if (hurtBox && hurtBox.healthComponent && hurtBox.healthComponent.alive)
+                {
+                    float damageDistance = this.projectileDamage.damage * (Mathf.Min(1, age * 0.20f));
+                    DamageInfo damageInfo = new DamageInfo();
+                    damageInfo.damage = damageDistance + (hurtBox.healthComponent.missingCombinedHealth * 0.35f);
+                    damageInfo.crit = false;
+                    damageInfo.damageColorIndex = DamageColorIndex.Item;
+                    damageInfo.attacker = (this.projectileController.owner ? this.projectileController.owner.gameObject : null);
+                    damageInfo.inflictor = base.gameObject;
+                    damageInfo.position = impactInfo.estimatedPointOfImpact;
+                    damageInfo.force = this.projectileDamage.force * base.transform.forward;
+                    damageInfo.procChainMask = this.projectileController.procChainMask;
+                    damageInfo.procCoefficient = this.projectileController.procCoefficient;
+                    hurtBox.healthComponent.TakeDamage(damageInfo);
+                }
             }
         }
     }

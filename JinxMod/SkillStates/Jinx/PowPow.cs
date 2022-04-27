@@ -30,6 +30,8 @@ namespace JinxMod.SkillStates
         private float bulletStopWatch;
         private int bulletCount = 3;
         private RocketController rocketController;
+        private bool hasHit;
+        private bool hasBuffed;
 
         public override void OnEnter()
         {
@@ -55,15 +57,6 @@ namespace JinxMod.SkillStates
             {
                 this.rocketController.attacks++;
             }
-
-            if (base.characterBody.GetBuffCount(Modules.Buffs.revdUp) < 3)
-            {
-                if (NetworkServer.active)
-                {
-                    base.characterBody.AddBuff(Modules.Buffs.revdUp);
-                }
-            }
-            this.revdUpController.ResetStopWatch();
         }
 
         public override void OnExit()
@@ -122,6 +115,7 @@ namespace JinxMod.SkillStates
                 if (hitInfo.hitHurtBox)
                 {
                     PointSoundManager.EmitSoundServer(Modules.Assets.bulletHitSoundEvent.index, hitInfo.hitHurtBox.transform.position);
+                    this.hasHit = true;
                 }
             }
             return result;
@@ -130,6 +124,18 @@ namespace JinxMod.SkillStates
         public override void FixedUpdate()
         {
             base.FixedUpdate();
+            if (hasHit && !hasBuffed)
+            {
+                if (base.characterBody.GetBuffCount(Modules.Buffs.revdUp) < 3)
+                {
+                    if (NetworkServer.active)
+                    {
+                        base.characterBody.AddBuff(Modules.Buffs.revdUp);
+                    }
+                }
+                hasBuffed = true;
+                this.revdUpController.ResetStopWatch();
+            }
             if (bulletStopWatch < this.fireTime / bulletCount)
             {
                 bulletStopWatch += Time.fixedDeltaTime;

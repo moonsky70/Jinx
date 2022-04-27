@@ -1,4 +1,5 @@
 ﻿using BepInEx.Configuration;
+using EntityStates;
 using JinxMod.Controller;
 using JinxMod.Modules.Characters;
 using RoR2;
@@ -69,6 +70,8 @@ namespace JinxMod.Modules.Survivors
             bodyPrefab.AddComponent<RevdUpController>();
             bodyPrefab.AddComponent<GetExcitedController>();
             displayPrefab.AddComponent<MenuController>();
+            CharacterDeathBehavior characterDeathBehavior = bodyPrefab.GetComponent<CharacterDeathBehavior>();
+            characterDeathBehavior.deathState = new SerializableEntityStateType(typeof(JinxMod.SkillStates.BaseStates.DeathState));
         }
 
         public override void InitializeUnlockables()
@@ -89,6 +92,7 @@ namespace JinxMod.Modules.Survivors
 
         public override void InitializeSkills()
         {
+
             Modules.Skills.CreateSkillFamilies(bodyPrefab);
             string prefix = JinxPlugin.DEVELOPER_PREFIX;
 

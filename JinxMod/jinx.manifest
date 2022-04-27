@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2831342728
+CRC: 3697318039
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a0aa58d93bf05d43006609d6ea7ef2e2
+    Hash: bb30c04fb8f54de256526732b892e54c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 85244ba353302c9e8cb2950661b0bbd8
@@ -59,6 +59,7 @@ Assets:
 - Assets/Jinx/VFX/BombExplosionEffect.prefab
 - Assets/Jinx/VFX/Textures/texFire.tga
 - Assets/Jinx/VFX/HenryBazookaExplosionEffect.prefab
+- Assets/Jinx/Model/RunFastRLFS.anim
 - Assets/Jinx/VFX/BazookaExplosionEffect Variant.prefab
 - Assets/Jinx/VFX/Textures/texHitSpark.png
 - Assets/Jinx/Icons/Pow-Pow.png
@@ -68,6 +69,7 @@ Assets:
 - Assets/Jinx/JinxDisplay.prefab
 - Assets/Jinx/CustomAnimations/RocketOverrideController.overrideController
 - Assets/Jinx/Icons/Phase_Rush_rune.png
+- Assets/Jinx/Model/RunFastFS.anim
 - Assets/Jinx/VFX/HenryBazookaMuzzleFlash.prefab
 - Assets/Jinx/Icons/Jinx_Passive.png
 - Assets/Jinx/VFX/Materials/matTrail.mat
@@ -90,7 +92,9 @@ Assets:
 - Assets/Jinx/Icons/JinxR.png
 - Assets/Jinx/VFX/Textures/texEmbers.png
 - Assets/Jinx/Model/matJinx.mat
+- Assets/Jinx/Model/RunBaseFS.anim
 - Assets/Jinx/VFX/Materials/matDust.mat
+- Assets/Jinx/Model/RunBaseRLFS.anim
 - Assets/Jinx/VFX/Materials/matPunchEffect.mat
 - Assets/Jinx/VFX/Textures/texSlash.png
 - Assets/Jinx/VFX/Materials/matPunchImpactShadow.mat
