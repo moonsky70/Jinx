@@ -3,8 +3,8 @@
 
 Special Thanks to Dyzcroll for creating custom jump animation for Jinx.  
 Special Thanks to Smallegreen for the humongus support
-![image](https://user-images.githubusercontent.com/7343912/159424928-0381bcf5-f0c9-40f0-b87e-8eba45c4d245.png)
-![Risk_of_Rain_2_LtJbsQoTw2](https://user-images.githubusercontent.com/7343912/159424837-84994a14-53f8-461c-bb22-1fc0ac7bf51d.jpg)
+![image](https://user-images.githubusercontent.com/7343912/165629624-41dadf32-abf3-4a45-949b-ee3c3f0082d5.png)
+![image](https://user-images.githubusercontent.com/7343912/165630033-8498e398-b0ea-4ab3-bd26-32aa8c9eaca8.png)
 
 ## Introduction
 A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care for the consequences. With an arsenal of deadly weapons, she unleashes the loudest blasts and brightest explosions to leave a trail of mayhem and panic in her wake. Jinx despises boredom and gleefully brings her own chaotic brand of pandemonium wherever she goes.
@@ -35,20 +35,20 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 * Korhouku
 
 ## Katarina Base Attributes
-* Health: 101 +33
-* Health Regen: 1.5/s + 0.2
+* Health: 110 +30
+* Health Regen: 1/s + 0.2
 * Damage: 12 + 2.4
 * Speed: 7 m/s
-* Armor: 20
-* Jumps: 2
+* Armor: 0
+* Jumps: 1
 
 ## Skills
-![image](https://user-images.githubusercontent.com/7343912/159751398-e0cc9cfb-203e-4760-8e19-7fc094d1064d.png)
+![image](https://user-images.githubusercontent.com/7343912/165629708-0169f3fe-8e9a-415c-bc7f-199806b2e11d.png)
 
 ## Credits
 * Nines
 * Dragonyck 
-* All the homies at the Risk of Rain 2 Modding Discord
+* All the homies at the Risk of Rain 2 Modding Discord except dotflare
 * All the Kofi Supporters
 * League of Legends
 
