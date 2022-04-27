@@ -43,11 +43,9 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 * Jumps: 1
 
 ## Skills
-![image](https://user-images.githubusercontent.com/7343912/165629708-0169f3fe-8e9a-415c-bc7f-199806b2e11d.png)
+![image](https://user-images.githubusercontent.com/7343912/165643242-f61accdc-3edd-456c-9574-2416a6cddc48.png)
 
 ## Credits
-* Nines
-* Dragonyck 
 * All the homies at the Risk of Rain 2 Modding Discord except dotflare
 * All the Kofi Supporters
 * League of Legends
