@@ -55,6 +55,10 @@ namespace JinxMod.Controller
                     }
                 }
             }
+            else
+            {
+                ResetTimer();
+            }
         }
 
     }

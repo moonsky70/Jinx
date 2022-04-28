@@ -125,7 +125,7 @@ namespace JinxMod
                 if (getExcitedController && self.HasBuff(Modules.Buffs.getExcitedSpeedBuff))
                 {
                     var currentDuration = getExcitedController.currentDuration;
-                    self.moveSpeed *= (1 + (currentDuration * .125f));
+                    self.moveSpeed *= 1 + Mathf.Max(Mathf.Min(currentDuration * .125f, 0.75f),0f);
                     self.attackSpeed *= 1.25f;
                 }
             }
