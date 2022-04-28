@@ -34,7 +34,7 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 * Rick
 * Korhouku
 
-## Katarina Base Attributes
+## Jinx Base Attributes
 * Health: 110 +30
 * Health Regen: 1/s + 0.2
 * Damage: 12 + 2.4
