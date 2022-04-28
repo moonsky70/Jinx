@@ -27,7 +27,8 @@ namespace JinxMod
         "PrefabAPI",
         "LanguageAPI",
         "SoundAPI",
-        "DamageAPI"
+        "DamageAPI",
+        "RecalculateStatsAPI"
     })]
 
     public class JinxPlugin : BaseUnityPlugin
@@ -37,7 +38,7 @@ namespace JinxMod
         //   this shouldn't even have to be said
         public const string MODUID = "com.Lemonlust.JinxMod";
         public const string MODNAME = "JinxMod";
-        public const string MODVERSION = "1.0.1";
+        public const string MODVERSION = "1.0.2";
 
         // a prefix for name tokens to prevent conflicts- please capitalize all name tokens for convention
         public const string DEVELOPER_PREFIX = "Lemonlust";
@@ -92,9 +93,24 @@ namespace JinxMod
 
         private void Hook()
         {
-            // run hooks here, disabling one is as simple as commenting out the line
-            On.RoR2.CharacterBody.RecalculateStats += CharacterBody_RecalculateStats;
             RoR2.GlobalEventManager.onCharacterDeathGlobal += GlobalEventManager_onCharacterDeathGlobal;
+            R2API.RecalculateStatsAPI.GetStatCoefficients += RecalculateStatsAPI_GetStatCoefficients;
+        }
+
+        private void RecalculateStatsAPI_GetStatCoefficients(CharacterBody sender, RecalculateStatsAPI.StatHookEventArgs args)
+        {
+            if (sender.HasBuff(Modules.Buffs.revdUp))
+            {
+                args.attackSpeedMultAdd += ((sender.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient));
+            }
+
+            GetExcitedController getExcitedController = sender.GetComponent<GetExcitedController>();
+            if (getExcitedController && sender.HasBuff(Modules.Buffs.getExcitedSpeedBuff))
+            {
+                var currentDuration = getExcitedController.currentDuration;
+                args.moveSpeedMultAdd += Mathf.Max(Mathf.Min(currentDuration * .125f, 0.75f), 0f);
+                args.attackSpeedMultAdd += .25f;
+            }
         }
 
         private void GlobalEventManager_onCharacterDeathGlobal(DamageReport damageReport)
@@ -107,27 +123,6 @@ namespace JinxMod
             {
                 GetExcitedController getExcitedController = damageReport.attackerBody.GetComponent<GetExcitedController>();
                 getExcitedController.GetExcited();
-            }
-        }
-
-        private void CharacterBody_RecalculateStats(On.RoR2.CharacterBody.orig_RecalculateStats orig, CharacterBody self)
-        {
-            orig(self);
-            if (self)
-            {
-
-                if (self.HasBuff(Modules.Buffs.revdUp))
-                {
-                    self.attackSpeed *= 1 + ((self.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient));
-                }
-
-                GetExcitedController getExcitedController = self.GetComponent<GetExcitedController>();
-                if (getExcitedController && self.HasBuff(Modules.Buffs.getExcitedSpeedBuff))
-                {
-                    var currentDuration = getExcitedController.currentDuration;
-                    self.moveSpeed *= 1 + Mathf.Max(Mathf.Min(currentDuration * .125f, 0.75f),0f);
-                    self.attackSpeed *= 1.25f;
-                }
             }
         }
     }

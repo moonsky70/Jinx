@@ -9,10 +9,11 @@ Special Thanks to Smallegreen for the humongous support
 ## Introduction
 A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care for the consequences. With an arsenal of deadly weapons, she unleashes the loudest blasts and brightest explosions to leave a trail of mayhem and panic in her wake. Jinx despises boredom and gleefully brings her own chaotic brand of pandemonium wherever she goes.
 
-## Latest Patch Notes `1.0.0`
+## Latest Patch Notes `1.0.2`
 `Bug reports can be posted in discord` https://discord.gg/aYuS9Wsxxx  
 
-* Initial Release
+* Fixed an issue causing Get Excited Buff making Jinx immobile.
+* Fixed an issue where Rev'd Up Buff was falling off before new stacks could be added.
 
 ## Discord
 <a href="https://discord.gg/aYuS9Wsxxx" target="_blank">
@@ -57,3 +58,5 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 ---
 
 ## Old Patch Notes
+`1.0.0`
+* Initial Release

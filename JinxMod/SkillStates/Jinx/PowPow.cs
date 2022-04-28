@@ -56,10 +56,13 @@ namespace JinxMod.SkillStates
                 this.rocketController.attacks++;
             }
 
-            if (NetworkServer.active && base.characterBody.GetBuffCount(Modules.Buffs.revdUp) < 3)
+            this.revdUpController.ResetStopWatch();
+            if (base.characterBody.GetBuffCount(Modules.Buffs.revdUp) < 3)
             {
-                base.characterBody.AddBuff(Modules.Buffs.revdUp);
-                this.revdUpController.ResetStopWatch();
+                if (NetworkServer.active)
+                {
+                    base.characterBody.AddBuff(Modules.Buffs.revdUp);
+                }
             }
         }
 

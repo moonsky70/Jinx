@@ -42,6 +42,10 @@ namespace JinxMod.Controller
                     }
                 }
             }
+            else
+            {
+                ResetStopWatch();
+            }
         }
     }
 }
