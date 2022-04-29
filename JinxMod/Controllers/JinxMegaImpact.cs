@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Networking;
 
 namespace JinxMod.Controllers
 {
@@ -47,7 +48,11 @@ namespace JinxMod.Controllers
                     damageInfo.force = this.projectileDamage.force * base.transform.forward;
                     damageInfo.procChainMask = this.projectileController.procChainMask;
                     damageInfo.procCoefficient = this.projectileController.procCoefficient;
-                    hurtBox.healthComponent.TakeDamage(damageInfo);
+
+                    if (NetworkServer.active)
+                    {
+                        hurtBox.healthComponent.TakeDamage(damageInfo);
+                    }
                 }
             }
         }

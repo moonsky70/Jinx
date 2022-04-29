@@ -15,11 +15,6 @@ namespace JinxMod.Controller
 	{
 		private void Awake()
 		{
-			if (!NetworkServer.active)
-			{
-				base.enabled = false;
-				return;
-			}
 			this.transform = base.transform;
 			this.rigidbody = base.GetComponent<Rigidbody>();
 			this.torquePID = base.GetComponent<QuaternionPID>();
@@ -28,26 +23,29 @@ namespace JinxMod.Controller
 		private void FixedUpdate()
 		{
 			this.timer += Time.fixedDeltaTime;
-			if (this.timer < this.giveupTimer)
-			{
-				this.rigidbody.velocity = this.transform.forward * this.maxVelocity;
-				if (this.targetComponent.target && this.timer >= this.delayTimer)
+			if (NetworkServer.active)
+            {
+				if (this.timer < this.giveupTimer)
 				{
-					this.rigidbody.velocity = this.transform.forward * (this.maxVelocity + this.timer * this.acceleration);
-					Vector3 vector = this.targetComponent.target.position + UnityEngine.Random.insideUnitSphere * this.turbulence - this.transform.position;
-					if (vector != Vector3.zero)
+					this.rigidbody.velocity = this.transform.forward * this.maxVelocity;
+					if (this.targetComponent.target && this.timer >= this.delayTimer)
 					{
-						Quaternion rotation = this.transform.rotation;
-						Quaternion targetQuat = Util.QuaternionSafeLookRotation(vector);
-						this.torquePID.inputQuat = rotation;
-						this.torquePID.targetQuat = targetQuat;
-						this.rigidbody.angularVelocity = this.torquePID.UpdatePID();
+						this.rigidbody.velocity = this.transform.forward * (this.maxVelocity + this.timer * this.acceleration);
+						Vector3 vector = this.targetComponent.target.position + UnityEngine.Random.insideUnitSphere * this.turbulence - this.transform.position;
+						if (vector != Vector3.zero)
+						{
+							Quaternion rotation = this.transform.rotation;
+							Quaternion targetQuat = Util.QuaternionSafeLookRotation(vector);
+							this.torquePID.inputQuat = rotation;
+							this.torquePID.targetQuat = targetQuat;
+							this.rigidbody.angularVelocity = this.torquePID.UpdatePID();
+						}
 					}
 				}
-			}
-			if (this.timer > this.deathTimer)
-			{
-				UnityEngine.Object.Destroy(base.gameObject);
+				if (this.timer > this.deathTimer)
+				{
+					UnityEngine.Object.Destroy(base.gameObject);
+				}
 			}
 		}
 
