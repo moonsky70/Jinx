@@ -12,7 +12,9 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 ## Latest Patch Notes `1.0.4`
 `Bug reports can be posted in discord` https://discord.gg/aYuS9Wsxxx  
 
-* Attempt to fix Fish Bones impact issues during multiplayer
+* Attempt to fix Fish Bones impact issues during multiplayer.
+* Adjusted Fish bones homing properties.
+* Reduced delay before homing on Fishbones from 1 second to 0.3 seconds.
 
 ## Discord
 <a href="https://discord.gg/aYuS9Wsxxx" target="_blank">

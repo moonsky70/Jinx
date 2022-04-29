@@ -48,11 +48,7 @@ namespace JinxMod.Controllers
                     damageInfo.force = this.projectileDamage.force * base.transform.forward;
                     damageInfo.procChainMask = this.projectileController.procChainMask;
                     damageInfo.procCoefficient = this.projectileController.procCoefficient;
-
-                    if (NetworkServer.active)
-                    {
-                        hurtBox.healthComponent.TakeDamage(damageInfo);
-                    }
+                    hurtBox.healthComponent.TakeDamage(damageInfo);
                 }
             }
         }
