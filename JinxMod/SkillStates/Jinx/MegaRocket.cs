@@ -26,7 +26,7 @@ namespace JinxMod.SkillStates
             base.OnEnter();
             this.duration = MegaRocket.baseDuration;
             this.fireTime = 0.53f;
-            base.characterBody.SetAimTimer(2f);
+            base.StartAimMode(duration, false);
             this.animator = base.GetModelAnimator();
             this.rocketController = base.GetComponent<RocketController>();
             if (this.rocketController)
@@ -89,6 +89,12 @@ namespace JinxMod.SkillStates
         public override void FixedUpdate()
         {
             base.FixedUpdate();
+
+            Ray aimRay = base.GetAimRay();
+            if (base.characterDirection && aimRay.direction != Vector3.zero)
+            {
+                base.characterDirection.moveVector = aimRay.direction;
+            }
 
             if (base.fixedAge >= this.fireTime)
             {

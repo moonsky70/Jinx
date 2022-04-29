@@ -32,7 +32,7 @@ namespace JinxMod.SkillStates
             {
                 this.fireTime = this.duration * 0.2f;
             }
-            base.characterBody.SetAimTimer(2f);
+            base.StartAimMode(duration, false);
             this.animator = base.GetModelAnimator();
             this.revdUpController = base.GetComponent<RevdUpController>();
             this.rocketController = base.GetComponent<RocketController>();

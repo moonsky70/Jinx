@@ -24,7 +24,7 @@ namespace JinxMod.SkillStates
             base.OnEnter();
             this.duration = FishBones.baseDuration;
             this.fireTime = 0.5f;
-            base.characterBody.SetAimTimer(2f);
+            base.StartAimMode(duration, false);
             this.animator = base.GetModelAnimator();
 
             if (this.animator.GetBool("isMoving") || (!(this.animator.GetBool("isGrounded"))))

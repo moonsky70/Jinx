@@ -36,7 +36,7 @@ namespace JinxMod.SkillStates
             base.OnEnter();
             this.duration = PowPow.baseDuration / this.attackSpeedStat;
             this.fireTime = 0.1f * this.duration;
-            base.characterBody.SetAimTimer(2f);
+            base.StartAimMode(duration, false);
             this.muzzleString = "PowPowMuzzle";
             this.animator = base.GetModelAnimator();
             this.revdUpController = base.GetComponent<RevdUpController>();

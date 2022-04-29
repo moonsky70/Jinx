@@ -9,11 +9,15 @@ Special Thanks to Smallegreen for the humongous support
 ## Introduction
 A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care for the consequences. With an arsenal of deadly weapons, she unleashes the loudest blasts and brightest explosions to leave a trail of mayhem and panic in her wake. Jinx despises boredom and gleefully brings her own chaotic brand of pandemonium wherever she goes.
 
-## Latest Patch Notes `1.0.2`
+## Latest Patch Notes `1.0.3`
 `Bug reports can be posted in discord` https://discord.gg/aYuS9Wsxxx  
 
-* Fixed an issue causing Get Excited Buff making Jinx immobile.
-* Fixed an issue where Rev'd Up Buff was falling off before new stacks could be added.
+* Jinx now rotates her body toward where she's aiming during Super Mega Death Rocket!
+* Fixed an issue where Zap could cancel itself out if casted again.
+* Zap cooldown starts at the end of the skill use.
+* Super Mega Death Rocket cooldown starts at the end of the skill use.
+* Bonus damage numbers from Super Mega Death Rocket now appear above affected units instead of collision impact location.
+* Fishbones now has a 1 second delay before homing on targets.
 
 ## Discord
 <a href="https://discord.gg/aYuS9Wsxxx" target="_blank">
@@ -58,5 +62,9 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 ---
 
 ## Old Patch Notes
+`1.0.2`
+* Fixed an issue causing Get Excited Buff making Jinx immobile.
+* Fixed an issue where Rev'd Up Buff was falling off before new stacks could be added.
+
 `1.0.0`
 * Initial Release

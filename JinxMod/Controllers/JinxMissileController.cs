@@ -57,7 +57,7 @@ namespace JinxMod.Controller
 		public float maxVelocity = 25f;
 		public float rollVelocity = 0f;
 		public float acceleration = 3f;
-		public float delayTimer = 0.3f;
+		public float delayTimer = 1f;
 		public float giveupTimer = 8f;
 		public float deathTimer = 10f;
 		private float timer;

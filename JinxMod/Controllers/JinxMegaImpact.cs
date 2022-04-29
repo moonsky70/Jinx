@@ -43,7 +43,7 @@ namespace JinxMod.Controllers
                     damageInfo.damageColorIndex = DamageColorIndex.Item;
                     damageInfo.attacker = (this.projectileController.owner ? this.projectileController.owner.gameObject : null);
                     damageInfo.inflictor = base.gameObject;
-                    damageInfo.position = impactInfo.estimatedPointOfImpact;
+                    damageInfo.position = hurtBox.healthComponent.gameObject.transform.position;
                     damageInfo.force = this.projectileDamage.force * base.transform.forward;
                     damageInfo.procChainMask = this.projectileController.procChainMask;
                     damageInfo.procCoefficient = this.projectileController.procCoefficient;
