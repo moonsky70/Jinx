@@ -33,7 +33,7 @@ namespace JinxMod.Controller
 					Vector3 vector = this.targetComponent.target.position + UnityEngine.Random.insideUnitSphere * this.turbulence - this.transform.position;
 					if (vector != Vector3.zero)
 					{
-						this.transform.forward = Vector3.RotateTowards(this.transform.forward, vector, 360f * 0.017453292f * Time.fixedDeltaTime, 0f);
+						this.transform.forward = Vector3.RotateTowards(this.transform.forward, vector, 720f * 0.017453292f * Time.fixedDeltaTime, 0f);
 					}
 				}
 			}

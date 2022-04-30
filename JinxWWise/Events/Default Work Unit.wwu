@@ -265,6 +265,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_JinxMenuSFX" ID="{55D6FD40-7B71-4F01-909B-83A9CC7EFD20}">
+							<ChildrenList>
+								<Action Name="" ID="{39686F2D-DCE7-4059-AD1F-554E96E4F537}" ShortID="1023742193">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="JinxMenuSFX" ID="{322867D5-6628-4718-97D7-3B39218CCF1D}" WorkUnitID="{A76274DA-E6F4-4F6F-96F1-B3C9BE656C19}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

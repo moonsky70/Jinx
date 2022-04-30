@@ -16,6 +16,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1741527693	Play_JinxZapSFX			\Default Work Unit\SFX\Play_JinxZapSFX	
 	2238196391	Play_JinxMegaRocketImpact			\Default Work Unit\SFX\Play_JinxMegaRocketImpact	
 	2473522939	Play_JinxJokeVO			\Default Work Unit\VO\Play_JinxJokeVO	
+	2531504859	Play_JinxMenuSFX			\Default Work Unit\SFX\Play_JinxMenuSFX	
 	2565643300	Play_JinxMegaRocketVO			\Default Work Unit\VO\Play_JinxMegaRocketVO	
 	2683431557	Play_JinxZapVO			\Default Work Unit\VO\Play_JinxZapVO	
 	2746573632	Play_JinxMovingVO			\Default Work Unit\VO\Play_JinxMovingVO	
@@ -110,6 +111,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	929510877	jinx_base_sfx_audio_65	C:\Users\Johnrey\Desktop\Jinx\JinxWWise\.cache\Windows\SFX\SFX\jinx_base_sfx_audio_65_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\SFX\JinxFishBonesShoot\New Random Container\jinx_base_sfx_audio_65		7989
 	930797921	jinx_base_sfx_audio_83	C:\Users\Johnrey\Desktop\Jinx\JinxWWise\.cache\Windows\SFX\SFX\jinx_base_sfx_audio_83_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\SFX\JinxPowPowShoot\New Random Container_01\jinx_base_sfx_audio_83		8116
 	957928929	jinx_base_sfx_audio_33	C:\Users\Johnrey\Desktop\Jinx\JinxWWise\.cache\Windows\SFX\SFX\jinx_base_sfx_audio_33_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\SFX\JinxPowPowShoot\New Random Container\jinx_base_sfx_audio_33		7860
+	968965449	jinx_base_sfx_audio_50	C:\Users\Johnrey\Desktop\Jinx\JinxWWise\.cache\Windows\SFX\SFX\jinx_base_sfx_audio_50_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\SFX\JinxMenuSFX\jinx_base_sfx_audio_50		57677
 	986713293	jinx_base_sfx_audio_23	C:\Users\Johnrey\Desktop\Jinx\JinxWWise\.cache\Windows\SFX\SFX\jinx_base_sfx_audio_23_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Sfx Mixer\SFX\JinxZapShoot\jinx_base_sfx_audio_23		13589
 	993042288	jinx_base_vo_audio_6	C:\Users\Johnrey\Desktop\Jinx\JinxWWise\.cache\Windows\SFX\VO\jinx_base_vo_audio_6_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Vo Mixer\VO\JinxAttackVO\jinx_base_vo_audio_6		32566
 	1020808129	jinx_base_vo_audio_39	C:\Users\Johnrey\Desktop\Jinx\JinxWWise\.cache\Windows\SFX\VO\jinx_base_vo_audio_39_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\Vo Mixer\VO\JinxAttackVO\jinx_base_vo_audio_39		15842

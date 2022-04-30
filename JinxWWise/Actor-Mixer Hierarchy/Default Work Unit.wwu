@@ -484,28 +484,6 @@
 												<ActiveSource Name="jinx_base_sfx_audio_34" ID="{C5FAD794-7276-4302-88D9-B030277359A0}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
-										<Sound Name="jinx_base_sfx_audio_36" ID="{B08F897D-B4B9-421D-A64C-50B843463998}" ShortID="1026058983">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7644C83A-CFDC-47C5-85D1-689579C9C42E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EF35653C-670B-4B5F-8652-4B2CBA38E324}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="jinx_base_sfx_audio_36" ID="{E37675A6-7374-4568-B552-C325D775689D}">
-													<Language>SFX</Language>
-													<AudioFile>SFX\jinx_base_sfx_audio_36.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="457845949"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="jinx_base_sfx_audio_36" ID="{E37675A6-7374-4568-B552-C325D775689D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="jinx_base_sfx_audio_37" ID="{DA45B26D-E9AF-4D7A-9B9A-FDBF83162F5C}" ShortID="587520257">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -658,28 +636,6 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="jinx_base_sfx_audio_5" ID="{1C82CFE0-BAE5-4D19-B90C-7013813BF3F1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="jinx_base_sfx_audio_50" ID="{C4312A40-3F5D-494B-8E64-2AE5F79498EE}" ShortID="50047617">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7644C83A-CFDC-47C5-85D1-689579C9C42E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EF35653C-670B-4B5F-8652-4B2CBA38E324}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="jinx_base_sfx_audio_50" ID="{9099A50A-9B44-40EC-8FF3-181B25B5EB67}">
-													<Language>SFX</Language>
-													<AudioFile>SFX\jinx_base_sfx_audio_50.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="968965449"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="jinx_base_sfx_audio_50" ID="{9099A50A-9B44-40EC-8FF3-181B25B5EB67}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="jinx_base_sfx_audio_51" ID="{751FA95D-58B4-4EBF-9AFE-7E539CEA713E}" ShortID="196922928">
@@ -2673,6 +2629,162 @@
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="JinxMenuSFX" ID="{322867D5-6628-4718-97D7-3B39218CCF1D}" ShortID="638125029">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7644C83A-CFDC-47C5-85D1-689579C9C42E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EF35653C-670B-4B5F-8652-4B2CBA38E324}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="jinx_base_sfx_audio_50" ID="{C4312A40-3F5D-494B-8E64-2AE5F79498EE}" ShortID="50047617">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom>
+																<Attenuation Name="Attenuation (Custom)" ID="{22A0393A-1115-4212-ACAF-9B5A9B6AEB8B}" ShortID="709366993">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{1A8F97CA-56CD-4F2C-A00F-9007AC4F5C27}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7644C83A-CFDC-47C5-85D1-689579C9C42E}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EF35653C-670B-4B5F-8652-4B2CBA38E324}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="jinx_base_sfx_audio_50" ID="{9099A50A-9B44-40EC-8FF3-181B25B5EB67}">
+															<Language>SFX</Language>
+															<AudioFile>SFX\jinx_base_sfx_audio_50.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="968965449"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="jinx_base_sfx_audio_50" ID="{9099A50A-9B44-40EC-8FF3-181B25B5EB67}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="jinx_base_sfx_audio_36" ID="{B08F897D-B4B9-421D-A64C-50B843463998}" ShortID="1026058983">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<Custom>
+														<Attenuation Name="Attenuation (Custom)" ID="{B7EC189C-7FA7-48B2-8FB8-1114EECA0D25}" ShortID="607557783">
+															<CurveUsageInfoList>
+																<VolumeDryUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																		<Curve Name="VolumeDry" ID="{1BF03A35-54BC-4021-8766-C481A8E20D7D}">
+																			<PropertyList>
+																				<Property Name="Flags" Type="int32" Value="3"/>
+																			</PropertyList>
+																			<PointList>
+																				<Point>
+																					<XPos>0</XPos>
+																					<YPos>0</YPos>
+																					<Flags>5</Flags>
+																				</Point>
+																				<Point>
+																					<XPos>100</XPos>
+																					<YPos>-200</YPos>
+																					<Flags>37</Flags>
+																				</Point>
+																			</PointList>
+																		</Curve>
+																	</CurveUsageInfo>
+																</VolumeDryUsage>
+																<VolumeWetGameUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetGameUsage>
+																<VolumeWetUserUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																</VolumeWetUserUsage>
+																<LowPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</LowPassFilterUsage>
+																<HighPassFilterUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</HighPassFilterUsage>
+																<SpreadUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</SpreadUsage>
+																<FocusUsage>
+																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																</FocusUsage>
+															</CurveUsageInfoList>
+														</Attenuation>
+													</Custom>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7644C83A-CFDC-47C5-85D1-689579C9C42E}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EF35653C-670B-4B5F-8652-4B2CBA38E324}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="jinx_base_sfx_audio_36" ID="{E37675A6-7374-4568-B552-C325D775689D}">
+													<Language>SFX</Language>
+													<AudioFile>SFX\jinx_base_sfx_audio_36.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="457845949"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="jinx_base_sfx_audio_36" ID="{E37675A6-7374-4568-B552-C325D775689D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

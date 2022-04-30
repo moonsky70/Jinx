@@ -35,8 +35,8 @@ namespace JinxMod.Modules
 
             ProjectileSphereTargetFinder projectileSphereTargetFinder = missilePrefab.AddComponent<ProjectileSphereTargetFinder>();
             projectileSphereTargetFinder.lookRange = 8f;
-            projectileSphereTargetFinder.onlySearchIfNoTarget = false;
-            projectileSphereTargetFinder.allowTargetLoss = true;
+            projectileSphereTargetFinder.onlySearchIfNoTarget = true;
+            projectileSphereTargetFinder.allowTargetLoss = false;
             projectileSphereTargetFinder.testLoS = true;
             projectileSphereTargetFinder.targetSearchInterval = 0.1f;
 

@@ -14,6 +14,7 @@ namespace JinxMod.Controller
         private void OnDestroy()
         {
             if (this.playID != 0) AkSoundEngine.StopPlayingID(this.playID);
+            if (this.playID2 != 0) AkSoundEngine.StopPlayingID(this.playID2);
         }
 
         private void OnEnable()
@@ -23,7 +24,8 @@ namespace JinxMod.Controller
 
         private void PlayEffect()
         {
-            this.playID = Util.PlaySound("Play_JinxJokeVO", base.gameObject);
+            this.playID = Util.PlaySound("Play_JinxTauntVO", base.gameObject);
+            this.playID2 = Util.PlaySound("Play_JinxMenuSFX", base.gameObject);
         }
     }
 }
