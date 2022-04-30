@@ -9,12 +9,18 @@ Special Thanks to Smallegreen for the humongous support
 ## Introduction
 A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care for the consequences. With an arsenal of deadly weapons, she unleashes the loudest blasts and brightest explosions to leave a trail of mayhem and panic in her wake. Jinx despises boredom and gleefully brings her own chaotic brand of pandemonium wherever she goes.
 
-## Latest Patch Notes `1.0.4`
+## Latest Patch Notes `1.0.5`
 `Bug reports can be posted in discord` https://discord.gg/aYuS9Wsxxx  
 
-* Attempt to fix Fish Bones impact issues during multiplayer.
-* Adjusted Fish bones homing properties.
-* Reduced delay before homing on Fishbones from 1 second to 0.3 seconds.
+* Pow-Pow damage increased to 3x200% (up from 3x125%)
+* Pow-Pow base duration decreased to 0.8 seconds down from 1.0 seconds.
+* Pow-Pow is no longer agile.
+* Pow-Pow now has reduced recoil
+* Pow-Pow now grants Rev'd up on hit instead of on use.
+* Fixed issue with fish bones homing during multiplayer games.
+* Fixed issue with pow-pow not granting Rev'd up during multiplayer games
+* Fish Bones now has reduced recoil.
+
 
 ## Discord
 <a href="https://discord.gg/aYuS9Wsxxx" target="_blank">
@@ -59,6 +65,11 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 ---
 
 ## Old Patch Notes
+`1.0.4`
+* Attempt to fix Fish Bones impact issues during multiplayer.
+* Adjusted Fish bones homing properties.
+* Reduced delay before homing on Fishbones from 1 second to 0.3 seconds.
+
 `1.0.3`
 * Jinx now rotates her body toward where she's aiming during Super Mega Death Rocket!
 * Fixed an issue where Zap could cancel itself out if casted again.

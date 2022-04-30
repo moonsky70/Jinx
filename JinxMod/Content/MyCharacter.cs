@@ -104,7 +104,7 @@ namespace JinxMod.Modules.Survivors
                 Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Pow-Pow"),
                 new EntityStates.SerializableEntityStateType(typeof(SkillStates.PowPow)),
                 "Weapon",
-                true));
+                false));
             ((ScriptableObject)primarySkillDef).name = "JinxPowPow";
             SkillDef fish = Modules.Skills.CreateSkillDef(new SkillDefInfo
                 (prefix + "_JINX_BODY_PRIMARY_FISHBONES_NAME",
@@ -171,6 +171,7 @@ namespace JinxMod.Modules.Survivors
                 rechargeStock = 1,
                 requiredStock = 1,
                 stockToConsume = 1,
+                keywordTokens = new string[] { "KEYWORD_AGILE" }
             });
             rollSkillDef.dontAllowPastMaxStocks = true;
             Modules.Skills.AddUtilitySkills(bodyPrefab, rollSkillDef);

@@ -11,11 +11,11 @@ namespace JinxMod.SkillStates
 {
     public class PowPow : BaseSkillState
     {
-        public static float damageCoefficient = 1.25f;
+        public static float damageCoefficient = 2f;
         public static float procCoefficient = .7f;
-        public static float baseDuration = 1.0f;
+        public static float baseDuration = 0.8f;
         public static float force = 400f;
-        public static float recoil = 1f;
+        public static float recoil = 0.5f;
         public static float range = 256f;
         public static GameObject tracerEffectPrefab = RoR2.LegacyResourcesAPI.Load<GameObject>("Prefabs/Effects/Tracers/TracerGoldGat");
 
@@ -30,6 +30,8 @@ namespace JinxMod.SkillStates
         private float bulletStopWatch;
         private int bulletCount = 3;
         private RocketController rocketController;
+        private bool hasHit = false;
+        private bool hasBuff = false;
 
         public override void OnEnter()
         {
@@ -55,7 +57,16 @@ namespace JinxMod.SkillStates
             {
                 this.rocketController.attacks++;
             }
+        }
 
+        public override void OnExit()
+        {
+            base.OnExit();
+        }
+
+        private void AddBuff()
+        {
+            this.hasBuff = true;
             this.revdUpController.ResetStopWatch();
             if (base.characterBody.GetBuffCount(Modules.Buffs.revdUp) < 3)
             {
@@ -65,21 +76,14 @@ namespace JinxMod.SkillStates
                 }
             }
         }
-
-        public override void OnExit()
-        {
-            base.OnExit();
-        }
-
         private void Fire()
         {
             base.characterBody.AddSpreadBloom(1.5f);
             EffectManager.SimpleMuzzleFlash(EntityStates.Commando.CommandoWeapon.FirePistol2.muzzleEffectPrefab, base.gameObject, this.muzzleString, false);
-            if (base.isAuthority)
+            Ray aimRay = base.GetAimRay();
+            base.AddRecoil(-1f * PowPow.recoil, -2f * PowPow.recoil, -0.5f * PowPow.recoil, 0.5f * PowPow.recoil);
+            if (NetworkServer.active)
             {
-                Ray aimRay = base.GetAimRay();
-                base.AddRecoil(-1f * PowPow.recoil, -2f * PowPow.recoil, -0.5f * PowPow.recoil, 0.5f * PowPow.recoil);
-
                 new BulletAttack
                 {
                     bulletCount = 1,
@@ -109,18 +113,17 @@ namespace JinxMod.SkillStates
                     spreadYawScale = 0f,
                     queryTriggerInteraction = QueryTriggerInteraction.UseGlobal,
                     hitEffectPrefab = EntityStates.Commando.CommandoWeapon.FirePistol2.hitEffectPrefab,
-                    hitCallback = bulletHitCallback,
+                    hitCallback = BulletHitCallback,
                 }.Fire();
-
-
             }
         }
 
-        private bool bulletHitCallback(BulletAttack bulletAttack, ref BulletHit hitInfo)
+        private bool BulletHitCallback(BulletAttack bulletAttack, ref BulletHit hitInfo)
         {
             var result = BulletAttack.defaultHitCallback(bulletAttack, ref hitInfo);
             if (hitInfo.hitHurtBox)
             {
+                this.hasHit = true;
                 if(NetworkServer.active) PointSoundManager.EmitSoundServer(Modules.Assets.bulletHitSoundEvent.index, hitInfo.hitHurtBox.transform.position);
             }
             return result;
@@ -129,11 +132,11 @@ namespace JinxMod.SkillStates
         public override void FixedUpdate()
         {
             base.FixedUpdate();
-            if (bulletStopWatch < this.fireTime / bulletCount)
+            if (bulletStopWatch < this.fireTime / 3f)
             {
                 bulletStopWatch += Time.fixedDeltaTime;
             }
-            if (base.fixedAge >= this.fireTime && bulletStopWatch > this.fireTime / bulletCount && bulletCount > 0)
+            if (base.fixedAge >= this.fireTime && bulletStopWatch > this.fireTime / 3f && bulletCount > 0)
             {
                 bulletStopWatch = 0f;
                 bulletCount--;
@@ -142,6 +145,11 @@ namespace JinxMod.SkillStates
                 {
                     this.hasFired = true;
                 }
+            }
+
+            if (this.hasHit && !this.hasBuff)
+            {
+                AddBuff();
             }
 
             if (base.fixedAge >= this.duration && base.isAuthority)

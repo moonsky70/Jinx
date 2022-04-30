@@ -72,18 +72,14 @@ namespace JinxMod.SkillStates
             {
                 this.hasFired = true;
                 Util.PlaySound("Play_JinxFishBonesShoot", base.gameObject);
-
-                if (base.isAuthority)
-                {
-                    FireMissile();
-                }
+                FireMissile();
             }
         }
 
         private void FireMissile()
         {
             Ray aimRay = base.GetAimRay();
-            base.AddRecoil(-1f * 6f, -2f * 6f, -0.5f * 6f, 0.5f * 6f);
+            base.AddRecoil(-1f * 3f, -2f * 3f, -0.5f * 3f, 0.5f * 3f);
             base.characterBody.AddSpreadBloom(1.5f);
             GameObject projectilePrefab = Modules.Projectiles.missilePrefab;
             bool isCrit = Util.CheckRoll(this.characterBody.crit, this.characterBody.master);
@@ -91,20 +87,23 @@ namespace JinxMod.SkillStates
             {
                 EffectManager.SimpleMuzzleFlash(FireRocket.effectPrefab, base.gameObject, "FishBonesMuzzle", false);
             }
-            FireProjectileInfo fireProjectileInfo = new FireProjectileInfo
+            if (NetworkServer.active)
             {
-                projectilePrefab = projectilePrefab,
-                position = aimRay.origin,
-                rotation = Util.QuaternionSafeLookRotation(aimRay.direction),
-                procChainMask = default(ProcChainMask),
-                target = null,
-                owner = this.characterBody.gameObject,
-                damage = this.characterBody.damage * FishBones.damageCoefficient,
-                crit = isCrit,
-                force = 600f,
-                damageColorIndex = DamageColorIndex.Default
-            };
-            ProjectileManager.instance.FireProjectile(fireProjectileInfo);
+                FireProjectileInfo fireProjectileInfo = new FireProjectileInfo
+                {
+                    projectilePrefab = projectilePrefab,
+                    position = aimRay.origin,
+                    rotation = Util.QuaternionSafeLookRotation(aimRay.direction),
+                    procChainMask = default(ProcChainMask),
+                    target = null,
+                    owner = this.characterBody.gameObject,
+                    damage = this.characterBody.damage * FishBones.damageCoefficient,
+                    crit = isCrit,
+                    force = 600f,
+                    damageColorIndex = DamageColorIndex.Default
+                };
+                ProjectileManager.instance.FireProjectile(fireProjectileInfo);
+            }
         }
 
         public override void FixedUpdate()

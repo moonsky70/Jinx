@@ -62,7 +62,7 @@ namespace JinxMod.Modules
 
             #region Utility
             LanguageAPI.Add(prefix + "UTILITY_ROLL_NAME", "Switcharoo");
-            LanguageAPI.Add(prefix + "UTILITY_ROLL_DESCRIPTION", "Jinx switches between Pow-Pow, her minigun, and Fishbones, her rocket launcher." + Environment.NewLine
+            LanguageAPI.Add(prefix + "UTILITY_ROLL_DESCRIPTION", Helpers.agilePrefix + "Jinx switches between Pow-Pow, her minigun, and Fishbones, her rocket launcher." + Environment.NewLine
             + "Switcharoo reset's Pow-Pow's and Fishbone's attack timer." + Environment.NewLine
             + "Jinx can Rocket Jump with Fishbones." + Environment.NewLine
             + "Jinx nullifies fall damage if she's knocked back by her own Rocket.");
