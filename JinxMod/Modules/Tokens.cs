@@ -73,7 +73,8 @@ namespace JinxMod.Modules
             LanguageAPI.Add(prefix + "SPECIAL_BOMB_NAME", "Super Mega Death Rocket!");
             LanguageAPI.Add(prefix + "SPECIAL_BOMB_DESCRIPTION", "Jinx fires a rocket in the target direction, The rocket explodes upon colliding with an enemy or terrain, dealing damage to them and all enemies in an area around them." + Environment.NewLine
             + $"<color=#f68835>{100f * MegaRocket.damageCoefficient}% - {100f * (MegaRocket.damageCoefficient * 2)}% damage</color> depending on projectile travel time " + $"<color=#d62d20>(+{JinxMegaImpact.bonusDamageCoefficient * 100f} of target's missing health)</color>" + Environment.NewLine
-            + "Bonus damage based on <color=#1F995C>missing health</color> is based on each unit's own <color=#1F995C>missing health.</color>");
+            + "Bonus damage based on <color=#1F995C>missing health</color> is based on each unit's own <color=#1F995C>missing health.</color>" + Environment.NewLine
+            + "Pocket I.C.B.M increases Super Mega Death Rocket!'s damage but will not fire extra projectiles.");
             #endregion
             #endregion
         }

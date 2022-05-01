@@ -69,6 +69,21 @@ namespace JinxMod.SkillStates
             {
                 EffectManager.SimpleMuzzleFlash(FireRocket.effectPrefab, base.gameObject, "FishBonesMuzzle", false);
             }
+
+            int? num;
+            if (base.characterBody == null)
+            {
+                num = null;
+            }
+            else
+            {
+                Inventory inventory = base.characterBody.inventory;
+                num = ((inventory != null) ? new int?(inventory.GetItemCount(DLC1Content.Items.MoreMissile)) : null);
+            }
+
+            int num2 = num ?? 0;
+            float num3 = Mathf.Max(1f, 1f + 0.5f * (float)(num2 - 1));
+
             FireProjectileInfo fireProjectileInfo = new FireProjectileInfo
             {
                 projectilePrefab = projectilePrefab,
@@ -77,13 +92,12 @@ namespace JinxMod.SkillStates
                 procChainMask = default(ProcChainMask),
                 target = null,
                 owner = this.characterBody.gameObject,
-                damage = this.characterBody.damage * MegaRocket.damageCoefficient,
+                damage = (this.characterBody.damage * MegaRocket.damageCoefficient) * num3,
                 crit = isCrit,
                 force = 1200f,
                 damageColorIndex = DamageColorIndex.Default
             };
             ProjectileManager.instance.FireProjectile(fireProjectileInfo);
-            //MissileUtils.FireMissile(aimRay.origin, this.characterBody, default(ProcChainMask), null, this.characterBody.damage * num, isCrit, projectilePrefab, DamageColorIndex.Default, aimRay.direction, 200f, true);
         }
 
         public override void FixedUpdate()
