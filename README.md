@@ -9,16 +9,12 @@ Special Thanks to Smallegreen for the humongous support
 ## Introduction
 A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care for the consequences. With an arsenal of deadly weapons, she unleashes the loudest blasts and brightest explosions to leave a trail of mayhem and panic in her wake. Jinx despises boredom and gleefully brings her own chaotic brand of pandemonium wherever she goes.
 
-## Latest Patch Notes `1.0.6`
+## Latest Patch Notes `1.0.7`
 `Bug reports can be posted in discord` https://discord.gg/aYuS9Wsxxx  
 
-* Pow-Pow damage decreased to 3x165% (down from 3x200%)
-* Jinx has new character select pose and sounds
-* Fish Bones homing will not allow target loss
-* Fish Bones homing rotation increased to hit airborne enemies easier
-* Super Mega Death Rocket! will attempt to check if it's bonus damage has already been dealt to targets.
-* Super Mega Death Rocket! base damage reduced to 1350-2700% damage (down from 1600-3200%)
-* Super Mega Death Rocket! bonus damage reduced to 25% of target's missing health (down from 35%)
+* Fish Bones will now be affected by Pocket I.C.B.M
+* Super Mega Death Rocket! damage is now affected by Pocket I.C.B.M 
+    * Super Mega Death Rocket! will not fire additional projectiles provided by Pocket I.C.B.M
 
 
 
@@ -65,6 +61,15 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 ---
 
 ## Old Patch Notes
+`1.0.6`
+* Pow-Pow damage decreased to 3x165% (down from 3x200%)
+* Jinx has new character select pose and sounds
+* Fish Bones homing will not allow target loss
+* Fish Bones homing rotation increased to hit airborne enemies easier
+* Super Mega Death Rocket! will attempt to check if it's bonus damage has already been dealt to targets.
+* Super Mega Death Rocket! base damage reduced to 1350-2700% damage (down from 1600-3200%)
+* Super Mega Death Rocket! bonus damage reduced to 25% of target's missing health (down from 35%)
+
 `1.0.5`
 * Pow-Pow damage increased to 3x200% (up from 3x125%)
 * Pow-Pow base duration decreased to 0.8 seconds down from 1.0 seconds.
