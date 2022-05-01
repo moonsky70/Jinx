@@ -51,7 +51,7 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 * Jumps: 1
 
 ## Skills
-![image](https://user-images.githubusercontent.com/7343912/165643242-f61accdc-3edd-456c-9574-2416a6cddc48.png)
+![image](https://user-images.githubusercontent.com/7343912/166158342-6a3a66b8-d6be-4f3d-8b21-d3bcd32e0ded.png)
 
 ## Credits
 * All the homies at the Risk of Rain 2 Modding Discord except dotflare
