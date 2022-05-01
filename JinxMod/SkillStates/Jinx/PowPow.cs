@@ -80,15 +80,14 @@ namespace JinxMod.SkillStates
         {
             base.characterBody.AddSpreadBloom(1.5f);
             EffectManager.SimpleMuzzleFlash(EntityStates.Commando.CommandoWeapon.FirePistol2.muzzleEffectPrefab, base.gameObject, this.muzzleString, false);
-            Ray aimRay = base.GetAimRay();
             base.AddRecoil(-1f * PowPow.recoil, -2f * PowPow.recoil, -0.5f * PowPow.recoil, 0.5f * PowPow.recoil);
             if (NetworkServer.active)
             {
                 new BulletAttack
                 {
                     bulletCount = 1,
-                    aimVector = aimRay.direction,
-                    origin = aimRay.origin,
+                    aimVector = base.inputBank.aimDirection,
+                    origin = base.inputBank.aimOrigin,
                     damage = PowPow.damageCoefficient * this.damageStat,
                     damageColorIndex = DamageColorIndex.Default,
                     damageType = DamageType.Generic,

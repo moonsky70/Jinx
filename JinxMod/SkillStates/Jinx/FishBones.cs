@@ -78,7 +78,6 @@ namespace JinxMod.SkillStates
 
         private void FireMissile()
         {
-            Ray aimRay = base.GetAimRay();
             base.AddRecoil(-1f * 3f, -2f * 3f, -0.5f * 3f, 0.5f * 3f);
             base.characterBody.AddSpreadBloom(1.5f);
             GameObject projectilePrefab = Modules.Projectiles.missilePrefab;
@@ -89,20 +88,45 @@ namespace JinxMod.SkillStates
             }
             if (NetworkServer.active)
             {
+                int? num;
+                if (base.characterBody == null)
+                {
+                    num = null;
+                }
+                else
+                {
+                    Inventory inventory = base.characterBody.inventory;
+                    num = ((inventory != null) ? new int?(inventory.GetItemCount(DLC1Content.Items.MoreMissile)) : null);
+                }
+                InputBankTest component = base.characterBody.GetComponent<InputBankTest>();
+                int num2 = num ?? 0;
+                float num3 = Mathf.Max(1f, 1f + 0.5f * (float)(num2 - 1));
                 FireProjectileInfo fireProjectileInfo = new FireProjectileInfo
                 {
                     projectilePrefab = projectilePrefab,
-                    position = aimRay.origin,
-                    rotation = Util.QuaternionSafeLookRotation(aimRay.direction),
+                    position = component.aimOrigin,
+                    rotation = Util.QuaternionSafeLookRotation(component.aimDirection),
                     procChainMask = default(ProcChainMask),
                     target = null,
                     owner = this.characterBody.gameObject,
-                    damage = this.characterBody.damage * FishBones.damageCoefficient,
+                    damage = (this.characterBody.damage * FishBones.damageCoefficient) * num3,
                     crit = isCrit,
                     force = 600f,
                     damageColorIndex = DamageColorIndex.Default
                 };
                 ProjectileManager.instance.FireProjectile(fireProjectileInfo);
+                Quaternion quaternion = Quaternion.LookRotation(component.aimDirection);
+                if (num2 > 0)
+                {
+                    FireProjectileInfo fireProjectileInfo2 = fireProjectileInfo;
+                    fireProjectileInfo2.rotation = quaternion * Quaternion.Euler(0f, -15, 0f);
+                    fireProjectileInfo2.position = fireProjectileInfo.position + UnityEngine.Random.insideUnitSphere * 1f;
+                    ProjectileManager.instance.FireProjectile(fireProjectileInfo2);
+                    FireProjectileInfo fireProjectileInfo3 = fireProjectileInfo;
+                    fireProjectileInfo3.rotation = quaternion * Quaternion.Euler(0f, 15, 0f) ;
+                    fireProjectileInfo3.position = fireProjectileInfo.position + UnityEngine.Random.insideUnitSphere * 1f;
+                    ProjectileManager.instance.FireProjectile(fireProjectileInfo3);
+                }
             }
         }
 
