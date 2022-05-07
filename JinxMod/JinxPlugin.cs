@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Security;
 using System.Security.Permissions;
+using R2API.Networking;
 using UnityEngine;
 
 [module: UnverifiableCode]
@@ -28,7 +29,8 @@ namespace JinxMod
         "LanguageAPI",
         "SoundAPI",
         "DamageAPI",
-        "RecalculateStatsAPI"
+        "RecalculateStatsAPI",
+        nameof(NetworkingAPI)
     })]
 
     public class JinxPlugin : BaseUnityPlugin
@@ -63,7 +65,8 @@ namespace JinxMod
                 Modules.Buffs.RegisterBuffs(); // add and register custom buffs/debuffs
                 Modules.Projectiles.RegisterProjectiles(); // add and register custom projectiles
                 Modules.Tokens.AddTokens(); // register name tokens
-                                            //Modules.ItemDisplays.PopulateDisplays(); // collect item display prefabs for use in our display rules
+                //Modules.ItemDisplays.PopulateDisplays(); // collect item display prefabs for use in our display rules
+                NetworkingAPI.RegisterMessageType<RefreshStacksMessage>();
 
                 // survivor initialization
                 new MyCharacter().Initialize();
