@@ -3,6 +3,8 @@ using JinxMod.Controller;
 using RoR2;
 using RoR2.Audio;
 using System;
+using R2API.Networking;
+using R2API.Networking.Interfaces;
 using UnityEngine;
 using UnityEngine.Networking;
 using static RoR2.BulletAttack;
@@ -149,7 +151,7 @@ namespace JinxMod.SkillStates
 
             if (this.hasHit && !this.hasBuff)
             {
-                AddBuff();
+                new RefreshStacksMessage(characterBody, Modules.Buffs.revdUp.buffIndex, 2.5f, 3).Send(NetworkDestination.Server);
             }
 
             if (base.fixedAge >= this.duration && base.isAuthority)
