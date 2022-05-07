@@ -15,14 +15,9 @@ namespace JinxMod.Controller
 	{
 		private void Start()
 		{
-			if (!NetworkServer.active)
-			{
-				base.enabled = false;
-				return;
-			}
-			this.transform = base.transform;
 			this.targetComponent = base.GetComponent<ProjectileTargetComponent>();
 		}
+
 		private void FixedUpdate()
 		{
 			this.timer += Time.fixedDeltaTime;
@@ -39,7 +34,6 @@ namespace JinxMod.Controller
 			}
 		}
 
-		private new Transform transform;
 		private ProjectileTargetComponent targetComponent;
 		public float maxVelocity = 25f;
 		public float rollVelocity = 0f;

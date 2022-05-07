@@ -186,8 +186,8 @@ namespace JinxMod.Modules.Characters
                 if (_cameraParams == null)
                 {
                     _cameraParams = ScriptableObject.CreateInstance<CharacterCameraParams>();
-                    _cameraParams.data.minPitch = -70;
-                    _cameraParams.data.maxPitch = 70;
+                    _cameraParams.data.minPitch = -89.99f;
+                    _cameraParams.data.maxPitch = 89.99f;
                     _cameraParams.data.wallCushion = 0.1f;
                     _cameraParams.data.pivotVerticalOffset = cameraParamsVerticalOffset;
                     _cameraParams.data.idealLocalCameraPos = new Vector3(0, 0, cameraParamsDepth);

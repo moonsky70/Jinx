@@ -10,7 +10,7 @@ namespace JinxMod
 {
 	public static class RefreshStacksHelper
 	{
-		public static void RefreshStacks(this CharacterBody body, BuffIndex index, float duration, int maxStacks)
+		public static void RefreshStacks(this CharacterBody body, BuffIndex index, float duration, int maxStacks, bool setToMax = false)
 		{
 			var amount = 0;
 			for (var i = 0; i < body.timedBuffs.Count; i++)
@@ -19,7 +19,6 @@ namespace JinxMod
 				var timedBuff = body.timedBuffs[i];
 				if (timedBuff.buffIndex != index) continue;
 				amount++;
-				Debug.Log("Timer:" + $"{timedBuff.timer}");
 				if (timedBuff.timer < duration * amount)
 				{
 					timedBuff.timer = duration * amount;
@@ -27,11 +26,18 @@ namespace JinxMod
 						NetworkBuffTimer(body, i, timedBuff.timer);
 				}
 			}
-			Debug.Log("Stacks:" + $"{amount}");
+			if (setToMax)
+            {
+				for (var i = amount; i < maxStacks; i++)
+				{
+					body.AddTimedBuff(BuffCatalog.GetBuffDef(index), duration * (i + 1), maxStacks);
+				}
+
+				return;
+			}
 
 			if (amount < maxStacks)
 			{
-				Debug.Log("AddTimeBuff");
 				body.AddTimedBuff(BuffCatalog.GetBuffDef(index), duration * (amount + 1), maxStacks);
 			}
 		}

@@ -10,15 +10,17 @@ namespace JinxMod
 		private BuffIndex index;
 		private float duration;
 		private int maxStacks;
+		bool setToMax;
 		
 		public RefreshStacksMessage(){}
 
-		public RefreshStacksMessage(CharacterBody body, BuffIndex index, float duration, int maxStacks)
+		public RefreshStacksMessage(CharacterBody body, BuffIndex index, float duration, int maxStacks, bool setToMax = false)
 		{
 			this.body = body;
 			this.index = index;
 			this.duration = duration;
 			this.maxStacks = maxStacks;
+			this.setToMax = setToMax;
 		}
 
 		public void Serialize(NetworkWriter writer)
@@ -27,6 +29,7 @@ namespace JinxMod
 			writer.WritePackedUInt32((uint) index);
 			writer.Write(duration);
 			writer.Write(maxStacks);
+			writer.Write(setToMax);
 		}
 
 		public void Deserialize(NetworkReader reader)
@@ -36,11 +39,12 @@ namespace JinxMod
 			index = (BuffIndex) reader.ReadPackedUInt32();
 			duration = reader.ReadSingle();
 			maxStacks = reader.ReadInt32();
+			setToMax = reader.ReadBoolean();
 		}
 		
 		public void OnReceived()
 		{
-			body.RefreshStacks(index, duration, maxStacks);
+			body.RefreshStacks(index, duration, maxStacks, setToMax);
 		}
 	}
 }

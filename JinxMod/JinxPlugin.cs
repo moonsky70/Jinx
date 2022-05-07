@@ -98,6 +98,7 @@ namespace JinxMod
         {
             RoR2.GlobalEventManager.onCharacterDeathGlobal += GlobalEventManager_onCharacterDeathGlobal;
             R2API.RecalculateStatsAPI.GetStatCoefficients += RecalculateStatsAPI_GetStatCoefficients;
+
         }
 
         private void RecalculateStatsAPI_GetStatCoefficients(CharacterBody sender, RecalculateStatsAPI.StatHookEventArgs args)
@@ -107,11 +108,9 @@ namespace JinxMod
                 args.attackSpeedMultAdd += ((sender.GetBuffCount(Modules.Buffs.revdUp) * 0.30f));
             }
 
-            GetExcitedController getExcitedController = sender.GetComponent<GetExcitedController>();
-            if (getExcitedController && sender.HasBuff(Modules.Buffs.getExcitedSpeedBuff))
+            if (sender.HasBuff(Modules.Buffs.getExcitedSpeedBuff))
             {
-                var currentDuration = getExcitedController.currentDuration;
-                args.moveSpeedMultAdd += Mathf.Max(Mathf.Min(currentDuration * .125f, 0.75f), 0f);
+                args.moveSpeedMultAdd += sender.GetBuffCount(Modules.Buffs.getExcitedSpeedBuff) * 0.125f;
                 args.attackSpeedMultAdd += .25f;
             }
         }
@@ -124,8 +123,7 @@ namespace JinxMod
 
             if (damageReport.victimTeamIndex != TeamIndex.Player && damageReport.attackerBody.bodyIndex == BodyCatalog.FindBodyIndex("JinxBody") && (damageReport.victimIsChampion || damageReport.victimIsBoss || damageReport.victimIsElite))
             {
-                GetExcitedController getExcitedController = damageReport.attackerBody.GetComponent<GetExcitedController>();
-                getExcitedController.GetExcited();
+                damageReport.attackerBody.RefreshStacks(Modules.Buffs.getExcitedSpeedBuff.buffIndex, 1, 6, true);
             }
         }
     }

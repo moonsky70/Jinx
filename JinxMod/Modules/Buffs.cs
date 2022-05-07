@@ -13,7 +13,7 @@ namespace JinxMod.Modules
         internal static void RegisterBuffs()
         {
             revdUp = AddNewBuff("JinxRevdUp", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Rev_d_up"), Color.white, true, false);
-            getExcitedSpeedBuff = AddNewBuff("GetExcitedMovementSpeedBuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Jinx_Passive"), Color.white, false, false);
+            getExcitedSpeedBuff = AddNewBuff("GetExcitedMovementSpeedBuff", Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("Jinx_Passive"), Color.white, true, false);
 
         }
 
