@@ -81,7 +81,7 @@ namespace JinxMod.SkillStates
             base.characterBody.AddSpreadBloom(1.5f);
             EffectManager.SimpleMuzzleFlash(EntityStates.Commando.CommandoWeapon.FirePistol2.muzzleEffectPrefab, base.gameObject, this.muzzleString, false);
             base.AddRecoil(-1f * PowPow.recoil, -2f * PowPow.recoil, -0.5f * PowPow.recoil, 0.5f * PowPow.recoil);
-            if (NetworkServer.active)
+            if (base.isAuthority)
             {
                 new BulletAttack
                 {
@@ -120,10 +120,11 @@ namespace JinxMod.SkillStates
         private bool BulletHitCallback(BulletAttack bulletAttack, ref BulletHit hitInfo)
         {
             var result = BulletAttack.defaultHitCallback(bulletAttack, ref hitInfo);
-            if (hitInfo.hitHurtBox)
+            HealthComponent healthComponent = hitInfo.hitHurtBox ? hitInfo.hitHurtBox.healthComponent : null;
+            if (healthComponent && healthComponent.alive && hitInfo.hitHurtBox.teamIndex != base.teamComponent.teamIndex)
             {
                 this.hasHit = true;
-                if(NetworkServer.active) PointSoundManager.EmitSoundServer(Modules.Assets.bulletHitSoundEvent.index, hitInfo.hitHurtBox.transform.position);
+                PointSoundManager.EmitSoundLocal(NetworkSoundEventCatalog.GetAkIdFromNetworkSoundEventIndex(Modules.Assets.bulletHitSoundEvent.index), hitInfo.hitHurtBox.transform.position);
             }
             return result;
         }

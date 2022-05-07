@@ -86,7 +86,7 @@ namespace JinxMod.SkillStates
             {
                 EffectManager.SimpleMuzzleFlash(FireRocket.effectPrefab, base.gameObject, "FishBonesMuzzle", false);
             }
-            if (NetworkServer.active)
+            if (base.isAuthority)
             {
                 int? num;
                 if (base.characterBody == null)
