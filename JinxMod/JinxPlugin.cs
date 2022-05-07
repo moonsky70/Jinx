@@ -21,6 +21,7 @@ namespace JinxMod
 {
     [BepInDependency("com.bepis.r2api", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.xoxfaby.BetterUI", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("bubbet.networkedtimedbuffs", BepInDependency.DependencyFlags.SoftDependency)]
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.EveryoneNeedSameModVersion)]
     [BepInPlugin(MODUID, MODNAME, MODVERSION)]
     [R2APISubmoduleDependency(new string[]
@@ -56,7 +57,6 @@ namespace JinxMod
             try
             {
                 if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey("com.xoxfaby.BetterUI")) betterUIInstalled = true;
-
                 jinxDamage = DamageAPI.ReserveDamageType();
                 Log.Init(Logger);
                 Modules.Assets.Initialize(); // load assets and read config
@@ -104,7 +104,7 @@ namespace JinxMod
         {
             if (sender.HasBuff(Modules.Buffs.revdUp))
             {
-                args.attackSpeedMultAdd += ((sender.GetBuffCount(Modules.Buffs.revdUp) * RevdUpController.attackSpeedBonusCoefficient));
+                args.attackSpeedMultAdd += ((sender.GetBuffCount(Modules.Buffs.revdUp) * 0.30f));
             }
 
             GetExcitedController getExcitedController = sender.GetComponent<GetExcitedController>();

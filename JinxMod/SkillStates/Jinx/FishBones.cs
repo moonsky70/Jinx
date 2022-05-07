@@ -20,7 +20,7 @@ namespace JinxMod.SkillStates
         private float fireTime;
         private bool hasFired;
         private Animator animator;
-        private RevdUpController revdUpController;
+        //private RevdUpController revdUpController;
         private RocketController rocketController;
 
         public override void OnEnter()
@@ -34,7 +34,7 @@ namespace JinxMod.SkillStates
             }
             base.StartAimMode(duration, false);
             this.animator = base.GetModelAnimator();
-            this.revdUpController = base.GetComponent<RevdUpController>();
+            //this.revdUpController = base.GetComponent<RevdUpController>();
             this.rocketController = base.GetComponent<RocketController>();
             if (this.rocketController)
             {
@@ -52,10 +52,10 @@ namespace JinxMod.SkillStates
 
             if (base.characterBody.GetBuffCount(Modules.Buffs.revdUp) > 0)
             {
-                this.revdUpController.ResetStopWatch();
+                //this.revdUpController.ResetStopWatch();
                 if (NetworkServer.active)
                 {
-                    base.characterBody.RemoveBuff(Modules.Buffs.revdUp);
+                    base.characterBody.RemoveOldestTimedBuff(Modules.Buffs.revdUp);
                 }
             }
 

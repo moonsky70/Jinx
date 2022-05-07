@@ -67,7 +67,7 @@ namespace JinxMod.Modules.Survivors
         {
             base.InitializeCharacter();
             bodyPrefab.AddComponent<RocketController>();
-            bodyPrefab.AddComponent<RevdUpController>();
+            //bodyPrefab.AddComponent<RevdUpController>();
             bodyPrefab.AddComponent<GetExcitedController>();
             displayPrefab.AddComponent<MenuController>();
             CharacterDeathBehavior characterDeathBehavior = bodyPrefab.GetComponent<CharacterDeathBehavior>();

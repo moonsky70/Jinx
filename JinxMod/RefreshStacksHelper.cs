@@ -3,6 +3,7 @@ using NetworkedTimedBuffs;
 using R2API.Networking;
 using R2API.Networking.Interfaces;
 using RoR2;
+using UnityEngine;
 using UnityEngine.Networking;
 
 namespace JinxMod
@@ -14,20 +15,24 @@ namespace JinxMod
 			var amount = 0;
 			for (var i = 0; i < body.timedBuffs.Count; i++)
 			{
+
 				var timedBuff = body.timedBuffs[i];
 				if (timedBuff.buffIndex != index) continue;
 				amount++;
-				if (timedBuff.timer < duration)
+				Debug.Log("Timer:" + $"{timedBuff.timer}");
+				if (timedBuff.timer < duration * amount)
 				{
-					timedBuff.timer = duration;
+					timedBuff.timer = duration * amount;
 					if (Chainloader.PluginInfos.ContainsKey("bubbet.networkedtimedbuffs"))
-						NetworkBuffTimer(body, i, duration);
+						NetworkBuffTimer(body, i, timedBuff.timer);
 				}
 			}
+			Debug.Log("Stacks:" + $"{amount}");
 
 			if (amount < maxStacks)
 			{
-				body.AddTimedBuff(BuffCatalog.GetBuffDef(index), duration, maxStacks);
+				Debug.Log("AddTimeBuff");
+				body.AddTimedBuff(BuffCatalog.GetBuffDef(index), duration * (amount + 1), maxStacks);
 			}
 		}
 

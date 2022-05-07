@@ -43,7 +43,7 @@ namespace JinxMod.SkillStates
             base.StartAimMode(duration, false);
             this.muzzleString = "PowPowMuzzle";
             this.animator = base.GetModelAnimator();
-            this.revdUpController = base.GetComponent<RevdUpController>();
+            //this.revdUpController = base.GetComponent<RevdUpController>();
 
             if (this.animator.GetBool("isMoving") || (!(this.animator.GetBool("isGrounded"))))
             {
@@ -151,6 +151,7 @@ namespace JinxMod.SkillStates
 
             if (this.hasHit && !this.hasBuff)
             {
+                this.hasBuff = true;
                 new RefreshStacksMessage(characterBody, Modules.Buffs.revdUp.buffIndex, 2.5f, 3).Send(NetworkDestination.Server);
             }
 

@@ -51,6 +51,7 @@ A manic and impulsive criminal from Zaun, Jinx lives to wreak havoc without care
 
 ## Credits
 * All the homies at the Risk of Rain 2 Modding Discord except dotflare
+* Bubbet for helping me with everything i keep fuckin up LMAO
 * All the Kofi Supporters
 * League of Legends
 
