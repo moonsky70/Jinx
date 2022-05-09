@@ -13,11 +13,20 @@ namespace JinxMod.Controller
 	[RequireComponent(typeof(ProjectileTargetComponent))]
 	public class JinxMissileController : MonoBehaviour
 	{
+		LineRenderer lineRenderer;
 		private void Start()
 		{
 			this.targetComponent = base.GetComponent<ProjectileTargetComponent>();
+			lineRenderer = GetComponent<LineRenderer>();
 		}
-
+		void Awake()
+        {
+			if (!NetworkServer.active)
+			{
+				enabled = false;
+				return;
+			}
+		}
 		private void FixedUpdate()
 		{
 			this.timer += Time.fixedDeltaTime;

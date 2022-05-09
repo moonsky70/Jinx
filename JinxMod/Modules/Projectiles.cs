@@ -63,6 +63,10 @@ namespace JinxMod.Modules
             rigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
 
             ProjectileController projectileController = missilePrefab.GetComponent<ProjectileController>();
+
+            //TEMPORARY FIX: WHY DO PREDICTIONS BREAK TRACKING??
+            projectileController.allowPrediction = false;
+
             var ghostPrefab = PrefabAPI.InstantiateClone(projectileController.ghostPrefab, "MissileGhost", false);
             missilePrefab.transform.localScale *= 5;
             ghostPrefab.transform.localScale *= 5;
